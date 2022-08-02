@@ -85,7 +85,7 @@ body {
 
 .dropdown:hover .dropdown-content{
     display: block;
-}
+}*/
 
 .sidebar {
 	background: #fff;
@@ -100,7 +100,7 @@ body {
 	transition: .4s linear;
 	z-index: 2;
     display: block;
-} */
+} 
 /*-----------------blog---------------------*/
 
 .blog {
@@ -123,6 +123,7 @@ body {
     line-height: 1.1em;
     margin: 25px 0 25px 0;
 }
+
 /*-----------------contact------------------*/
 
 .contact {
