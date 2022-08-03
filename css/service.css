@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  height: 460px;
+  background-color: #1c2347;
+}
+
+.section-1-content span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #ff7d90;
+  display: flex;
+  align-items: flex-start;
+  height: 44px;
+}
+.section-1-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 30px 96px 30px;
+}
+
+.section-1-content h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+  height: 84px;
+  width: 100%;
+}
+
+.section-1-img {
+  width: 50%;
+  height: 100%;
+  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-QD6VBXB.jpg");
+  background-position: center center;
+  background-size: cover;
+}
