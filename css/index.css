@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Barlow', sans-serif;
+	font-weight:500;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn {
+    background-color: #FF7D90;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #EE7968;;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.icon {
+    border: 1px solid #FF7D90;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #FF7D90;
+    color: white;
+    font-size: 25px;
+}
+
+:root {
+    --e-global-color-primary: #ff7d90;
+    --e-global-color-secondary:#1c2347;
+    --e-global-color-text: #777777;
+    --e-global-color-accent: #2f4fd0;
+    --e-global-color-1f86ad6: #ffffff;
+    --e-global-color-3aab81d: #000000;
+    --e-global-color-9bed8f9: #f2f7fb;
+    --e-global-color-f03f58e: #02010100;
+    --e-global-color-2c6ecd4: #e6e6e6;
+    --e-global-color-df0e136: #ee7968;
+    --e-global-color-b92305c: #4f4f4f;
+    --e-global-typography-font-family: "Barlow";
+  }
+
+/*-------------------section-1---------------*/
+.section-1 .top {
+    background-color: #F2F7FB;
+    padding: 50px 0 40px 0;
+    position: relative;
+}
+
+.section-1 .top .name {
+    color: #FF7D90;
+    text-transform: uppercase;
+}
+
+.headline {
+    max-width: 650px;
+    margin-top: 15px;
+}
+
+.headline_plain {
+    color: var(--e-global-color-secondary);
+    font-size: 50px;    
+    font-weight: 500;
+}
+
+.headline_dynamic {
+    color: var(--e-global-color-primary);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.section-1 .detail {
+    color: var(--e-global-color-text);
+    max-width: 650px;
+    margin-top: 15px;
+}
+
+.section-1 .bottom {
+    position: relative;
+}
+
+.section-1 .bottom .image{
+    background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-EACCXCY.jpg);
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+
+.section-1 .bottom .image .overlay {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, var( --e-global-color-f03f58e ) 0%, var( --e-global-color-secondary ) 93%);
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.section-1 .bottom .slide {
+    width: 660px;
+    padding-top: 30%;
+    padding-left: 15%;
+}
+
+.slide_heading {
+    font-size: 50px;
+}
+
+.slide_desc {
+    font-size: 17px;
+    margin: 15px 0 15px 0;
+    max-width: 525px;
+}
+
+.slide_btn {
+    border: 2px solid #fff;
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    width: 158px;
+}
+/*-------------------industries--------------*/
+
+.out_industries .left .name {
+    color: var(--e-global-color-secondary);
+    font-size: 24px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+
+.out_industries .desc {
+    color: var(--e-global-color-text);
+    max-width: 420px;
+    margin-bottom: 0.9rem;
+}
+
+.out_industries .right .title {
+    color: #FF7D90;
+    text-transform: uppercase;
+}
+
+.out_industries .right .name_industries {
+    color: var(--e-global-color-secondary);
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    line-height: 1.1em;
+    margin: 25px 0 25px 0;
+    margin-left: 0px;
+    max-width: 420px;
+}
+
+.out_industries .right .icon {
+    border: 1px solid #FF7D90;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #FF7D90;
+    color: white;
+    font-size: 25px;
+    margin: 0 15px 15px 0;
+}
+
+.out_industries .right .btn {
+    width: 180px;
+}
+
+.out_industries .right .btn p{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 15px;
+}
+
+/*------------------reason-------------------*/
+.reason {
+    margin-top: 100px;
+    /* position: absolute; */
+}
+
+.reason img {
+    width: 568px;
+    height: 550px;
+}
+
+.reason .box {
+    background-color: var(--e-global-color-secondary);
+    width: 55%;
+    padding: 60px 15px 120px 30px;
+}
+
+.reason .title {
+    color: #FF7D90;
+    text-transform: uppercase;
+}
+
+.reason .introduct {
+    font-size: 47px;
+    color: #fff;
+    line-height: 1.1em;
+    margin-top: 20px;
+}
+
+.reason .list_reason {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    margin:20px 0 20px 0;
+}
+
+.reason .item {
+    padding-top: 10px;
+}
+.reason .item i {
+    margin-right: 10px;
+}
+
+.reason .btn {
+    width:180px ;
+}
+
+.reason .btn p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 15px;
+}
+
+/*-------------------slide--------------------*/
+.site_slide {
+    position: relative;
+    background-color: #fff;
+    width: 450px;
+    margin-top: -80px;
+    margin-left: 150px;
+    padding: 30px;
+}
+
+.slide .owl-nav{
+    display: none;
+}
+
+
+
+.slide img {
+    width: 170px;
+    height: 48px;
+}
+
+/*-----------------image---------------------*/
+.image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    color: white;
+    background-image: linear-gradient(       180deg,       var(--e-global-color-f03f58e) 41%,       var(--e-global-color-secondary) 97%     ),     url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg");   opacity: 0.88;
+}
+
+.image .grid {
+    padding-top:40% ;
+    position: absolute;
+    margin-left: 60px;
+    grid-gap: 60px;
+}
+
+.image .number {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.image .name {
+    font-size: 18px;
+    margin: 15px 0 15px 0;
+}
+
+.image .desc {
+    max-width: 340px;
+}
+
+/*------------------services-----------------*/
+
+.our_service {
+    margin: 100px 0 100px 20px;
+}
+
+
+.our_service .left .btn {
+    width: 180px;
+    margin-top: 20px;
+}
+
+.our_service .left .btn p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 15px;  
+}
+
+.our_service .right {
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.our_service .box {
+    margin: 20px;
+    max-width: 360px;
+}
+
+.our_service .right .icon {
+    background-color: var(--e-global-color-secondary);
+    border: 1px solid var(--e-global-color-secondary);
+}
+
+.our_service .right .item_name {
+    color: var(--e-global-color-secondary);
+    font-size: 21px;
+    line-height: 1.4em;
+    margin: 10px;
+    text-align: center;
+}
+
+.our_service .right .detail {
+    color: var(--e-global-color-text);
+    margin-top: 15px;
+}
+
+.our_service .right .wrapper {
+    color: var(--e-global-color-primary);
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.our_service .right .box i{
+    margin-right: 10px; 
+}
+
+/*-------------------team--------------------*/
+.team .left {
+    max-width: 310px;
+}
+.team {
+    margin-top: 100px;
+}
+
+.team .right .img {
+    background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg");
+    height:400px;
+    width: 280px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--e-global-color-f03f58e);
+}
+
+.team .right .img .overlay {
+    background-color: #00000047;
+    text-align: left;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    align-items: stretch;
+    color: #fff;
+}
+
+.team .right .content {
+    display: none;
+    color: #fff;    
+}
+
+.team .right .img:hover .wrapper {
+    display: none;
+}
+
+.team .right .img:hover .content {
+    background-color: var( --e-global-color-secondary );
+    margin-top: -400px;
+    height: 400px;
+    display: block;
+    
+}
+
+ .content:hover {
+    display: block;
+    transition: all .6s;
+}
+
+.content .name_leader{
+    font-size: 24px;
+}
+
+.team .btn {
+    margin-top: 15px;
+    width: 180px;
+}
+
+.team .btn p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 15px;
+}
+
+/*-------------------process-----------------*/
+.our_process {
+    margin: 100px 0 100px 0;
+}
+.our_process .name {
+    text-transform: uppercase;
+    color: #FF7D90;
+    text-align: center;
+}
+
+.our_process .name::after{
+    content: "-";
+    color:#FF7D90;
+    margin-left: 10px;
+}
+
+.our_process .name::before{
+    content: "-";
+    color:#FF7D90 ;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.our_process .title{
+    color: var(--e-global-color-secondary);
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+    line-height: 1.1em;
+    margin: 25px 0 25px 0;
+    max-width: 744px;
+    margin-left: 200px;
+}
+
+.our_process .grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.our_process .icon{
+    border: 1px solid #FF7D90;
+    padding: 20px;
+    background-color: white;
+    color: #FF7D90;
+}
+
+.our_process .icon:hover {
+    transform: scale(0.8 ,0.8);
+}
+
+.our_process .icon-first{
+    border: 1px solid #FF7D90;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #FF7D90;
+    color: white;
+    font-size: 25px;
+}
+
+.our_process .icon-first:hover {
+    color: var(--e-global-color-text);
+}
+
+.our_process .box .box_name {
+    margin-top: 25px;
+    color: var(--e-global-color-secondary);
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.our_process .box .detail {
+    color: var(--e-global-color-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-top: 25px;
+}
+
+/*-----------------contact------------------*/
+
+.contact {
+    margin-bottom: 100px;
+}
+
+.left {
+    max-width: 480px;
+    margin-right: 30px;
+}
+
+.left .name {
+    color: #FF7D90;
+    text-transform: uppercase;
+}
+
+.left .title {
+    color: var(--e-global-color-secondary);
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.1em;
+    max-width: 420px;
+    margin: 15px 0 15px 0;
+}
+
+.left .desc {
+    color: var(--e-global-color-text);
+    max-width: 420px;
+}
+
+.right {
+    max-width: 720px;
+}
+
+.grid input {
+    width: 325px;
+    height: 31px;
+    padding: 6px 16px;
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 695px;
+    height: 31px;
+    padding: 6px 16px;
+    margin:15px 0 15px 0;
+}
+
+.message {
+    width: 695px;
+    padding: 6px 16px;
+    margin:15px 0 15px 0;
+}
+
+.btn {
+    width: 50px;
+}
+
