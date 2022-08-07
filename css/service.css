@@ -1,19 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Barlow", sans-serif;
-  font-weight: 500;
-}
-
-.container {
-  width: 100%;
+.section-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+.section-1 .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .section-1 {
@@ -28,11 +22,22 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  color: #ff7d90;
+  color: var(--e-global-color-primary);
   display: flex;
   align-items: flex-start;
   height: 44px;
 }
+
+.section-1-content span::before,
+.section-1-content span::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.5rem);
+}
+
 .section-1-content {
   color: white;
   display: flex;
@@ -55,10 +60,462 @@ body {
   width: 100%;
 }
 
+.section-1-content p {
+  display: flex;
+  text-align: center;
+}
+
 .section-1-img {
   width: 50%;
   height: 100%;
   background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-QD6VBXB.jpg");
   background-position: center center;
   background-size: cover;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 893px;
+  padding: 96px 0px 96px 0px;
+  gap: 48px;
+}
+
+.section-2-content {
+  width: 50%;
+  padding: 30px;
+}
+
+.section-2-content h1 {
+  display: flex;
+  justify-content: flex-start;
+  color: #1c2347;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1em;
+  text-transform: capitalize;
+}
+
+.section-2-content span {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  display: flex;
+  align-items: flex-start;
+  height: 44px;
+}
+
+.section-2-content span::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.5rem);
+}
+
+.section-2-detail {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  gap: 30px;
+  padding: 30px;
+  width: 1140px;
+  height: 500px;
+  background-image: linear-gradient(
+      180deg,
+      var(--e-global-color-f03f58e) 41%,
+      var(--e-global-color-secondary) 97%
+    ),
+    url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg");
+  opacity: 0.88;
+  background-size: cover;
+}
+.section-2-detail .detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 30px;
+}
+
+.section-2-detail .detail-item span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  color: var(--e-global-color-1f86ad6);
+  font-size: 60px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.section-2-detail .detail-item h6 {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: var(--e-global-color-1f86ad6);
+  text-transform: capitalize;
+}
+
+.section-2-detail .detail-item p {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: var(--e-global-color-1f86ad6);
+  text-transform: capitalize;
+}
+.section-3-content h2 {
+  color: var(--e-global-color-secondary);
+  font-size: 50px;
+  font-family: "Barlow", Sans-serif;
+}
+.section-3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 96px 0px 96px 0;
+  background-color: var(--e-global-color-9bed8f9);
+  line-height: 1, 1rem;
+}
+
+.section-3 .container {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+}
+
+.section-3-content {
+  width: 30%;
+}
+.section-3-content span::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.5rem);
+}
+
+.section-3-content span {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  display: flex;
+  align-items: flex-start;
+  height: 44px;
+}
+
+.section-3-content h2 {
+  font-size: 50px;
+  line-height: 1.1em;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--e-global-color-secondary);
+}
+
+.section-3-content p {
+  font-size: 18px;
+  font-family: "Barlow", Sans-serif;
+  color: #777777;
+}
+
+.section-3-detail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 70%;
+}
+.section-3-detail .detail-title {
+  display: flex;
+  border-bottom: 1px solid #777777;
+}
+
+.section-3-detail .detail-item {
+  width: 50%;
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.section-3-detail .detail-item {
+  width: 50%;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-3-detail .detail-item h5 {
+  font-size: 21px;
+  font-family: "Barlow", Sans-serif;
+  color: #1c2347;
+}
+.section-3-detail .detail-item p {
+  font-size: 18px;
+  font-family: "Barlow", Sans-serif;
+  color: #777777;
+}
+.section-3-detail .detail-item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--e-global-color-secondary);
+}
+
+.section-3-detail .detail-item span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--e-global-color-1f86ad6);
+  width: 30px;
+  height: 30px;
+}
+
+.learn-more {
+  display: flex;
+  gap: 8px;
+}
+
+.learn-more i,
+.learn-more a {
+  color: var(--e-global-color-primary);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 3px;
+}
+
+.learn-more:hover i,
+.learn-more:hover a {
+  color: var(--e-global-color-df0e136);
+}
+
+.section-4 {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.section-4 img {
+  width: 45%;
+  height: 550px;
+}
+
+.section-4 .box {
+  background-color: var(--e-global-color-secondary);
+  width: 55%;
+  padding: 96px 30px 96px 60px;
+}
+
+.section-4 .box span {
+  color: var(--e-global-color-primary);
+  text-transform: uppercase;
+}
+
+.section-4 .box span::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 187px;
+  margin: 0 1rem;
+  transform: translateY(-0.3rem);
+}
+
+.section-4 .list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  margin: 20px 0 20px 0;
+}
+
+.section-4 .item {
+  padding-top: 10px;
+}
+.section-4 .item i {
+  margin: 10px;
+}
+
+.section-4 .box h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1em;
+  text-transform: capitalize;
+  color: var(--e-global-color-1f86ad6);
+}
+
+/*-------------------slide--------------------*/
+.site_slide {
+  position: relative;
+  background-color: #fff;
+  width: 450px;
+  margin-top: -80px;
+  margin-left: 150px;
+  padding: 30px;
+}
+
+.slide .owl-nav {
+  display: none;
+}
+
+.slide img {
+  width: 170px;
+  height: 48px;
+}
+
+/*-----------------image---------------------*/
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  color: white;
+  background-image: linear-gradient(
+      180deg,
+      var(--e-global-color-f03f58e) 41%,
+      var(--e-global-color-secondary) 97%
+    ),
+    url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg");
+  opacity: 0.88;
+}
+
+.image .grid {
+  padding-top: 40%;
+  position: absolute;
+  margin-left: 60px;
+  grid-gap: 60px;
+}
+
+.image .number {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.section-5 {
+  padding: 96px 0px 96px 0px;
+}
+
+.section-5 .title span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  display: flex;
+  height: 44px;
+  text-transform: uppercase;
+}
+
+.section-5 .title span::before,
+.section-5 .title span::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.5rem);
+}
+
+.section-5 .name {
+  font-size: 18px;
+  margin: 15px 0 15px 0;
+}
+
+.image .desc {
+  max-width: 340px;
+}
+
+.section-5 .title {
+  width: 100%;
+}
+.section-5 {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+}
+
+.section-5 .content .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-5 .grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-5 .img {
+  margin-bottom: 25px;
+}
+
+.section-5 .box:first-child .img {
+  background-image: url("https://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/2-Img-GKSQD9X.jpg");
+  height: 167px;
+  width: 167px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-5 .box:nth-child(2) .img {
+  background-image: url("https://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/2-Img-FKR8N68.jpg");
+  height: 167px;
+  width: 167px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-5 .box:last-child .img {
+  background-image: url("https://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/2-Img-FTXVWXP.jpg");
+  height: 167px;
+  width: 167px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-5 .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: calc(100% / 3);
+}
+
+.section-5 .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-5 .title h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1em;
+  text-transform: capitalize;
+  color: var(--e-global-color-secondary);
+}
+
+.content .name_leader {
+  font-size: 24px;
 }
