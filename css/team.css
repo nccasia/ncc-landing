@@ -1,0 +1,209 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-1 .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  height: 460px;
+  background-color: #1c2347;
+}
+
+.section-1-content span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  display: flex;
+  align-items: flex-start;
+  height: 44px;
+}
+
+.section-1-content span::before,
+.section-1-content span::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.5rem);
+}
+
+.section-1-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 30px 96px 30px;
+}
+
+.section-1-content h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+  height: 84px;
+  width: 100%;
+}
+
+.section-1-content p {
+  display: flex;
+  text-align: center;
+}
+
+.section-1-img {
+  width: 50%;
+  height: 100%;
+  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-JDHACMJ.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 893px;
+  padding: 96px 0px 96px 0px;
+  gap: 48px;
+}
+
+.section-2 .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+}
+
+.section-2-detail .grid .box {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg");
+  height: 250px;
+  width: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--e-global-color-f03f58e);
+  padding: 30px;
+}
+
+.section-2-detail .grid .box .content {
+  display: none;
+  background-color: var(--e-global-color-secondary);
+  transition: all 0.6s;
+}
+
+.section-2-detail .grid .box:hover .content {
+  display: block;
+  z-index: 4;
+  height: 310px;
+  width: 260px;
+  transition: display 0.6s;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-2-detail .grid .box:hover .wrapper {
+  display: none;
+}
+
+.section-2-detail .grid .wrapper {
+  color: var(--e-global-color-1f86ad6);
+}
+
+.section-2-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+
+.section-2-content h1 {
+  display: flex;
+  color: #1c2347;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1em;
+  text-transform: capitalize;
+}
+
+.section-2-content span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  display: flex;
+  height: 44px;
+}
+
+.section-2-content span::before,
+.section-2-content span::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.5rem);
+}
+
+.section-2-detail {
+  display: flex;
+
+  justify-content: center;
+  position: relative;
+  padding: 30px;
+  width: 1140px;
+  height: 500px;
+}
+.section-2-detail .detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 30px;
+}
+
+.section-2-detail .detail-item span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  color: var(--e-global-color-1f86ad6);
+  font-size: 60px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.section-2-detail .detail-item h6 {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: var(--e-global-color-1f86ad6);
+  text-transform: capitalize;
+}
+
+.section-2-detail .detail-item p {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: var(--e-global-color-1f86ad6);
+  text-transform: capitalize;
+}
