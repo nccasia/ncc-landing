@@ -15,7 +15,7 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    positon: relative;
+    position: relative;
   }
   
   .header-left {
@@ -32,7 +32,7 @@
     font-family: var(--e-global-typography-font-family), Sans-serif;
     font-size: 36px !important;
     font-weight: 500;
-    line-header: 1.2em;
+    line-height: 1.2em;
     text-transform: capitalize;
   }
   
@@ -137,4 +137,70 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     font-family: var(--e-global-typography-font-family), Sans-serif;
+  }
+
+  .sidebar {
+    background: var(--e-global-color-secondary);
+    width: 25%;
+    display: none;
+    position: absolute;
+    margin-left: 75%;
+    top: 0;
+    color: white;
+    z-index: 999;
+    position: fixed;
+    height: 100vh;
+  }
+
+  
+  #closeIcon {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .sidebar .wrapper {
+    margin: 30% 0 0 60px;
+  }
+
+  .sidebar_header {
+    font-size: 36px;
+  }
+
+  .sidebar_name {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .sidebar_desc {
+    padding:15px 0 0 0 ;
+  }
+
+  .sidebar ul {
+    padding-top: 10px;  
+  }
+  .sidebar ul li {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 15px;
+  }
+
+  .sidebar ul li:hover {
+    color: var(--e-global-color-primary);
+  }
+
+  .sidebar ul li i {
+    padding-right: 20px;
+  }
+
+  .sidebar .icon {
+    border: 1px solid var(--e-global-color-primary);
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--e-global-color-primary);
+    background-color: var(--e-global-color-secondary);
+  }
+
+  .sidebar .icon:hover {
+    background-color: white;
   }
