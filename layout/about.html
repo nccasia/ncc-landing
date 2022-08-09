@@ -1,411 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link rel="stylesheet" href="../css/about.css"/>
-   <link rel="stylesheet" href="../css/global.css" />
-  <title>About</title>
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <title>About</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="header-left">
-          <div class="header-title">
-            <h3>Shevia.</h3>
-          </div>
-          <div class="header-menu">
-            <ul class="menu-content">
-              <li class="menu-item">
-                <a href="./index.html">Home</a>
-              </li>
-              <li class="menu-item"><a href="./about.html">About</a></li>
-              <li class="menu-item">
-                <a href="#"
-                  ><span>Pages <i class="fa-solid fa-angle-down"></i></span
-                ></a>
-                <ul class="menu-dropdown">
-                  <li><a class="dropdown-item" href="#">Service</a></li>
-                  <li><a class="dropdown-item" href="#">Team</a></li>
-                  <li><a class="dropdown-item" href="#">Case Study</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a href="#">Contact</a></li>
-            </ul>
-          </div>
+      <div class="header-left">
+        <div class="header-title">
+          <h3>Shevia.</h3>
         </div>
-        <div class="header-right">
-          <div class="header-button">
-            <button class="header-btn" type="button">Get Quoatation</button>
-          </div>
-          <span class="nav-bar">
-            <i id="openIcon" class="fa-solid fa-bars fa-xl" onclick="openSidebar()"></i>
-          </span>
+        <div class="header-menu">
+          <ul class="menu-content">
+            <li class="menu-item">
+              <a href="/layout/index.html">Home</a>
+            </li>
+            <li class="menu-item"><a href="/layout/about.html">About</a></li>
+            <li class="menu-item">
+              <a href="#"
+                ><span>Pages <i class="fa-solid fa-angle-down"></i></span
+              ></a>
+              <ul class="menu-dropdown">
+                <li>
+                  <a class="dropdown-item" href="/layout/pages/service.html"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/layout/pages/team.html"
+                    >Team</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/layout/pages/casestudy.html"
+                    >Case Study</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="/layout/contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="header-right">
+        <div class="header-button">
+          <button class="header-btn" type="button">Get Quoatation</button>
+        </div>
+        <span class="nav-bar">
+          <i
+            id="openIcon"
+            class="fa-solid fa-bars fa-xl"
+            onclick="openSidebar()"
+          ></i>
+        </span>
+      </div>
     </header>
     <div class="sidebar" id="sidebar">
-        <i id="closeIcon" class="fa-solid fa-xmark" onclick="closeSidebar()" style="font-size:24px ;"></i>
-        <div class="wrapper">
+      <i
+        id="closeIcon"
+        class="fa-solid fa-xmark"
+        onclick="closeSidebar()"
+        style="font-size: 24px"
+      ></i>
+      <div class="wrapper">
         <p class="sidebar_header">Shevia</p>
-        <p class="sidebar_desc">luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <p class="sidebar_desc">
+          luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
         <p class="sidebar_name">Services</p>
         <ul>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Mobile Development</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Web Development</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">
-                    Data Science</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">IoT Development</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Enterprise Application</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">User Interfice Design</p>
-            </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Mobile Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Web Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Data Science</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">IoT Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Enterprise Application</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">User Interfice Design</p>
+          </li>
         </ul>
         <p class="sidebar_name">Follow Us</p>
         <ul class="flex">
-            <li><i class="icon fa-brands fa-facebook"></i></li>
-            <li><i class="icon fa-brands fa-twitter"></i></li>
-            <li><i class="icon fa-brands fa-linkedin"></i></li>
-            <li><i class="icon fa-brands fa-youtube"></i></li>
+          <li><i class="icon fa-brands fa-facebook"></i></li>
+          <li><i class="icon fa-brands fa-twitter"></i></li>
+          <li><i class="icon fa-brands fa-linkedin"></i></li>
+          <li><i class="icon fa-brands fa-youtube"></i></li>
         </ul>
-</div>
+      </div>
     </div>
     <div class="section_1">
-        <div class="container flex">
-            <div class="left">
-                <p class="name">quisque velit</p>
-                <p class="title">about us</p>
-                <p class="desc">Established in 2014 as a software firm and IT outsourcing service provider, NCCPLUS has grown rapidly and become a trusted partner of national and international businesses. We are a team of dynamic and talented engineers pursuing the passion of transforming the world.</p>
-            </div>
-            <div class="right"></div>
+      <div class="container flex">
+        <div class="left">
+          <p class="name">quisque velit</p>
+          <p class="title">about us</p>
+          <p class="desc">
+            Established in 2014 as a software firm and IT outsourcing service
+            provider, NCCPLUS has grown rapidly and become a trusted partner of
+            national and international businesses. We are a team of dynamic and
+            talented engineers pursuing the passion of transforming the world.
+          </p>
         </div>
+        <div class="right"></div>
+      </div>
     </div>
     <div class="section_2">
-        <div class="container flex">
-            <div class="left">
-                <p class="name">about us</p>
-                <h2 class="title">We Are Determined To Be The Luxury Software Development Service</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <p class="desc">Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <div class="btn">
-                    <div class="flex">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <p>learn more</p>
-                    </div>
-                </div>
+      <div class="container flex">
+        <div class="left">
+          <p class="name">about us</p>
+          <h2 class="title">
+            We Are Determined To Be The Luxury Software Development Service
+          </h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <p class="desc">
+            Donec id elit non mi porta gravida at eget metus. Nulla vitae elit
+            libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac,
+            vestibulum at eros. Donec ullamcorper nulla non metus auctor
+            fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit.
+          </p>
+          <div class="btn">
+            <div class="flex">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p>learn more</p>
             </div>
-            <div class="right">
-                <div class="vision">
-                    <p class="name_vision">Our vision</p>
-                    <p class="desc_vision">NCC is making efforts to be one of the top software firms and outsourcing service providers in national and international areas.</p>
-                    <div class="flex">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <p class="more">read more</p>
-                    </div>
-                </div>
-                <div class="mission">
-                    <p class="name_mission">Our mission</p>
-                    <p class="desc_mission">At NCC, we build everything around “People” because we understand that human resource is the determining factor of success. We gather and build up young and talented software engineers to professional and international class levels.</p>
-                    <div class="flex">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <p class="more">read more</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="right">
+          <div class="vision">
+            <p class="name_vision">Our vision</p>
+            <p class="desc_vision">
+              NCC is making efforts to be one of the top software firms and
+              outsourcing service providers in national and international areas.
+            </p>
+            <div class="flex">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p class="more">read more</p>
+            </div>
+          </div>
+          <div class="mission">
+            <p class="name_mission">Our mission</p>
+            <p class="desc_mission">
+              At NCC, we build everything around “People” because we understand
+              that human resource is the determining factor of success. We
+              gather and build up young and talented software engineers to
+              professional and international class levels.
+            </p>
+            <div class="flex">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p class="more">read more</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section_3">
-        <div class="container flex">
-            <div class="left">
-                <p class="name">expertise</p>
-                <h2 class="title">We Are Built By A Team Of Highly Focused</h2>
-                <div class="btn">
-                    <div class="flex">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <p class="more">learn more</p>
-                    </div>
-                </div>
+      <div class="container flex">
+        <div class="left">
+          <p class="name">expertise</p>
+          <h2 class="title">We Are Built By A Team Of Highly Focused</h2>
+          <div class="btn">
+            <div class="flex">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p class="more">learn more</p>
             </div>
-            <div class="right">
-                <p class="desc_section3">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                <div class="wrapper grid">
-                    <div class="box">
-                        <div class="flex">
-                            <span class="counter_number">100</span>
-                            <span class="counter_number">%</span>
-                        </div>
-                        <h6>Project on time</h6>
-                        <p class="desc">Vivamus magna justo, lacinia eget consectetur sed</p>
-                    </div>
-                    <div class="box">
-                        <div class="flex">
-                            <span class="counter_number">$</span>
-                            <span class="counter_number">70</span>
-                            <span class="counter_number">M</span>
-                        </div>
-                        <h6>Create In Revenue</h6>
-                        <p class="desc">Vivamus magna justo, lacinia eget consectetur sed</p>
-                    </div>
-                    <div class="box">
-                        <div class="flex">
-                            <span class="counter_number">20</span>
-                            <span class="counter_number">+</span>
-                        </div>
-                        <h6>Five Star On Clutch</h6>
-                        <p class="desc">Vivamus magna justo, lacinia eget consectetur sed</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="right">
+          <p class="desc_section3">
+            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+            dui. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.Vestibulum ac diam sit amet quam vehicula elementum sed sit
+            amet dui.
+          </p>
+          <div class="wrapper grid">
+            <div class="box">
+              <div class="flex">
+                <span class="counter_number">100</span>
+                <span class="counter_number">%</span>
+              </div>
+              <h6>Project on time</h6>
+              <p class="desc">
+                Vivamus magna justo, lacinia eget consectetur sed
+              </p>
+            </div>
+            <div class="box">
+              <div class="flex">
+                <span class="counter_number">$</span>
+                <span class="counter_number">70</span>
+                <span class="counter_number">M</span>
+              </div>
+              <h6>Create In Revenue</h6>
+              <p class="desc">
+                Vivamus magna justo, lacinia eget consectetur sed
+              </p>
+            </div>
+            <div class="box">
+              <div class="flex">
+                <span class="counter_number">20</span>
+                <span class="counter_number">+</span>
+              </div>
+              <h6>Five Star On Clutch</h6>
+              <p class="desc">
+                Vivamus magna justo, lacinia eget consectetur sed
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section_4">
-        <div class="container flex">
-            <div class="left">
-                <div></div>
-                <div class="wrapper">
-                    <div class="flex">
-                        <div class="icon_vd">
-                            <a href="https://www.youtube.com/watch?v=YN4BgrSAidQ&list=RDYN4BgrSAidQ&start_radio=1">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
-                        </div>
-                        <div class="vd_content">
-                            <h6>Watch Video</h6>
-                            <p class="vd_desc">
-                                Donec rutrum congue leo eget malesua</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container flex">
+        <div class="left">
+          <div></div>
+          <div class="wrapper">
+            <div class="flex">
+              <div class="icon_vd">
+                <a
+                  href="https://www.youtube.com/watch?v=YN4BgrSAidQ&list=RDYN4BgrSAidQ&start_radio=1"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+              <div class="vd_content">
+                <h6>Watch Video</h6>
+                <p class="vd_desc">Donec rutrum congue leo eget malesua</p>
+              </div>
             </div>
-            <div class="right">
-                <p class="name">from founder</p>
-                <h2 class="title">We Believe That Perfection Is Overrated When The Business Goals</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <div class="btn">
-                    <div class="flex">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <p>learn more</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="right">
+          <p class="name">from founder</p>
+          <h2 class="title">
+            We Believe That Perfection Is Overrated When The Business Goals
+          </h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <div class="btn">
+            <div class="flex">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p>learn more</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section_5">
-        <div class="container">
-            <div class="top">
-                <p class="name">our history</p>
-                <h2 class="titles">We Are Very Proud As A Company To Always Deliver On Our Word
-                </h2>
-            </div>
-            <div class="bottom grid">
-                <div class="box">
-                    <div class="flex">
-                        <i class="icon fa-solid fa-rocket"></i>
-                        <div class="wrapper">
-                            <p class="name_history">We Are Founded</p>
-                        </div>
-                    </div>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="time">2014</p>
-                </div>
-                <div class="box">
-                    <div class="flex">
-                        <i class="icon fa-solid fa-rocket"></i>
-                        <div class="wrapper">
-                            <p class="name_history">10 programmers</p>
-                            <p class="name_history">100m2 office</p>
-                        </div>
-                    </div>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="time">2016</p>
-                </div>
-                <div class="box">
-                    <div class="flex">
-                        <i class="icon fa-solid fa-rocket"></i>
-                        <div class="wrapper">
-                            <p class="name_history">91 programmers</p>
-                            <p class="name_history">230m2 office</p>
-                        </div>
-                    </div>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="time">2018</p>
-                </div>
-                <div class="box">
-                    <div class="flex">
-                        <i class="icon fa-solid fa-rocket"></i>
-                        <div class="wrapper">
-                            <p class="name_history">150 programmers</p>
-                            <p class="name_history">500m2 office</p>
-                        </div>
-                    </div>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="time">2020</p>
-                </div>
-                <div class="box">
-                    <div class="flex">
-                        <i class="icon fa-solid fa-rocket"></i>
-                        <div class="wrapper">
-                            <p class="name_history">300+ programmer</p>
-                            <p class="name_history">1300m2 office</p>
-                        </div>
-                    </div>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <p class="time">2022</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="top">
+          <p class="name">our history</p>
+          <h2 class="titles">
+            We Are Very Proud As A Company To Always Deliver On Our Word
+          </h2>
         </div>
+        <div class="bottom grid">
+          <div class="box">
+            <div class="flex">
+              <i class="icon fa-solid fa-rocket"></i>
+              <div class="wrapper">
+                <p class="name_history">We Are Founded</p>
+              </div>
+            </div>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <p class="time">2014</p>
+          </div>
+          <div class="box">
+            <div class="flex">
+              <i class="icon fa-solid fa-rocket"></i>
+              <div class="wrapper">
+                <p class="name_history">10 programmers</p>
+                <p class="name_history">100m2 office</p>
+              </div>
+            </div>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <p class="time">2016</p>
+          </div>
+          <div class="box">
+            <div class="flex">
+              <i class="icon fa-solid fa-rocket"></i>
+              <div class="wrapper">
+                <p class="name_history">91 programmers</p>
+                <p class="name_history">230m2 office</p>
+              </div>
+            </div>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <p class="time">2018</p>
+          </div>
+          <div class="box">
+            <div class="flex">
+              <i class="icon fa-solid fa-rocket"></i>
+              <div class="wrapper">
+                <p class="name_history">150 programmers</p>
+                <p class="name_history">500m2 office</p>
+              </div>
+            </div>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <p class="time">2020</p>
+          </div>
+          <div class="box">
+            <div class="flex">
+              <i class="icon fa-solid fa-rocket"></i>
+              <div class="wrapper">
+                <p class="name_history">300+ programmer</p>
+                <p class="name_history">1300m2 office</p>
+              </div>
+            </div>
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+            <p class="time">2022</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section_6">
-        <div class="container flex">
-            <div class="left">
-                <div class="box flex">
-                    <img src="../image/Logo-1.png" />
-                    <img src="../image/Logo-2.png" />
-                </div>
-                <div class="box flex">
-                    <img src="../image/Logo-5.png" />
-                    <img src="../image/Logo-6.png" />
-                </div>
-                    <h4>Our Professional Clients</h4>
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <div class="wrapper flex">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <p class="more">Read more</p>
-                </div>
-            </div>
-            <div class="middle">
-                <h3>Get in touch</h3>
-                <p class="desc">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                <ul>
-                    <li class="list_item">Shevia Developer</li>
-                    <li class="list_item">info@ncc.asia</li>
-                    <li class="list_item">(+84) 2466874606</li>
-                </ul>
-                <div class="wrapper flex">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    <p class="more">Read more</p>
-                </div>
-            </div>
-            <div class="right">
-                <h4>ask us anything</h4>
-                <div class="flex">
-                    <input type="text" placeholder="Name" style="margin-right:20px ;" />
-                    <input type="email" placeholder="Email" />
-                </div>
-                <input class="input" type="text" placeholder="Message">
-                <div class="btn">SEND MESSAGE</div>
-            </div>
+      <div class="container flex">
+        <div class="left">
+          <div class="box flex">
+            <img src="../image/Logo-1.png" />
+            <img src="../image/Logo-2.png" />
+          </div>
+          <div class="box flex">
+            <img src="../image/Logo-5.png" />
+            <img src="../image/Logo-6.png" />
+          </div>
+          <h4>Our Professional Clients</h4>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="wrapper flex">
+            <i class="fa-solid fa-arrow-right"></i>
+            <p class="more">Read more</p>
+          </div>
         </div>
+        <div class="middle">
+          <h3>Get in touch</h3>
+          <p class="desc">
+            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <ul>
+            <li class="list_item">Shevia Developer</li>
+            <li class="list_item">info@ncc.asia</li>
+            <li class="list_item">(+84) 2466874606</li>
+          </ul>
+          <div class="wrapper flex">
+            <i class="fa-solid fa-arrow-right"></i>
+            <p class="more">Read more</p>
+          </div>
+        </div>
+        <div class="right">
+          <h4>ask us anything</h4>
+          <div class="flex">
+            <input type="text" placeholder="Name" style="margin-right: 20px" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <input class="input" type="text" placeholder="Message" />
+          <div class="btn">SEND MESSAGE</div>
+        </div>
+      </div>
     </div>
     <footer class="footer">
-        <div class="container">
-            <div class="footer-top flex">
-                <h1>Shevia.</h1>
-                <p>Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="flex">
-                    <input type="email" placeholder="Email" />
-                    <div class="btn">SUBSCRIBE</div>
-                </div>
-            </div>
-        <hr />
-            <div class="footer-middle flex">
-                <div class="box">
-                    <div class="title">Company</div>
-                    <ul>
-                        <li>About</li>
-                        <li>Investor</li>
-                        <li>Clients</li>
-                        <li>Legal</li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <div class="title">Useful Links</div>
-                    <ul>
-                        <li>News</li>
-                        <li>Our Process</li>
-                        <li>Team</li>
-                        <li>Knowledbase</li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <div class="title">Services</div>
-                    <ul>
-                        <li>Mobile Apps</li>
-                        <li>Web Apps</li>
-                        <li>Custom Applications</li>
-                        <li>Digital Marketing</li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <div class="title">Follow Us</div>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                    </ul>
-                </div>
-                <div class="box grid">
-                    <a href="#">
-                        <img src="../image/img_1.jpg" />
-                    </a>
-                    <a href="#">
-                        <img src="../image/img_2.jpg" />
-                    </a>
-                    <a href="#">
-                        <img src="../image/img_3.jpg" />
-                    </a>
-                    <a href="#">
-                        <img src="../image/img_4.jpg" />
-                    </a>
-                    <a href="#">
-                        <img src="../image/img_5.jpg" />
-                    </a>
-                    <a href="#">
-                        <img src="../image/img_6.jpg" />
-                    </a>
-                </div>
-            </div>
-        <hr />
-            <div class="footer-bottom">
-                <p>Copyright © 2021 Envalab.com</p>
-            </div>
+      <div class="container">
+        <div class="footer-top flex">
+          <h1>Shevia.</h1>
+          <p>
+            Utenim ad minim veniam quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="flex">
+            <input type="email" placeholder="Email" />
+            <div class="btn">SUBSCRIBE</div>
+          </div>
         </div>
+        <hr />
+        <div class="footer-middle flex">
+          <div class="box">
+            <div class="title">Company</div>
+            <ul>
+              <li>About</li>
+              <li>Investor</li>
+              <li>Clients</li>
+              <li>Legal</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="title">Useful Links</div>
+            <ul>
+              <li>News</li>
+              <li>Our Process</li>
+              <li>Team</li>
+              <li>Knowledbase</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="title">Services</div>
+            <ul>
+              <li>Mobile Apps</li>
+              <li>Web Apps</li>
+              <li>Custom Applications</li>
+              <li>Digital Marketing</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="title">Follow Us</div>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+          <div class="box grid">
+            <a href="#">
+              <img src="../image/img_1.jpg" />
+            </a>
+            <a href="#">
+              <img src="../image/img_2.jpg" />
+            </a>
+            <a href="#">
+              <img src="../image/img_3.jpg" />
+            </a>
+            <a href="#">
+              <img src="../image/img_4.jpg" />
+            </a>
+            <a href="#">
+              <img src="../image/img_5.jpg" />
+            </a>
+            <a href="#">
+              <img src="../image/img_6.jpg" />
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <p>Copyright © 2021 Envalab.com</p>
+        </div>
+      </div>
     </footer>
     <script>
-        function openSidebar() {
-            document.getElementById("sidebar").style.display = "block";
-        }
+      function openSidebar() {
+        document.getElementById("sidebar").style.display = "block";
+      }
 
-        function closeSidebar() {
-            document.getElementById("sidebar").style.display = "none";
-        }
+      function closeSidebar() {
+        document.getElementById("sidebar").style.display = "none";
+      }
     </script>
-</body>
+  </body>
 </html>

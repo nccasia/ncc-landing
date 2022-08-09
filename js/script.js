@@ -3,7 +3,6 @@ var sidebar = document.querySelector(".sidebar");
 var closeIcon = document.querySelector(".icon_close");
 
 menuIcon.onclick = function () {
-<<<<<<< HEAD
   sidebar.classList.toggle("small-sidebar");
 };
 
@@ -17,11 +16,3 @@ function toggleItem(id1, id2, itemTitle, itemContent) {
   document.getElementById(itemTitle).classList.toggle("focus");
   document.getElementById(itemContent).classList.toggle("none");
 }
-=======
-	sidebar.classList.toggle("small-sidebar");
-}
-
-closeIcon.onclick = function () {
-	sidebar.classList.onclick("close-sidebar")
-}
->>>>>>> home
