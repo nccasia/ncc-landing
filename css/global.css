@@ -22,6 +22,7 @@ body {
   font-weight: 500;
   line-height: 1.5em;
 }
+
 .flex {
   display: flex;
 }
@@ -31,6 +32,7 @@ body {
   padding: 15px;
   border-radius: 5px;
   color: white;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -50,6 +52,11 @@ body {
   background-color: #ff7d90;
   color: white;
   font-size: 25px;
+  cursor: pointer;
+}
+
+.icon_style {
+  padding-top: 5px;
 }
 
 .name {
@@ -72,6 +79,30 @@ body {
   height: 1px;
   background: var(--e-global-color-primary);
   margin: 10px 0 0 10px;
+}
+
+.title {
+  font-size: 68px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titles {
+  color: var(--e-global-color-secondary);
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.1em;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.more {
+  color: var(--e-global-color-primary);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 :root {

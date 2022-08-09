@@ -1,0 +1,438 @@
+
+
+  /*--------------------section 1-------------------*/
+.section_1 {
+    height: 460px;
+    margin: 0 0 100px 0;
+}
+
+  .section_1 .left{
+    padding-top: 100px;
+    width: 50%;
+    background-color: var(--e-global-color-secondary);
+    color: white;
+}
+
+.section_1 .left .title {
+    margin: 50px;
+}
+
+.section_1 .desc {
+    text-align: center;
+    padding:0 15px;
+}
+
+.section_1 .right {
+    width: 50%;
+    background-image: url("../image/img_4.jpg");
+    background-size: cover;
+    height: 460px;
+}
+
+/*-------------------section_2--------------------*/
+.section_2 {
+    margin-bottom: 100px;
+}
+
+.section_2 .left {
+    width: 50%;
+    padding:60px 15px 0 0;
+}
+
+.section_2 .name {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.section_2 .name::after{
+    display: none;
+}
+
+.section_2 .left .title {
+    line-height: 1.1em;
+    color: var(--e-global-color-secondary);
+    font-weight: 500;
+    font-size: 50px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.section_2 .btn {
+    max-width: 190px;
+    margin-top: 15px;
+}
+
+.section_2 .btn i {
+    padding: 4px 10px 0 35px;
+}
+
+.section_2 .btn p {
+    text-transform: uppercase;
+}
+
+.section_2 .right {
+    background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-JDHACMJ.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 550px;
+}
+
+.section_2 .vision {
+    color: white;
+    background-color: var(--e-global-color-secondary);
+    width: 40%;
+    padding: 15px;
+    margin: 62% 0 0 10%;
+}
+
+.section_2 .vision .name_vision {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.section_2 .vision i {
+    color: var(--e-global-color-primary);
+    padding: 4px 10px 0 0;
+}
+
+.section_2 .mission {
+    background-color: var(--e-global-color-primary);
+    width: 40%;
+    float: right;
+    margin-top: -276px;
+    color: white;
+    padding: 15px;
+}
+
+.section_2 .mission .name_mission {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.section_2 .mission .more {
+    color: white;
+}
+
+.section_2 .mission i {
+    padding: 4px 10px 0 0;
+}
+
+/*--------------------section_3-------------------*/
+.section_3 {
+    padding: 100px;
+    background-color: var(--e-global-color-9bed8f9);
+}
+
+.section_3 .left {
+    width: 45%;
+}
+
+.section_3 .left .name {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.section_3 .left .name::after {
+    display: none;
+}
+
+.section_3 .left .title {
+    line-height:1.1em;
+    color: var(--e-global-color-secondary);
+    font-size: 50px;
+    text-transform: capitalize;
+    max-width: 420px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.section_3 .btn {
+    width: 190px;
+    color: white;
+    margin-top: 15px;
+}
+
+.section_3 .btn p{
+    color: white;
+}
+
+.section_3 .btn i {
+    padding: 4px 10px 0 25px;
+}
+
+.section_3 .right{
+    width: 55%;
+}
+
+.section_3 .right .grid {
+    grid-gap: 35px;
+    margin-top: 40px;
+}
+
+.section_3 .desc_section3 {
+    color: var(--e-global-color-text);
+}
+
+.section_3 .desc_section3::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    opacity: 0.5;
+    background: var(--e-global-color-text);
+    margin: 40px 0 0 -90px;
+}
+
+.section_3 .counter_number{
+    color: var(--e-global-color-secondary);
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin: 15px 0 15px 0;
+}
+
+.section_3 h6{
+    color: var(--e-global-color-secondary);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/*-------------------section_4--------------------*/
+.section_4 {
+    height: 585px;
+    background-color: var(--e-global-color-secondary);
+}
+
+.section_4 .left {
+    width: 50%;
+    background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg);
+    background-position: center center;
+    background-size: cover;
+    height:620px;
+    z-index: 4;
+}
+
+.section_4 .left .wrapper {
+    height: 120px;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    background-color: var(--e-global-color-secondary);
+    border-color: var( --e-global-color-1f86ad6 );
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 82% 0% 0% 50%;
+    color: white;
+}
+
+.section_4 .right {
+    padding: 80px 0 0 20px;
+}
+.section_4 .right .title {
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.1em;
+    color: white;
+    max-width: 540px;
+    text-align: left;
+}
+
+.section_4 .right .name {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.section_4 .right .name::after{
+    display: none;
+}
+
+.section_4 .right .desc {
+    color: white;
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+.section_4 .right .btn {
+    width: 190px;
+    margin-top: 30px;
+}
+
+.section_4 .right .btn i {
+    padding: 5px 10px 0 30px;
+}
+
+.section_4 .right .btn p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/*--------------------section_5-------------------*/
+.section_5 {
+    margin:100px 0 100px 0;
+}
+
+.section_5 .titles {
+    max-width: 880px;
+    margin-left: 120px;
+}
+
+.section_5 .bottom {
+    margin-top: 25px;
+}
+
+.section_5 .grid{
+    grid-gap: 20px;
+}
+
+.section_5 .bottom .box .flex {
+    height: 78px;
+}
+
+.section_5 .bottom .icon {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    transition-duration: .1s;
+}
+
+.section_5 .bottom .icon:hover {
+    color: var(--e-global-color-text);
+    margin: 6px 10px 0 0;
+}
+
+.section_5 .bottom .desc {
+    max-width: 300px;
+}
+
+.section_5 .bottom .name_history {
+    color: var(--e-global-color-secondary);
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.section_5 .time{
+    margin-top: 15px;
+    color: var(--e-global-color-primary);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.section_5 .time::after {
+    content: '';
+    position: absolute;
+    width: 14%;
+    height: 0.5px;
+    background: var(--e-global-color-primary);
+    margin: 10px 0 0 10px;
+}
+/*---------------------section_6-----------------*/
+.section_6 {
+    padding: 50px 0 50px 0;
+    background-color: var(--e-global-color-9bed8f9);
+}
+
+.section_6 .left {
+    max-width: 350px;
+    padding: 30px;
+}
+
+.wrapper {
+    margin-top: 15px;
+}
+
+.section_6 .box {
+    padding-bottom: 20px;
+}
+
+.section_6 .left img {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var( --e-global-color-2c6ecd4 );
+    margin: 0px 15px 0px 0px;
+    width: 147px;
+    height: 57px;
+    opacity: 0.47;
+}
+
+.section_6 .left img:hover {
+    opacity: 1;
+}
+
+.section_6 .left h4 {
+    color: var(--e-global-color-secondary);
+    font-size: 24px;
+    line-height: 1.3em;
+    font-weight: 500;
+}
+
+.section_6 .left i {
+    padding: 5px 15px 0 0;
+    color: var(--e-global-color-primary);
+}
+.section_6 .middle {
+    max-width: 300px;
+    padding: 20px 30px;
+}
+
+.section_6 .middle .desc {
+    max-width: 240px;
+    margin-top: 20px;
+}
+
+.desc {
+    color: var(--e-global-color-text);
+    margin-top: 15px;
+}
+
+.section_6 .middle li {
+    color: var(--e-global-color-text);
+    padding-top: 10px;
+}
+
+.section_6 .middle h3{
+    color: var(--e-global-color-secondary);
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.section_6 .middle i {
+    padding: 5px 15px 0 0;
+    color: var(--e-global-color-primary);
+}
+
+.section_6 .right h4{
+    color: var(--e-global-color-secondary);
+    font-size: 24px;
+    line-height: 1.3em;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+}
+
+.section_6 .right .input {
+    width: 450px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.section_6 .right input {
+    background-color: var( --e-global-color-f03f58e );
+    border-color: var( --e-global-color-text );
+    border-width: 1px 1px 1px 1px;
+    font-size: 16px;
+    min-height: 47px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    width: calc(100% / 2);
+}
+
+.section_6 .right .btn {
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+}
+
