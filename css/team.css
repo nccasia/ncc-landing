@@ -83,6 +83,7 @@
 }
 
 .section-2 {
+  width: 100%;
   margin-top: 100px;
 }
 
@@ -102,63 +103,66 @@
   text-align: center;
 }
 
-.section-2 .right .grid {
+.section-2 .bottom .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.section-2 .right .img {
-  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg");
-  height: 400px;
-  width: 280px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--e-global-color-f03f58e);
-}
-
-.section-2 .right .wrapper {
-  padding: 0 0 20px 20px;
-}
-
-.section-2 .right .img .overlay {
-  background-color: #00000047;
-  text-align: left;
-  justify-content: flex-end;
-  display: flex;
   width: 100%;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  align-items: stretch;
-  color: #fff;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
 }
 
-.section-2 .right .content {
-  display: none;
-  color: #fff;
+.grid-item {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  width: 100%;
+  height: 400px;
+  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  background-color: var(--e-global-color-secondary);
+  color: var(--e-global-color-1f86ad6);
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.section-2 .right .img:hover .wrapper {
-  display: none;
-}
-
-.section-2 .right .img:hover .content {
-  background-color: var(--e-global-color-secondary);
-  margin-top: -400px;
-  height: 400px;
-  display: block;
-}
-
-.content:hover {
-  display: block;
-  transition: all 0.6s;
-}
-
-.name_leader {
+.text h2 {
+  display: flex;
   font-size: 24px;
 }
 
