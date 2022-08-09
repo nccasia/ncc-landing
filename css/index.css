@@ -1,99 +1,3 @@
-*{
-    margin: 0;
-	padding: 0;
-}
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-body {
-	font-size: 16px;
-	font-family: 'Barlow', sans-serif;
-	font-weight:500;
-    line-height: 1.5em;
-}
-
-.flex {
-    display: flex;
-}
-
-.btn {
-    background-color: #FF7D90;
-    padding: 15px;
-    border-radius: 5px;
-    color: white;
-}
-
-.btn:hover {
-    background-color: #EE7968;;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-.icon {
-    border: 1px solid #FF7D90;
-    padding: 15px;
-    border-radius: 50%;
-    background-color: #FF7D90;
-    color: white;
-    font-size: 25px;
-}
-
-.name {
-    color: #FF7D90;
-    text-align: center;
-    text-transform: uppercase;
-}
-.name::before {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 1px;
-    background:var(--e-global-color-primary);
-    margin: 10px 0 0 -70px;
-}
-.name::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 1px;
-    background: var(--e-global-color-primary);
-    margin: 10px 0 0 10px;
-}
-
-.icon_style{
-    padding-top: 5px;
-    padding-right: 5px;
-}
-
-:root {
-    --e-global-color-primary: #ff7d90;
-    --e-global-color-secondary:#1c2347;
-    --e-global-color-text: #777777;
-    --e-global-color-accent: #2f4fd0;
-    --e-global-color-1f86ad6: #ffffff;
-    --e-global-color-3aab81d: #000000;
-    --e-global-color-9bed8f9: #f2f7fb;
-    --e-global-color-f03f58e: #02010100;
-    --e-global-color-2c6ecd4: #e6e6e6;
-    --e-global-color-df0e136: #ee7968;
-    --e-global-color-b92305c: #4f4f4f;
-    --e-global-typography-font-family: "Barlow";
-  }
 
 /*-------------------section-1---------------*/
 .section-1 .top {
@@ -241,7 +145,7 @@ body {
     width: 60px;
     height: 1px;
     background: var(--e-global-color-primary);
-    margin: 70px 60px 10px;
+    margin: 70px 0 10px;
 }
 
 .section-2 .right {
@@ -300,6 +204,8 @@ body {
     color: #FF7D90;
     text-transform: uppercase;
     margin-left: 130px;
+    font-size: 16px;
+    text-align: left;
 }
 
 .section-3 .title::before{
@@ -380,7 +286,7 @@ body {
 
 .section-4 .top .btn {
     width: 180px;   
-    margin: 20px 0 0 40%;
+    margin: 20px 0 15px 40%;
 }
 
 .section-4 .top .btn p {
@@ -642,6 +548,7 @@ body {
     line-height: 1.1em;
     max-width: 420px;
     margin: 15px 0 15px 0;
+    text-align: left;
 }
 
 .left .desc {

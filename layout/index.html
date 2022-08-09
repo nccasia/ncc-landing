@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/index.css"/>
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../libs/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,8 +39,6 @@
                   <li><a class="dropdown-item" href="#">Service</a></li>
                   <li><a class="dropdown-item" href="#">Team</a></li>
                   <li><a class="dropdown-item" href="#">Case Study</a></li>
-                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                  <li><a class="dropdown-item" href="#">Single Post</a></li>
                 </ul>
               </li>
               <li class="menu-item"><a href="#">Contact</a></li>
@@ -263,7 +262,7 @@
                 </div>  
                 <div class="btn">
                     <div class="flex">
-                        <i class="icon_style fa-solid fa-arrow-right"></i>
+                        <i class="icon_style fa-solid fa-arrow-right" style="padding-left:15px ;"></i>
                         <p>read more</p>
                     </div>
                 </div>    
@@ -308,7 +307,7 @@
                 <p class="title">Build Your Custom Software For Your Business</p>
                 <div class="btn">
                     <div class="flex">
-                        <i class="icon_style fa-solid fa-arrow-right"></i>
+                        <i class="icon_style fa-solid fa-arrow-right" style="padding-left:15px ;"></i>
                         <p>get started</p>
                     </div>
                 </div>
@@ -713,8 +712,8 @@
       }
     })
     </script>
-        	<script>
-		$('.slide1').owlCarousel({
+    <script>
+	$('.slide1').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
@@ -732,6 +731,37 @@
         },
     }
 })
-	 </script>
+	</script>
+    <script type="application/ld+json">
+    {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "MOBILE PLATFORM DEVELOPMENT",
+    "image": "https://ncc.asia/assets/images/portfolio/learningenglish.jpg",
+    "description": "Android native application. Hybrid android app using phonegap, Xamarin. IOS native application.",
+    "mpn": "925872",
+    "brand": {
+        "@type": "Thing",
+        "name": "Software Outsourcing Service"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "89"
+    },
+    "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "0.99",
+        "priceValidUntil": "2020-11-05",
+        "itemCondition": "http://schema.org/UsedCondition",
+        "availability": "http://schema.org/InStock",
+        "seller": {
+            "@type": "Organization",
+            "name": "NCCSOFT"
+        }
+    }
+    }
+    </script>
 </body>
 </html>

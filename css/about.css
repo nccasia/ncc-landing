@@ -1,118 +1,4 @@
-*{
-    margin: 0;
-	padding: 0;
-}
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
 
-ul {
-	list-style: none;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-body {
-	font-size: 16px;
-	font-family: 'Barlow', sans-serif;
-	font-weight:500;
-    line-height: 1.5em;
-}
-
-.flex {
-    display: flex;
-}
-
-.btn {
-    background-color: #FF7D90;
-    padding: 15px;
-    border-radius: 5px;
-    color: white;
-}
-
-.btn:hover {
-    background-color: #EE7968;;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-.icon {
-    border: 1px solid #FF7D90;
-    padding: 15px;
-    border-radius: 50%;
-    background-color: #FF7D90;
-    color: white;
-    font-size: 25px;
-}
-
-.name {
-    color: #FF7D90;
-    text-align: center;
-    text-transform: uppercase;
-}
-.name::before {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 1px;
-    background:var(--e-global-color-primary);
-    margin: 10px 0 0 -70px;
-}
-.name::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 1px;
-    background: var(--e-global-color-primary);
-    margin: 10px 0 0 10px;
-}
-
-.title {
-    font-size: 68px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.titles {
-    color: var(--e-global-color-secondary);
-    font-size: 50px;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 1.1em;
-    text-align: center;
-    margin-top: 15px;
-}
-
-.more {
-    color: var(--e-global-color-primary);
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-
-:root {
-    --e-global-color-primary: #ff7d90;
-    --e-global-color-secondary:#1c2347;
-    --e-global-color-text: #777777;
-    --e-global-color-accent: #2f4fd0;
-    --e-global-color-1f86ad6: #ffffff;
-    --e-global-color-3aab81d: #000000;
-    --e-global-color-9bed8f9: #f2f7fb;
-    --e-global-color-f03f58e: #02010100;
-    --e-global-color-2c6ecd4: #e6e6e6;
-    --e-global-color-df0e136: #ee7968;
-    --e-global-color-b92305c: #4f4f4f;
-    --e-global-typography-font-family: "Barlow";
-  }
 
   /*--------------------section 1-------------------*/
 .section_1 {
@@ -150,6 +36,16 @@ body {
 
 .section_2 .left {
     width: 50%;
+    padding:60px 15px 0 0;
+}
+
+.section_2 .name {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.section_2 .name::after{
+    display: none;
 }
 
 .section_2 .left .title {
@@ -161,28 +57,85 @@ body {
     text-transform: capitalize;
 }
 
+.section_2 .btn {
+    max-width: 190px;
+    margin-top: 15px;
+}
+
+.section_2 .btn i {
+    padding: 4px 10px 0 35px;
+}
+
+.section_2 .btn p {
+    text-transform: uppercase;
+}
+
 .section_2 .right {
     background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-JDHACMJ.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+    height: 550px;
 }
 
 .section_2 .vision {
+    color: white;
     background-color: var(--e-global-color-secondary);
-    width: 30%;
+    width: 40%;
+    padding: 15px;
+    margin: 62% 0 0 10%;
+}
+
+.section_2 .vision .name_vision {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.section_2 .vision i {
+    color: var(--e-global-color-primary);
+    padding: 4px 10px 0 0;
 }
 
 .section_2 .mission {
     background-color: var(--e-global-color-primary);
     width: 40%;
     float: right;
+    margin-top: -276px;
+    color: white;
+    padding: 15px;
+}
+
+.section_2 .mission .name_mission {
+    font-size: 24px;
+    line-height: 1.3em;
+}
+
+.section_2 .mission .more {
+    color: white;
+}
+
+.section_2 .mission i {
+    padding: 4px 10px 0 0;
 }
 
 /*--------------------section_3-------------------*/
+.section_3 {
+    padding: 100px;
+    background-color: var(--e-global-color-9bed8f9);
+}
+
 .section_3 .left {
-    width: 50%;
+    width: 45%;
+}
+
+.section_3 .left .name {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.section_3 .left .name::after {
+    display: none;
 }
 
 .section_3 .left .title {
@@ -194,9 +147,130 @@ body {
     font-weight: 500;
     text-align: left;
 }
+
+.section_3 .btn {
+    width: 190px;
+    color: white;
+    margin-top: 15px;
+}
+
+.section_3 .btn p{
+    color: white;
+}
+
+.section_3 .btn i {
+    padding: 4px 10px 0 25px;
+}
+
+.section_3 .right{
+    width: 55%;
+}
+
+.section_3 .right .grid {
+    grid-gap: 35px;
+    margin-top: 40px;
+}
+
+.section_3 .desc_section3 {
+    color: var(--e-global-color-text);
+}
+
+.section_3 .desc_section3::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    opacity: 0.5;
+    background: var(--e-global-color-text);
+    margin: 40px 0 0 -90px;
+}
+
+.section_3 .counter_number{
+    color: var(--e-global-color-secondary);
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin: 15px 0 15px 0;
+}
+
+.section_3 h6{
+    color: var(--e-global-color-secondary);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/*-------------------section_4--------------------*/
+.section_4 {
+    height: 585px;
+    background-color: var(--e-global-color-secondary);
+}
+
+.section_4 .left {
+    width: 50%;
+    background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg);
+    background-position: center center;
+    background-size: cover;
+    height:620px;
+    z-index: 4;
+}
+
+.section_4 .left .wrapper {
+    height: 120px;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    background-color: var(--e-global-color-secondary);
+    border-color: var( --e-global-color-1f86ad6 );
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 82% 0% 0% 50%;
+    color: white;
+}
+
+.section_4 .right {
+    padding: 80px 0 0 20px;
+}
+.section_4 .right .title {
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.1em;
+    color: white;
+    max-width: 540px;
+    text-align: left;
+}
+
+.section_4 .right .name {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.section_4 .right .name::after{
+    display: none;
+}
+
+.section_4 .right .desc {
+    color: white;
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+.section_4 .right .btn {
+    width: 190px;
+    margin-top: 30px;
+}
+
+.section_4 .right .btn i {
+    padding: 5px 10px 0 30px;
+}
+
+.section_4 .right .btn p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
 /*--------------------section_5-------------------*/
 .section_5 {
-    margin-bottom: 100px;
+    margin:100px 0 100px 0;
 }
 
 .section_5 .titles {
@@ -221,6 +295,12 @@ body {
     height: 30px;
     text-align: center;
     margin: 10px 10px 0 0;
+    transition-duration: .1s;
+}
+
+.section_5 .bottom .icon:hover {
+    color: var(--e-global-color-text);
+    margin: 6px 10px 0 0;
 }
 
 .section_5 .bottom .desc {
