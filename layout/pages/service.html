@@ -78,10 +78,62 @@
           <button class="header-btn" type="button">Get Quoatation</button>
         </div>
         <span class="nav-bar">
-          <i class="fa-solid fa-bars fa-xl"></i>
+          <i
+            id="openIcon"
+            class="fa-solid fa-bars fa-xl"
+            onclick="openSidebar()"
+          ></i>
         </span>
       </div>
     </header>
+    <div class="sidebar" id="sidebar">
+      <i
+        id="closeIcon"
+        class="fa-solid fa-xmark"
+        onclick="closeSidebar()"
+        style="font-size: 24px"
+      ></i>
+      <div class="wrapper">
+        <p class="sidebar_header">Shevia</p>
+        <p class="sidebar_desc">
+          luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <p class="sidebar_name">Services</p>
+        <ul>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Mobile Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Web Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Data Science</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">IoT Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Enterprise Application</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">User Interfice Design</p>
+          </li>
+        </ul>
+        <p class="sidebar_name">Follow Us</p>
+        <ul class="flex">
+          <li><i class="icon fa-brands fa-facebook"></i></li>
+          <li><i class="icon fa-brands fa-twitter"></i></li>
+          <li><i class="icon fa-brands fa-linkedin"></i></li>
+          <li><i class="icon fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
     <div class="section-container">
       <div class="section-1">
         <div class="container">
@@ -359,6 +411,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      function openSidebar() {
+        document.getElementById("sidebar").style.display = "block";
+      }
+
+      function closeSidebar() {
+        document.getElementById("sidebar").style.display = "none";
+      }
+    </script>
     <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
     <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
     <script>
