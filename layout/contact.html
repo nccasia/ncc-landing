@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,33 +17,56 @@
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link rel="stylesheet" href="../css/about.css"/>
-   <link rel="stylesheet" href="../css/global.css" />
+  
+   <link rel="stylesheet" href="">
+
   <title>About</title>
 </head>
 <body>
     <header class="header">
         <div class="header-left">
-          <div class="header-title">
-            <h3>Shevia.</h3>
+          <div
+            class="header-title"
+            style="display: flex; align-items: center; gap: 5px"
+          >
+            <img
+              src="/image/logo.png"
+              alt="logo-ncc"
+              style="width: 24px; height: 24px"
+            />
+            <h3>NCC.</h3>
           </div>
           <div class="header-menu">
             <ul class="menu-content">
               <li class="menu-item">
-                <a href="./index.html">Home</a>
+                <a href="/layout/index.html">Home</a>
               </li>
-              <li class="menu-item"><a href="./about.html">About</a></li>
+              <li class="menu-item"><a href="/layout/about.html">About</a></li>
               <li class="menu-item">
                 <a href="#"
                   ><span>Pages <i class="fa-solid fa-angle-down"></i></span
                 ></a>
                 <ul class="menu-dropdown">
-                  <li><a class="dropdown-item" href="#">Service</a></li>
-                  <li><a class="dropdown-item" href="#">Team</a></li>
-                  <li><a class="dropdown-item" href="#">Case Study</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/layout/pages/service.html"
+                      >Service</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/layout/pages/team.html"
+                      >Team</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/layout/pages/casestudy.html"
+                      >Case Study</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="menu-item"><a href="#">Contact</a></li>
+              <li class="menu-item">
+                <a href="/layout/contact.html">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -51,52 +75,62 @@
             <button class="header-btn" type="button">Get Quoatation</button>
           </div>
           <span class="nav-bar">
-            <i id="openIcon" class="fa-solid fa-bars fa-xl" onclick="openSidebar()"></i>
+            <i
+              id="openIcon"
+              class="fa-solid fa-bars fa-xl"
+              onclick="openSidebar()"
+            ></i>
           </span>
         </div>
-    </header>
-    <div class="sidebar" id="sidebar">
-        <i id="closeIcon" class="fa-solid fa-xmark" onclick="closeSidebar()" style="font-size:24px ;"></i>
+      </header>
+      <div class="sidebar" id="sidebar">
+        <i
+          id="closeIcon"
+          class="fa-solid fa-xmark"
+          onclick="closeSidebar()"
+          style="font-size: 24px"
+        ></i>
         <div class="wrapper">
-        <p class="sidebar_header">Shevia</p>
-        <p class="sidebar_desc">luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-        <p class="sidebar_name">Services</p>
-        <ul>
+          <p class="sidebar_header">Shevia</p>
+          <p class="sidebar_desc">
+            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <p class="sidebar_name">Services</p>
+          <ul>
             <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Mobile Development</p>
+              <i class="fa-solid fa-check"></i>
+              <p class="sidebar_item">Mobile Development</p>
             </li>
             <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Web Development</p>
+              <i class="fa-solid fa-check"></i>
+              <p class="sidebar_item">Web Development</p>
             </li>
             <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">
-                    Data Science</p>
+              <i class="fa-solid fa-check"></i>
+              <p class="sidebar_item">Data Science</p>
             </li>
             <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">IoT Development</p>
+              <i class="fa-solid fa-check"></i>
+              <p class="sidebar_item">IoT Development</p>
             </li>
             <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Enterprise Application</p>
+              <i class="fa-solid fa-check"></i>
+              <p class="sidebar_item">Enterprise Application</p>
             </li>
             <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">User Interfice Design</p>
+              <i class="fa-solid fa-check"></i>
+              <p class="sidebar_item">User Interfice Design</p>
             </li>
-        </ul>
-        <p class="sidebar_name">Follow Us</p>
-        <ul class="flex">
+          </ul>
+          <p class="sidebar_name">Follow Us</p>
+          <ul class="flex">
             <li><i class="icon fa-brands fa-facebook"></i></li>
             <li><i class="icon fa-brands fa-twitter"></i></li>
             <li><i class="icon fa-brands fa-linkedin"></i></li>
             <li><i class="icon fa-brands fa-youtube"></i></li>
-        </ul>
-</div>
-    </div>
+          </ul>
+        </div>
+      </div>
     <div class="contact">
         <div class="elementor">
           <div class="boxleft">
