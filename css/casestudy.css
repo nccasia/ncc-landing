@@ -204,16 +204,26 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-bottom: 1px solid var(--e-global-color-text);
+  padding: 30px 0 30px 0;
 }
 
 .bottom-detail .content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom-detail .content p:hover {
+  text-decoration: underline;
+  color: var(--e-global-color-primary);
 }
 
 /* The actual popup */
 .bottom-detail .popuptext {
   visibility: hidden;
-  width: 850px;
+  width: 100%;
   height: fit-content;
   text-align: center;
   border-radius: 24px;
@@ -226,16 +236,18 @@
 .detail-title {
   display: flex;
   margin-bottom: 15px;
-
-  height: 90px;
+  height: 60px;
   position: relative;
   justify-content: flex-start;
   gap: 30px;
+  align-items: center;
 }
 
-table {
-  border-top-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+.detail-title .item-name {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.4em;
+  text-transform: capitalize;
 }
 
 table,
@@ -244,27 +256,35 @@ td {
   text-align: left;
   color: var(--e-global-color-secondary);
   background-color: white;
+}
 
-  border-bottom-right-radius: 24px;
+td {
+  padding: 15px;
 }
 
 th {
   border: 2px solid var(--e-global-color-secondary);
-  text-align: left;
+  text-align: center;
   font-weight: 600;
   font-size: 24px;
+  color: white;
   background-color: var(--e-global-color-primary);
-  border-top-left-radius: 24px;
 }
 
 .bottom-detail .show {
+  display: flex;
+  align-items: flex-start;
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
 .bottom-detail .popuptext i {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--e-global-color-secondary);
 }
 
 /* Add animation (fade in the popup) */

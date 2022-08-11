@@ -61,12 +61,14 @@
 .menu-item {
   padding: 13px 20px;
 }
-.menu-item:hover {
+.menu-item:hover,
+.menu-item:focus {
   border-bottom: 1px solid var(--e-global-color-primary);
 }
 
 .menu-item:hover,
-.menu-item a:hover {
+.menu-item a:hover,
+.menu-item a:focus {
   color: var(--e-global-color-primary);
 }
 
