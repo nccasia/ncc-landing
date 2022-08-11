@@ -1,0 +1,36 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/about",
+        "destination": "/layout/about.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/layout/contact.html"
+      },
+      {
+        "source": "/pages/team",
+        "destination": "/layout/pages/team.html"
+      },
+      {
+        "source": "/pages/service",
+        "destination": "/layout/pages/service.html"
+      },
+      {
+        "source": "/pages/casestudy",
+        "destination": "/layout/pages/casestudy.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
