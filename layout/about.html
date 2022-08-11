@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link rel="stylesheet" href="../css/about.css"/>
@@ -41,9 +42,32 @@
                   <li><a class="dropdown-item" href="#">Case Study</a></li>
                 </ul>
               </li>
-              <li class="menu-item"><a href="#">Contact</a></li>
+              <li class="menu-item"><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
+        </div>
+        <div class="navbar_menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="small_menu">
+            <ul class="menu-content">
+                <li class="menu-item">
+                    <a href="./index.html">HOME</a>
+                </li>                
+                <li class="menu-item">
+                    <a href="./about.html">ABOUT</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><span>PAGES <i class="fa-solid fa-angle-down"></i></span
+                        ></span></a>
+                    <ul class="menu-dropdown">
+                        <li><a class="dropdown-item" href="#">SERVICE</a></li>
+                        <li><a class="dropdown-item" href="#">TEAM</a></li>
+                        <li><a class="dropdown-item" href="#">CASE STUDY</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="./contact.html">CONTACT</a></li>
+            </ul>
         </div>
         <div class="header-right">
           <div class="header-button">
@@ -114,7 +138,7 @@
                 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                 <p class="desc">Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <div class="btn">
-                    <div class="flex">
+                    <div class="flex_icon">
                         <i class="fa-solid fa-arrow-right"></i>
                         <p>learn more</p>
                     </div>
@@ -124,7 +148,7 @@
                 <div class="vision">
                     <p class="name_vision">Our vision</p>
                     <p class="desc_vision">NCC is making efforts to be one of the top software firms and outsourcing service providers in national and international areas.</p>
-                    <div class="flex">
+                    <div class="flex_icon">
                         <i class="fa-solid fa-arrow-right"></i>
                         <p class="more">read more</p>
                     </div>
@@ -132,7 +156,7 @@
                 <div class="mission">
                     <p class="name_mission">Our mission</p>
                     <p class="desc_mission">At NCC, we build everything around “People” because we understand that human resource is the determining factor of success. We gather and build up young and talented software engineers to professional and international class levels.</p>
-                    <div class="flex">
+                    <div class="flex_icon">
                         <i class="fa-solid fa-arrow-right"></i>
                         <p class="more">read more</p>
                     </div>
@@ -146,7 +170,7 @@
                 <p class="name">expertise</p>
                 <h2 class="title">We Are Built By A Team Of Highly Focused</h2>
                 <div class="btn">
-                    <div class="flex">
+                    <div class="flex_icon">
                         <i class="fa-solid fa-arrow-right"></i>
                         <p class="more">learn more</p>
                     </div>
@@ -156,7 +180,7 @@
                 <p class="desc_section3">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
                 <div class="wrapper grid">
                     <div class="box">
-                        <div class="flex">
+                        <div class="flex_icon">
                             <span class="counter_number">100</span>
                             <span class="counter_number">%</span>
                         </div>
@@ -164,20 +188,19 @@
                         <p class="desc">Vivamus magna justo, lacinia eget consectetur sed</p>
                     </div>
                     <div class="box">
-                        <div class="flex">
-                            <span class="counter_number">$</span>
-                            <span class="counter_number">70</span>
-                            <span class="counter_number">M</span>
+                        <div class="flex_icon">
+                            <span class="counter_number">90</span>
+                            <span class="counter_number">%</span>
                         </div>
-                        <h6>Create In Revenue</h6>
+                        <h6>Code Coverage</h6>
                         <p class="desc">Vivamus magna justo, lacinia eget consectetur sed</p>
                     </div>
                     <div class="box">
-                        <div class="flex">
-                            <span class="counter_number">20</span>
-                            <span class="counter_number">+</span>
+                        <div class="flex_icon">
+                            <span class="counter_number">100</span>
+                            <span class="counter_number">%</span>
                         </div>
-                        <h6>Five Star On Clutch</h6>
+                        <h6>Keep Communication With Client</h6>
                         <p class="desc">Vivamus magna justo, lacinia eget consectetur sed</p>
                     </div>
                 </div>
@@ -190,11 +213,24 @@
                 <div></div>
                 <div class="wrapper">
                     <div class="flex">
-                        <div class="icon_vd">
-                            <a href="https://www.youtube.com/watch?v=YN4BgrSAidQ&list=RDYN4BgrSAidQ&start_radio=1">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
+                        <div>
+                            <div class="btn-lg video" data-video="https://www.youtube.com/watch?v=QBNMMwL8d_s" data-toggle="modal" data-target="#videoModal">
+                                <i class="icon_vd fa-solid fa-play"></i>
+                            </div>
+                            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-body">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-x" onclick="closeVD()"></i></button>
+                                      <video controls width="100%">
+                                        <source src="https://www.youtube.com/watch?v=QBNMMwL8d_s" type="video/mp4">
+                                      </video>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
+                        
                         <div class="vd_content">
                             <h6>Watch Video</h6>
                             <p class="vd_desc">
@@ -205,10 +241,10 @@
             </div>
             <div class="right">
                 <p class="name">from founder</p>
-                <h2 class="title">We Believe That Perfection Is Overrated When The Business Goals</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <h2 class="title">Treat Clients As Close Friends</h2>
+                <p class="desc">NCC always treats clients as close friends because we believe NCC and clients are not just the parties in the business contract but also the good companion on the journey of discovering technology and transforming the world. On that journey, the understanding, trust, and unanimity of friendship are the foundation and motivation to go further and faster.</p>
                 <div class="btn">
-                    <div class="flex">
+                    <div class="flex_icon">
                         <i class="fa-solid fa-arrow-right"></i>
                         <p>learn more</p>
                     </div>
@@ -284,17 +320,17 @@
     <div class="section_6">
         <div class="container flex">
             <div class="left">
-                <div class="box flex">
+                <div class="box flex_icon">
                     <img src="../image/Logo-1.png" />
                     <img src="../image/Logo-2.png" />
                 </div>
-                <div class="box flex">
+                <div class="box flex_icon">
                     <img src="../image/Logo-5.png" />
                     <img src="../image/Logo-6.png" />
                 </div>
                     <h4>Our Professional Clients</h4>
                     <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <div class="wrapper flex">
+                    <div class="wrapper flex_icon">
                         <i class="fa-solid fa-arrow-right"></i>
                         <p class="more">Read more</p>
                 </div>
@@ -307,7 +343,7 @@
                     <li class="list_item">info@ncc.asia</li>
                     <li class="list_item">(+84) 2466874606</li>
                 </ul>
-                <div class="wrapper flex">
+                <div class="wrapper flex_icon">
                     <i class="fa-solid fa-arrow-right"></i>
                     <p class="more">Read more</p>
                 </div>
@@ -406,6 +442,27 @@
         function closeSidebar() {
             document.getElementById("sidebar").style.display = "none";
         }
+
+        function closeVD(){
+            document.getElementById("videoModal").style.display = "none";
+        }
     </script>
+    <script>
+    $(function() {
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+            videoSRC = $(this).attr("data-video"),
+            videoSRCauto = videoSRC + "";
+        $(theModal + ' source').attr('src', videoSRCauto);
+        $(theModal + ' video').load();
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' source').attr('src', videoSRC);
+        });
+      });
+    });
+    </script>
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>

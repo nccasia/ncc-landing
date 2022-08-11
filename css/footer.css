@@ -69,3 +69,39 @@
 .footer-bottom p:hover {
     color: white;
 }
+
+@media only screen and (max-width: 768px){
+    .footer .flex {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-middle .box .title{
+        text-align: center;
+    }
+
+    .footer-top p {
+        max-width: 90%;
+        text-align: center;
+        margin: 15px 0 15px 27px;
+    }
+
+    .footer-top input {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .footer-top .btn {
+        width: 80%;
+        margin: 15px 0 0 49px;
+    }
+
+    .footer-middle .box {
+        margin-bottom: 15px;
+    }
+
+    .grid a img {
+        width: 218px;
+        height: 218px;
+    }
+}

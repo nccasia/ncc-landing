@@ -8,6 +8,10 @@
     max-height: 140px;
     padding: 15px 0 15px 0;
   }
+
+  .navbar_menu{
+    display: none;
+  }
   
   .header-container {
     display: flex;
@@ -44,6 +48,19 @@
     height: 100%;
   }
   
+  .small_menu {
+    display: none;
+  }
+
+  .menu2 {
+    display: block;
+  }
+
+  .small_menu .menu-content {
+    display: flex;
+    flex-direction: column;
+  }
+
   .menu-content {
     display: flex;
     justify-content: flex-start;
@@ -208,4 +225,21 @@
 
   .sidebar .icon:hover {
     background-color: white;
+  }
+
+  @media only screen and (max-width: 768px){
+    .header-menu{
+      display: none;
+    }
+
+    .header-right {
+      display: none;
+    }
+
+    .navbar_menu {
+      display: block;
+      font-size: 30px;
+      position: absolute;
+      margin-left: 90%;
+    }
   }
