@@ -243,11 +243,16 @@
   align-items: center;
 }
 
+.detail-title i {
+  color: var(--e-global-color-primary);
+}
+
 .detail-title .item-name {
   font-size: 21px;
   font-weight: 500;
   line-height: 1.4em;
   text-transform: capitalize;
+  color: var(--e-global-color-primary);
 }
 
 table,
