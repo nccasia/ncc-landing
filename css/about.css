@@ -2,8 +2,12 @@
 
   /*--------------------section 1-------------------*/
 .section_1 {
-    
     margin: 0 0 100px 0;
+}
+
+.section_1 .name {
+    font-size: 40px;
+    margin-bottom: 80px;
 }
 
   .section_1 .left{
@@ -13,14 +17,10 @@
     color: white;
 }
 
-.section_1 .left .title {
-    margin: 50px;
-    line-height: 1.1em;
-}
-
 .section_1 .desc {
     text-align: center;
-    padding:0 15px;
+    margin-top: 40px;
+    color: white;
 }
 
 .section_1 .right {
@@ -45,30 +45,11 @@
     margin-left: 70px;
 }
 
-.section_2 .name::after{
-    display: none;
-}
-
-.section_2 .left .title {
-    line-height: 1.1em;
-    color: var(--e-global-color-secondary);
-    font-weight: 500;
-    font-size: 50px;
-    text-align: left;
-    text-transform: capitalize;
-}
-
-.section_2 .btn {
-    max-width: 190px;
-    margin-top: 15px;
-}
-
-.section_2 .btn i {
-    padding: 4px 10px 0 35px;
-}
-
-.section_2 .btn p {
-    text-transform: uppercase;
+.section_2 .name_section2{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+    font-size: 22px;
 }
 
 .section_2 .right {
@@ -78,46 +59,6 @@
     background-size: cover;
     width: 50%;
     height: 550px;
-}
-
-.section_2 .vision {
-    color: white;
-    background-color: var(--e-global-color-secondary);
-    width: 40%;
-    padding: 15px;
-    margin: 55% 0 0 20%;
-}
-
-.section_2 .vision .name_vision {
-    font-size: 24px;
-    line-height: 1.3em;
-}
-
-.section_2 .vision i {
-    color: var(--e-global-color-primary);
-    padding: 4px 10px 0 0;
-}
-
-.section_2 .mission {
-    background-color: var(--e-global-color-primary);
-    width: 40%;
-    float: right;
-    margin-top: -355px;
-    color: white;
-    padding: 15px;
-}
-
-.section_2 .mission .name_mission {
-    font-size: 24px;
-    line-height: 1.3em;
-}
-
-.section_2 .mission .more {
-    color: white;
-}
-
-.section_2 .mission i {
-    padding: 4px 10px 0 0;
 }
 
 /*--------------------section_3-------------------*/
@@ -231,7 +172,7 @@
     background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg);
     background-position: center center;
     background-size: cover;
-    height:620px;
+    height:585px;
     z-index: 4;
 }
 
@@ -321,10 +262,6 @@
     margin: 6px 10px 0 0;
 }
 
-.section_5 .bottom .desc {
-    max-width: 300px;
-}
-
 .section_5 .bottom .name_history {
     color: var(--e-global-color-secondary);
     font-size: 24px;
@@ -352,52 +289,13 @@
     background-color: var(--e-global-color-9bed8f9);
 }
 
-.section_6 .left {
-    max-width: 350px;
-    padding: 30px;
+.section_6 .flex {
+    justify-content: space-between;
 }
 
-.wrapper {
-    margin-top: 15px;
-}
-
-.section_6 .box {
-    padding-bottom: 20px;
-}
-
-.section_6 .left img {
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: var( --e-global-color-2c6ecd4 );
-    margin: 0px 15px 0px 0px;
-    width: 147px;
-    height: 57px;
-    opacity: 0.47;
-}
-
-.section_6 .left img:hover {
-    opacity: 1;
-}
-
-.section_6 .left h4 {
-    color: var(--e-global-color-secondary);
-    font-size: 24px;
-    line-height: 1.3em;
-    font-weight: 500;
-}
-
-.section_6 .left i {
-    padding: 5px 15px 0 0;
-    color: var(--e-global-color-primary);
-}
 .section_6 .middle {
     max-width: 300px;
     padding: 20px 30px;
-}
-
-.section_6 .middle .desc {
-    max-width: 240px;
-    margin-top: 20px;
 }
 
 .desc {
