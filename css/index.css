@@ -308,7 +308,9 @@
     width: 100%;
     position: relative;
     color: white;
-    background-image: linear-gradient(       180deg,       var(--e-global-color-f03f58e) 41%,       var(--e-global-color-secondary) 97%     ),     url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg");   opacity: 0.88;
+    background-position: bottom right;
+    background-image: linear-gradient(190deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg"); 
+    opacity: 0.88;
 }
 
 .section-5 .grid {
@@ -718,8 +720,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 10% 0 0 40%;
-        grid-gap: 60px;
+        margin: 10% 0 0 30%;
+        grid-gap: 80px;
     }
 
     .section-6 .bottom .grid{
