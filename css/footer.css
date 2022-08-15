@@ -17,11 +17,6 @@
 
 .footer-top p {
   max-width: 500px;
-  display: flex;
-  justify-items: flex-start;
-  width: 100%;
-  font-size: 30px;
-  letter-spacing: 0.1em;
 }
 
 .footer-top input {
@@ -75,19 +70,37 @@
   color: white;
 }
 
-@media (max-width: 425px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 768px), (max-width: 414px) {
+  .footer .flex {
+    display: block;
+    text-align: center;
   }
 
-  .footer-top {
-    display: flex;
-    flex-direction: column;
+  .footer-middle .box .title {
+    text-align: center;
   }
 
-  .footer-middle {
-    display: flex;
-    flex-direction: column;
+  .footer-top p {
+    max-width: 90%;
+    text-align: center;
+    margin: 15px 0 15px 27px;
+  }
+
+  .footer-top input {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .footer-top .btn {
+    width: 80%;
+    margin: 20px 0 0 6%;
+  }
+
+  .footer-middle .box {
+    margin-bottom: 15px;
+  }
+
+  .grid a img {
+    width: 85%;
   }
 }
