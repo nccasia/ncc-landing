@@ -228,8 +228,7 @@
   .sidebar .icon:hover {
     background-color: white;
   }
-
-  @media only screen and (max-width: 960px),(max-width:414px){
+  @media screen and (max-width: 960px){
     .header {
       max-width: 100%;
     }

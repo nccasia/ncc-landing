@@ -20,13 +20,14 @@
     color: var(--e-global-color-secondary);
     font-size: 50px;    
     font-weight: 500;
-    line-height: 1.1em;
+    line-height: 1em;
 }
 
 .headline_dynamic {
     color: var(--e-global-color-primary);
     font-size: 50px;
     font-weight: 500;
+    line-height: 1em;
 }
 
 .section-1 .detail {
@@ -574,7 +575,11 @@
     width: 50px;
 }
 
-@media only screen and (max-width: 768px), (max-width:414px){
+@media only screen and (max-width: 768px){
+    /* .container {
+        width: 100%;
+    } */
+
     .section-1 .top .name {
         text-align: center;
     }
@@ -713,7 +718,8 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: -10% 0 0 40%;
+        margin: 10% 0 0 40%;
+        grid-gap: 60px;
     }
 
     .section-6 .bottom .grid{

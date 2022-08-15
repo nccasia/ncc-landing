@@ -432,6 +432,10 @@
         margin: 15px;
     }
 
+    .section_3 .desc_section3::after{
+        display: none;
+    }
+
     .section_3 .left {
         width: 100%;
     }
@@ -469,6 +473,7 @@
         background-color: white;
         height: max-content;
     }
+    
     .section_4 .flex {
         display: flex;
         flex-direction: column-reverse;
@@ -500,5 +505,30 @@
 
     .section_6 .flex {
         display: block;
+    }
+
+    .section_6 .middle {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .section_6 .right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .section_6 .text {
+        margin: 20px 20px 0 0;
+    }
+
+    .section_6 .right .input {
+        margin: 20px 20px 0 0;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .section_5 .grid{
+        margin-left: 5%;
     }
 }
