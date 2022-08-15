@@ -81,9 +81,9 @@
 
  .wrap {
     background-color: var(--e-global-color-secondary);
-    width: 370px;
+    width: 360px;
     margin-left: 70%;
-    margin-top: -50%;
+    margin-top: -45%;
     z-index: 3;
     position: absolute;
     padding: 50px 0 50px 0;
@@ -265,7 +265,7 @@
 }
 
 .section-4 .box {
-    margin: 20px;
+    margin-top: 20px;
     max-width: 360px;
 }
 
@@ -399,10 +399,9 @@
   
   .overlay p {
     display: flex;
-    align-items: flex-end;
     height: 100%;
     font-size: 16px;
-    padding: 0 10px 0 10px;
+    padding: 100px 10px 0 10px;
   }
   
   .text {
@@ -477,6 +476,7 @@
     padding: 20px;
     background-color: white;
     color: #FF7D90;
+    margin-left: 35%;
 }
 
 .section-7 .icon:hover {
@@ -490,6 +490,7 @@
     background-color: #FF7D90;
     color: white;
     font-size: 25px;
+    margin-left: 35%;
 }
 
 .section-7 .icon-first:hover {
@@ -502,6 +503,7 @@
     font-size: 24px;
     line-height: 1.3em;
     height: 63px;
+    text-align: center;
 }
 
 .section-7 .box .detail {
@@ -544,6 +546,7 @@
 }
 
 .right {
+    margin-left: 5%;
     max-width: 720px;
 }
 
@@ -584,9 +587,10 @@
     }
 
     .wrap {
+        margin-left: 50%;
+        width: 50%;
         position: absolute;
-        margin-top: -98%;
-        margin-left: 52%;
+        margin-top: -100%;
     }
 
     .wrap .box_content {
@@ -662,7 +666,7 @@
     }
 
     .section-3 .box {
-        width: 100%;
+        width: 93%;
     }
 
     .section-3 .wrapper .list_reason {
@@ -684,18 +688,32 @@
     .section-4 .bottom {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .section-4 .bottom .content {
         height: max-content;
     }
 
+    .section-4 .box {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .section-4 .box .flex_icon{
+        justify-content: center;
+    }
+
+    .section-4 .bottom .box .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .section-5 .grid {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-left: 30%;
+        margin: -10% 0 0 40%;
     }
 
     .section-6 .bottom .grid{
@@ -716,6 +734,14 @@
     .section-7 .box .detail{
         margin-top: 0;
         max-width: 95%;
+    }
+
+    .section-7 .icon{
+        margin-left: 0;
+    }
+
+    .section-7 .icon-first{
+        margin-left: 0;
     }
 
     .section-8 .flex {
@@ -743,18 +769,22 @@
 
     .section-8 input {
         width: 80%;
-        margin-left: 65px;
+        margin-left: 5%;
     }
 
     .section-8 .message{
         width: 80%;
-        margin-left: 65px;
+        margin-left: 5%;
     }
 
     .section-8 .btn {
         width: 81%;
-        margin-left: 65px;
+        margin-left: 5%;
         text-align: center;
     }
+}
+
+@media only screen and (max-width:414px) {
+
 }
 

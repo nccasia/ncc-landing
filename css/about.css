@@ -404,7 +404,7 @@
     }
 
     .section_2 .right {
-        background-image: none;
+        margin-top: 40px;
         width: 100%;
     }
 
@@ -429,6 +429,7 @@
     .section_3 .desc_section3{
         width: 100%;
         text-align: center;
+        margin: 15px;
     }
 
     .section_3 .left {
