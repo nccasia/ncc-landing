@@ -17,6 +17,11 @@
 
 .footer-top p {
   max-width: 500px;
+  display: flex;
+  justify-items: flex-start;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 0.1em;
 }
 
 .footer-top input {
@@ -68,4 +73,21 @@
 
 .footer-bottom p:hover {
   color: white;
+}
+
+@media (max-width: 425px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-middle {
+    display: flex;
+    flex-direction: column;
+  }
 }

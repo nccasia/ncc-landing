@@ -14,6 +14,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 body {
@@ -118,10 +119,4 @@ body {
   --e-global-color-df0e136: #ee7968;
   --e-global-color-b92305c: #4f4f4f;
   --e-global-typography-font-family: "Barlow";
-}
-
-@media only screen and (max-width: 425px) {
-  .container {
-    max-width: 425px;
-  }
 }

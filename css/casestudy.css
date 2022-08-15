@@ -23,9 +23,9 @@
   justify-content: center;
   width: 100%;
   color: var(--e-global-color-primary);
-  display: flex;
   align-items: flex-start;
   height: 44px;
+  text-transform: uppercase;
 }
 
 .section-1-content span::before,

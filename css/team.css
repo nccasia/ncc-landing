@@ -53,8 +53,9 @@
   flex-direction: column;
   width: 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 96px 30px 96px 30px;
+  gap: 30px;
 }
 
 .section-1-content h1 {
@@ -63,7 +64,7 @@
   color: white;
   font-size: 68px;
   font-weight: 500;
-  line-height: 1em;
+  line-height: 1.1em;
   text-transform: uppercase;
   height: 84px;
   width: 100%;
@@ -71,7 +72,14 @@
 
 .section-1-content p {
   display: flex;
+  justify-content: center;
   text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1em;
+  height: 84px;
+  width: 100%;
 }
 
 .section-1-img {
@@ -141,10 +149,9 @@
 
 .overlay p {
   display: flex;
-  align-items: flex-end;
   height: 100%;
   font-size: 16px;
-  padding: 0 10px 0 10px;
+  padding: 75px 10px 0 10px;
 }
 
 .text {
@@ -173,6 +180,7 @@
   display: flex;
   font-size: 20px;
   padding: 0 10px 0 10px;
+  font-style: italic;
 }
 
 .section-2 .btn {
@@ -286,6 +294,7 @@
   color: var(--e-global-color-1f86ad6);
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .section-3-detail .detail-toggle .item-title {
