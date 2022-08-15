@@ -791,6 +791,24 @@
 }
 
 @media only screen and (max-width:414px) {
+    .section-1 .image {
+        height: 800px;
+    }
 
+    .section-1 .bottom .slide {
+        padding: 165% 0 100px 5%;
+    }
+
+    .section-1 .wrap {
+        margin-top: -240%;
+    }
+
+    .slide_heading{
+        font-size: 40px;
+    }
+
+    .section-2 .left .title::before{
+        display: none;
+    }
 }
 
