@@ -561,3 +561,9 @@
         margin-left: 5%;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1025px){
+    .section_3 .counter_number{
+        font-size: 40px;
+    } 
+}

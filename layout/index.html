@@ -30,7 +30,7 @@
         <img
             src="/image/logo.png"
             alt="logo-ncc"
-            style="width: 40px; height: 40px"
+            class="logo"
         />
         </div>
         <div class="header-menu">
@@ -141,16 +141,15 @@
         <div class="image">
             <div class="overlay"></div>
             <div class="box">
-                <div class="slide ">
+                <div class="slide">
                     <div class="owl-carousel slide2" id="slide2">
                         <div class="wrapper">
-                            <p class="slide_heading">
-                                Digital Disruption
-                            </p>
+                            <p class="slide_heading">Digital Disruption</p>
                             <div class="slide_btn">learn more</div>
-                        </div>						
+                        </div>
                     </div>
                 </div>
+                
             </div>
             <div class="wrap">
                 <p class="box_title">Client Applications Development</p>
@@ -526,7 +525,7 @@
             <div class="flex">
                 <p class="name">GET STARTED</p>
             </div>
-            <p class="title">Get Started & Tell Us About Your Requirements</p>
+            <p class="title">Get Started & Tell Us About Your Requirement</p>
         </div>
         <div class="right">
             <div class="grid">
@@ -543,8 +542,8 @@
     <div class="container">
         <div class="footer-top">
             <div class="wrapper_top">
-                <h1>Shevia.</h1>
-                <p>Utenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <img src="../image/logo.png" class="logo">
+                <p>We do it with passion</p>
                 <div class="submit_subscribe">
                     <input type="email" placeholder="Email" />
                     <div class="btn">SUBSCRIBE</div>
@@ -556,37 +555,25 @@
             <div class="box">
                 <div class="title">Company</div>
                 <ul>
-                    <li>About</li>
-                    <li>Investor</li>
-                    <li>Clients</li>
-                    <li>Legal</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Vision & Mission</a></li>
                 </ul>
             </div>
             <div class="box">
-                <div class="title">Useful Links</div>
+                <div class="title">Outstandings</div>
                 <ul>
-                    <li>News</li>
-                    <li>Our Process</li>
-                    <li>Team</li>
-                    <li>Knowledbase</li>
-                </ul>
-            </div>
-            <div class="box">
-                <div class="title">Services</div>
-                <ul>
-                    <li>Mobile Apps</li>
-                    <li>Web Apps</li>
-                    <li>Custom Applications</li>
-                    <li>Digital Marketing</li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">Case study</a></li>
                 </ul>
             </div>
             <div class="box">
                 <div class="title">Follow Us</div>
                 <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Youtube</li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Youtube</a></li>
                 </ul>
             </div>
             <div class="box grid">
@@ -616,44 +603,64 @@
         </div>
     </div>
 </footer>
-    <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
-    <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
-    <script>        
-        $('.slide2').owlCarousel({
-            loop:true,
-            margin:10,
-            responsiveClass:true,
-            autoplay:true,
-            autoplayTimeout:1000,
-            autoplayHoverPause:true,
-          responsive:{
-          0:{
-              items:1,
-              nav:true
-          },
-      }
-    })
-    </script>
-        <script>
-            $(".slide1").owlCarousel({
-              loop: true,
-              margin: 10,
-              responsiveClass: true,
-              autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true,
-              responsive: {
-                0: {
-                  items: 1,
-                  nav: true,
-                },
-                600: {
-                  items: 3,
-                  nav: false,
-                },
-              },
-            });
-          </script>
-    <script src="../js/script.js"></script>
+<script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
+<script src="/libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="../js/script.js"></script>
+<!-- <script>        
+    $('.slide2').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        items: 2,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+    }
+})
+</script> -->
+<script>
+    $(".slide2").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+        responsive: {
+        0: {
+            items: 1,
+            nav: true,
+        },
+        },
+    });
+</script>
+<script>
+    $(".slide1").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+        responsive: {
+        0: {
+            items: 1,
+            nav: true,
+        },
+        600: {
+            items: 3,
+            nav: false,
+        },
+        },
+    });
+</script>
+
 </body>
 </html>

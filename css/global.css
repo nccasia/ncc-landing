@@ -108,6 +108,11 @@ body {
     display: flex;
 }
 
+.logo {
+    width: 56px;
+    height: 56px;
+}
+
 :root {
     --e-global-color-primary: #ff7d90;
     --e-global-color-secondary:#1c2347;
