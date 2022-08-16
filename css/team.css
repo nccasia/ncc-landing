@@ -21,7 +21,8 @@
 .section-1 {
   display: flex;
   justify-content: center;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 460px;
   background-color: #1c2347;
 }
@@ -31,10 +32,9 @@
   justify-content: center;
   width: 100%;
   color: var(--e-global-color-primary);
-  display: flex;
   align-items: flex-start;
-  text-transform: uppercase;
   height: 44px;
+  text-transform: uppercase;
 }
 
 .section-1-content span::before,
@@ -44,7 +44,7 @@
   border-top: 1px solid var(--e-global-color-primary);
   width: 4rem;
   margin: 0 1rem;
-  transform: translateY(0.7rem);
+  transform: translateY(0.5em);
 }
 
 .section-1-content {
@@ -64,7 +64,7 @@
   color: white;
   font-size: 68px;
   font-weight: 500;
-  line-height: 1.1em;
+  line-height: 1em;
   text-transform: uppercase;
   height: 84px;
   width: 100%;
@@ -72,14 +72,7 @@
 
 .section-1-content p {
   display: flex;
-  justify-content: center;
   text-align: center;
-  color: white;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.1em;
-  height: 84px;
-  width: 100%;
 }
 
 .section-1-img {
@@ -121,9 +114,9 @@
 .grid-item {
   display: flex;
   position: relative;
-  gap: 10px;
+
   width: 100%;
-  height: 450px;
+  height: 550px;
   background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg");
   background-position: center center;
   background-size: cover;
@@ -147,40 +140,38 @@
   opacity: 1;
 }
 
-.overlay p {
-  display: flex;
-  height: 100%;
-  font-size: 16px;
-  padding: 75px 10px 0 10px;
-}
-
 .text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   color: white;
   position: absolute;
-  top: 8%;
+  top: 50%;
   left: 50%;
   width: 100%;
+  height: 550px;
+  text-align: left;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 .text h2 {
   display: flex;
   font-size: 24px;
-  padding: 0 10px 0 10px;
+  padding: 10px;
 }
 
-.text p {
-  display: flex;
-  font-size: 20px;
-  padding: 0 10px 0 10px;
+.text .description {
+  font-size: 18px;
+  padding: 0 10px;
   font-style: italic;
+  bottom: 20%;
+}
+
+.text .position {
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 .section-2 .btn {
@@ -225,7 +216,7 @@
   display: inline-block;
   content: "";
   border-top: 1px solid var(--e-global-color-primary);
-  width: 4rem;
+  width: 30%;
   margin: 0 1rem;
   transform: translateY(0.7rem);
 }
@@ -359,6 +350,7 @@
 .section-4 {
   margin-top: 100px;
   width: 100%;
+  margin: 100px 0 100px 0px;
 }
 
 .section-4 img {
@@ -437,10 +429,6 @@
   font-weight: 300;
 }
 
-.section-4 {
-  margin: 100px 0 100px 20px;
-}
-
 .section-4 .top {
   display: flex;
   flex-direction: column;
@@ -513,4 +501,220 @@
   height: 30px;
   /* padding: 6px; */
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .section-1 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .section-1 .container {
+    flex-direction: column;
+    max-width: 100%;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-1-content {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+  }
+
+  .section-1-content h1 {
+    font-size: 45px;
+    line-height: 1em;
+  }
+
+  .section-1-content p {
+    padding: 0 30px;
+  }
+
+  .section-1-img {
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+  }
+
+  .section-2 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 0 30px 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-2 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 30px 0 30px;
+  }
+
+  .section-2 .bottom .grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+
+  .overlay p {
+    padding: 30px;
+  }
+
+  .text {
+    top: 50%;
+    text-align: left;
+    gap: 0;
+  }
+
+  .text h2 {
+    padding: 30px;
+    font-size: 30px;
+  }
+
+  .text .position {
+    padding: 30px;
+  }
+
+  .text .description {
+    padding: 30px;
+    line-height: 1.5em;
+  }
+
+  .section-3 {
+    padding: 0;
+  }
+
+  .section-3 .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section-3-title {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .section-3-title span {
+    justify-content: center;
+  }
+
+  .section-3-detail {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .section-3-detail .detail-toggle {
+    width: 100%;
+    padding: 48px 30px;
+    gap: 0;
+  }
+
+  .section-3-detail .toggle-item {
+    padding: 0;
+  }
+
+  .section-3-detail .toggle-item .item-title {
+    padding: 12px;
+  }
+
+  .section-3-detail .toggle-item .item-content p {
+    padding: 0 30px 30px;
+  }
+
+  .section-4 {
+    margin: 60px 0 60px 0;
+  }
+
+  .section-4 .top {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-1 {
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    flex-direction: column;
+  }
+
+  .section-1-img {
+    height: auto;
+  }
+
+  .section-1-content {
+    padding: 30px;
+  }
+
+  .section-2 {
+    width: calc(100% - 60px);
+  }
+
+  .section-2 .top .name {
+    padding: 30px;
+  }
+
+  .section-2 .top .title {
+    padding: 30px;
+  }
+
+  .section-2 .bottom .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+  }
+
+  .section-3-title {
+    width: 57.843%;
+  }
+
+  .section-3-title h2 {
+    font-size: 49px;
+  }
+
+  .section-3-title span::before {
+    width: 15%;
+  }
+
+  .section-3-detail {
+    width: 42.112%;
+    align-items: center;
+  }
+
+  .text h2 {
+    font-size: 30px;
+    padding: 30px;
+  }
+
+  .text .position {
+    padding: 30px;
+    margin-bottom: 0;
+  }
+
+  .text .description {
+    padding: 30px;
+    line-height: 1.5em;
+  }
+
+  .section-3-detail .detail-toggle {
+    gap: 0;
+  }
+
+  .section-3-detail .toggle-item {
+    width: auto;
+  }
+
+  .section-4 {
+    margin: 60px 0 60px 0;
+  }
 }

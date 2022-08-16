@@ -225,9 +225,13 @@
 .sidebar .icon:hover {
   background-color: white;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 767px) {
   .header {
     max-width: 100%;
+  }
+
+  .header-btn {
+    display: none;
   }
 
   .header-menu {
@@ -246,13 +250,17 @@
   }
 
   .small_menu {
-    width: 60vh;
+    width: 70%;
     position: absolute;
     transform: scaleY(1);
     transition: max-height 0.3s, transform 0.3s, -webkit-transform 0.3s;
     z-index: 999;
     background-color: white;
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  }
+
+  .menu-content {
+    padding: 0;
   }
 
   .menu-dropdown {
