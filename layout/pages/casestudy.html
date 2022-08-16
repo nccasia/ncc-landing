@@ -1,1581 +1,1726 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/libs/owl-carousel/owl.carousel.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/casestudy.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/libs/owl-carousel/owl.carousel.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/css/casestudy.css" />
-  <link rel="stylesheet" href="/css/header.css" />
-  <link rel="stylesheet" href="/css/global.css" />
-  <link rel="stylesheet" href="/css/footer.css" />
+    <title>NCC - CaseStudy - Welcome to NCC</title>
+  </head>
 
-  <title>NCC - CaseStudy - Welcome to NCC</title>
-</head>
-
-<body id="body">
-  <header class="header">
-    <div class="header-left">
+  <body id="body">
+    <header class="header">
+      <div class="header-left">
         <div
-        class="header-title"
-        style="display: flex; align-items: center; gap: 5px"
+          class="header-title"
+          style="display: flex; align-items: center; gap: 5px"
         >
-        <img
+          <img
             src="/image/logo.png"
             alt="logo-ncc"
             style="width: 40px; height: 40px"
-        />
+          />
         </div>
         <div class="header-menu">
-        <ul class="menu-content">
+          <ul class="menu-content">
             <li class="menu-item">
-            <a href="./index.html">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li class="menu-item"><a href="./about.html">About</a></li>
             <li class="menu-item">
-            <a href="#"
+              <a href="#"
                 ><span>Pages <i class="fa-solid fa-angle-down"></i></span
-            ></a>
-            <ul class="menu-dropdown">
-                <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
+              ></a>
+              <ul class="menu-dropdown">
+                <li>
+                  <a class="dropdown-item" href="/pages/service">SERVICE</a>
+                </li>
                 <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
-                <li><a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a></li>
-            </ul>
+                <li>
+                  <a class="dropdown-item" href="/pages/casestudy"
+                    >CASE STUDY</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="menu-item"><a href="./contact.html">Contact</a></li>
-        </ul>
+          </ul>
         </div>
-    </div>
-    <div class="navbar_menu">
+      </div>
+      <div class="navbar_menu">
         <i class="fa-solid fa-bars"></i>
-    </div>
-    <div class="header-right">
+      </div>
+      <div class="header-right">
         <div class="header-button">
-        <button class="header-btn" type="button">Get Quoatation</button>
+          <button class="header-btn" type="button">Get Quoatation</button>
         </div>
         <span class="nav-bar">
-        <i id="openIcon" class="fa-solid fa-bars fa-xl" onclick="openSidebar()"></i>
+          <i
+            id="openIcon"
+            class="fa-solid fa-bars fa-xl"
+            onclick="openSidebar()"
+          ></i>
         </span>
-    </div>
-  </header>
-  <div class="small_menu">
-    <ul class="menu-content">
+      </div>
+    </header>
+    <div class="small_menu">
+      <ul class="menu-content">
         <li class="menu-item">
-            <a href="**">HOME</a>
-        </li>                
-        <li class="menu-item">
-            <a href="/about">ABOUT</a>
+          <a href="**">HOME</a>
         </li>
         <li class="menu-item">
-            <a href="#"><span>PAGES <i class="fa-solid fa-angle-down"></i></span
-                ></span></a>
-            <ul class="menu-dropdown">
-                <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
-                <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
-                <li><a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a></li>
-            </ul>
+          <a href="/about">ABOUT</a>
+        </li>
+        <li class="menu-item">
+          <a href="#"
+            ><span>PAGES <i class="fa-solid fa-angle-down"></i></span
+          ></a>
+          <ul class="menu-dropdown">
+            <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
+            <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
+            <li>
+              <a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a>
+            </li>
+          </ul>
         </li>
         <li class="menu-item"><a href="./contact.html">CONTACT</a></li>
-    </ul>
-  </div>
-  <div class="sidebar" id="sidebar">
-        <i id="closeIcon" class="fa-solid fa-xmark" onclick="closeSidebar()" style="font-size:24px ;"></i>
-        <div class="wrapper">
+      </ul>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <i
+        id="closeIcon"
+        class="fa-solid fa-xmark"
+        onclick="closeSidebar()"
+        style="font-size: 24px"
+      ></i>
+      <div class="wrapper">
         <p class="sidebar_header">Shevia</p>
-        <p class="sidebar_desc">luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <p class="sidebar_desc">
+          luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
         <p class="sidebar_name">Services</p>
         <ul>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Mobile Development</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Web Development</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">
-                    Data Science</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">IoT Development</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">Enterprise Application</p>
-            </li>
-            <li class="flex">
-                <i class="fa-solid fa-check"></i>
-                <p class="sidebar_item">User Interfice Design</p>
-            </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Mobile Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Web Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Data Science</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">IoT Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Enterprise Application</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">User Interfice Design</p>
+          </li>
         </ul>
         <p class="sidebar_name">Follow Us</p>
         <ul class="flex">
-            <li><i class="icon fa-brands fa-facebook"></i></li>
-            <li><i class="icon fa-brands fa-twitter"></i></li>
-            <li><i class="icon fa-brands fa-linkedin"></i></li>
-            <li><i class="icon fa-brands fa-youtube"></i></li>
+          <li><i class="icon fa-brands fa-facebook"></i></li>
+          <li><i class="icon fa-brands fa-twitter"></i></li>
+          <li><i class="icon fa-brands fa-linkedin"></i></li>
+          <li><i class="icon fa-brands fa-youtube"></i></li>
         </ul>
-</div>
-  </div>
-  <div class="section-container">
-    <div class="section-1">
-      <div class="container">
-        <div class="section-1-content">
-          <span>our service</span>
-          <h1>CaseStudy</h1>
-          <p>
-            With intensive knowledge and professional experience in a variety
-            of technologies, our outsourcing services can cover the entire
-            software development life cycle and meet business needs in variety
-            of industries
-          </p>
-        </div>
-        <div class="section-1-img"></div>
       </div>
     </div>
-    <div class="section-2">
-      <div class="container">
-        <div class="top">
-          <p class="name">our process</p>
-          <p class="title">
-            We apply agile/scrum methodology to bring the most updated and
-            optimized product
-          </p>
+    <div class="section-container">
+      <div class="section-1">
+        <div class="container">
+          <div class="section-1-content">
+            <span>our service</span>
+            <h1>CaseStudy</h1>
+            <p>
+              With intensive knowledge and professional experience in a variety
+              of technologies, our outsourcing services can cover the entire
+              software development life cycle and meet business needs in variety
+              of industries
+            </p>
+          </div>
+          <div class="section-1-img"></div>
         </div>
-        <div class="grid" style="padding-top: 15px">
-          <div class="box">
-            <i class="icon-first fa-regular fa-envelope"></i>
-            <p class="box_name">Requirements analysis</p>
-            <p class="detail">
-              Requirement analysis is the most important and fundamental stage
-              in SDLC. This information is then used to plan the basic project
-              approach and to conduct product feasibility study in the
-              economical, operational and technical areas.
+      </div>
+      <div class="section-2">
+        <div class="container">
+          <div class="top">
+            <p class="name">our process</p>
+            <p class="title">
+              We apply agile/scrum methodology to bring the most updated and
+              optimized product
             </p>
           </div>
-          <div class="box">
-            <i class="icon fa-regular fa-paper-plane"></i>
-            <p class="box_name">Design and Architecture</p>
-            <p class="detail">
-              This phase comes out with the best architecture for the product
-              to be developed. Based on the requirements specified in the
-              previous phase, usually more than one design approach for the
-              product architecture is proposed and documented in a DDS
-            </p>
-          </div>
-          <div class="box">
-            <i class="icon fas fa-rocket"></i>
-            <p class="box_name">Development</p>
-            <p class="detail">
-              After all architecture and design choices are already defined,
-              the actual coding starts. Quality assurance and software testing
-            </p>
-            <p class="detail">
-              In this phase, the developed software is tested thoroughly and
-              any defects found are assigned to developers to get them fixed.
-            </p>
-          </div>
-          <div class="box">
-            <i class="icon far fa-lightbulb"></i>
-            <p class="box_name">Deployment</p>
-            <p class="detail">
-              After the software has been tested, the final deployment takes
-              place. But, this is not as simple as the click of a button.
-              There are a lot of things to consider in this software
-              development life cycle process.
-            </p>
-          </div>
-          <div class="box">
-            <i class="icon fas fa-book-atlas"></i>
-            <p class="box_name">Review</p>
-            <p class="detail">
-              In the final phase of the SDLC, it’s important to acknowledge
-              that all software requires review. If users find any issues, the
-              problem can be fixed in the next release
-            </p>
+          <div class="grid">
+            <div class="box">
+              <i class="icon-first fa-regular fa-envelope"></i>
+              <p class="box_name">Requirements analysis</p>
+              <p class="detail">
+                Requirement analysis is the most important and fundamental stage
+                in SDLC. This information is then used to plan the basic project
+                approach and to conduct product feasibility study in the
+                economical, operational and technical areas.
+              </p>
+            </div>
+            <div class="box">
+              <i class="icon fa-regular fa-paper-plane"></i>
+              <p class="box_name">Design and Architecture</p>
+              <p class="detail">
+                This phase comes out with the best architecture for the product
+                to be developed. Based on the requirements specified in the
+                previous phase, usually more than one design approach for the
+                product architecture is proposed and documented in a DDS
+              </p>
+            </div>
+            <div class="box">
+              <i class="icon fas fa-rocket"></i>
+              <p class="box_name">Development</p>
+              <p class="detail">
+                After all architecture and design choices are already defined,
+                the actual coding starts. Quality assurance and software testing
+              </p>
+              <p class="detail">
+                In this phase, the developed software is tested thoroughly and
+                any defects found are assigned to developers to get them fixed.
+              </p>
+            </div>
+            <div class="box">
+              <i class="icon far fa-lightbulb"></i>
+              <p class="box_name">Deployment</p>
+              <p class="detail">
+                After the software has been tested, the final deployment takes
+                place. But, this is not as simple as the click of a button.
+                There are a lot of things to consider in this software
+                development life cycle process.
+              </p>
+            </div>
+            <div class="box">
+              <i class="icon fas fa-book-atlas"></i>
+              <p class="box_name">Review</p>
+              <p class="detail">
+                In the final phase of the SDLC, it’s important to acknowledge
+                that all software requires review. If users find any issues, the
+                problem can be fixed in the next release
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <section class="section-3">
-      <div class="container">
-        <div class="section-3-content">
-          <span>CaseStudy</span>
-          <h2>Featured Case Studies</h2>
-        </div>
-        <div class="section-3-detail">
-          <div class="container">
-            <div class="bottom">
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-money-check fa-2xl"></i>
-                  <p class="item-name">Finance & Insurance</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <div class="content-popup">
-                    <p class="detail-pop-title" onclick="openPopup('pop-FS-1')" data-bs-target="pop-FS-1">ESG</p>
-                    <span class="popuptext" id="pop-FS-1">
-                      <table>
-                        <tr>
-                          <th>Clients</th>
-                          <td>
-                            A dynamic and innovative, technology-focused
-                            Singaporean provider of collection, management and
-                            disclosure of material and actionable data solutions
-                            to businesses.
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Client Needs</th>
-                          <td>
-                            A network for events planner and attendance to
-                            connect and exchange. It is relied on NFC readers
-                            and blockchains. The network strives to be among the
-                            top solutions for resolving the problem of mistrust
-                            between event stakeholders and offering the
-                            ecosystem necessary to produce self-organizing
-                            programmable events.
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Our solutions</th>
-                          <td>
-                            NCC create a team of 9 people in which 6 are devs
-                            and 2 are QAs. We came up with the solution of using
-                            tickets which is unique to each event for atendance
-                            to use and exchange for drinks, food, and others in
-                            the event. Every purchase is contactless which
-                            enhance the trust between stakeholders and event
-                            organizer. We built 2 version of the network: One
-                            use Stellar and the other use Polygon. We also
-                            utilized React - native NodeJS and Microservice.
-                          </td>
-                        </tr>
-                      </table>
-                      <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-1')"></i>
-                    </span>
+      <section class="section-3">
+        <div class="container">
+          <div class="section-3-content">
+            <span>CaseStudy</span>
+            <h2>Featured Case Studies</h2>
+          </div>
+          <div class="section-3-detail">
+            <div class="container">
+              <div class="bottom">
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-money-check fa-2xl"></i>
+                    <p class="item-name">Finance & Insurance</p>
                   </div>
-                  
-                  <p class="detail-pop-title" data-bs-target="pop-FS-2" onclick="openPopup('pop-FS-2')">
-                    Financial and Legacy Planning
-                  </p>
-                  <span class="popuptext" id="pop-FS-2">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          Global consulting firm that partners with leaders in
-                          business and society to tackle their most important
-                          challenges and capture their greatest opportunities.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A centralized location to keep track of all
-                          investment portfolio in mutiple currencies and
-                          owning assets and liabilities.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC used a team of 4 people to analyse and come up
-                          with the solution with back-end, front-end. Both
-                          mobile and web are built following a strictly
-                          schedule to keep up with clients demand. The team
-                          also ensure quality of product as the QA is
-                          allocated. The team delivered the updates for API
-                          integration, features are deployed weekly, the
-                          end-to-end flow for deployment & release run
-                          smoothly. The team mainly used react, graphql, aws
-                          and serverless technology for the hybrid app.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-2')"></i>
-                  </span>
-                  <p class="detail-pop-title" onclick="openPopup('pop-FS-3')">
-                    Research and analysis
-                  </p>
-                  <span class="popuptext" id="pop-FS-3">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          Global consulting firm that partners with leaders in
-                          business and society to tackle their most important
-                          challenges and capture their greatest opportunities.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A platform for users to conduct their own research
-                          to identify and compare industry players, trace
-                          funding transactions and other connections among
-                          companies & analyze market trends. The main
-                          components are: Atlas Search Navigator for
-                          classifying fintechs across technology, business,
-                          and product lines and drilling down into precise
-                          subcategories; Smart Visualize for creating dynamic
-                          maps, trend charts, and other data visualizations;
-                          and the Fintech Profile Pages for diving deep into
-                          startups’ partnerships, use cases, and financials.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Base on the professional experience on fintech
-                          industry, NCC formed a team of 20 skilled members
-                          including PM, Technical Leader, BA, Developers, QA,
-                          DevOps. The tickets in project were devided into two
-                          main flows, the first one for ETL sub-team and the
-                          second one for backend& frontend. The ETL sub-team
-                          was in charged of checking and finding fintech
-                          companies that have not been added to DB via client
-                          source and external source via AWS. The backend &
-                          frontend focused on displaying the fintech companies
-                          that have not been added to internal database.
-                          Testers in the ETL folow needed to query data in DB
-                          to compare with data API returned to each company.
-                          In the Frontend& Backend flow, they had to double
-                          check the features sharing functions such as
-                          realtime company, filter in other features to assure
-                          that there is no mistake with the current data flow.
-                          The main issue in most of tasks is depending on data
-                          from external API so if there was a wrong external
-                          data the team would have to detech and check all of
-                          data flow of ETL and Frontend & Backend to figure
-                          out the mistake. To handle this challenge, the team
-                          is active in implementing, creating test case and
-                          follow data in advance so that can take time and
-                          have plan to solve the arising problem but not
-                          affect the progress of project. With this
-                          professional and effective working manner, NCC has
-                          become the trusted partner of client for 3 years.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-3')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-FS-4" onclick="openPopup('pop-FS-4')">
-                    Investment
-                  </p>
-                  <span class="popuptext" id="pop-FS-4">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          An independent professional services group of
-                          companies located in Singapore, providing a range of
-                          services focused on private equity, venture capital,
-                          mezzanine and other alternative and cross-border
-                          investments throughout Southeast Asia.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          As a web-app to store all information of individuals
-                          and Corporates who focus on private equity, venture
-                          capital, mezzanine, and other alternative and
-                          cross-border investments throughout Southeast Asia.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on experience on developing products for
-                          finance and investment industry, NCC found a
-                          dedicated and skill team of 15 engineers to
-                          implement this project. We use ASP.NET MVC 5/ .NET
-                          framework 4.8/ .NET core 3.1, Razor, Entity
-                          framework 6, Asp.net Identity, AWS sdk, PDF sharp,
-                          Hello Sign, Bootstrap, Jquery for this project.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-4')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-FS-5" onclick="openPopup('pop-FS-5')">
-                    DLT-based trade finance platform
-                  </p>
-                  <span class="popuptext" id="pop-FS-5">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A Blockchain / Distributed Ledger Technology (DLT)
-                          solution provider, offering DLT software
-                          development, deployment, and operations support.
-                          Specializing in building enterprise grade DLT
-                          systems and applications, with a focus on Commercial
-                          Trade, Insurance Technology (InsurTech), and Real
-                          Estate Development industries.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A team can build a DLT-based trade finance platform
-                          which a fully digitized platform to accelerate trade
-                          business by connecting corporates and financiers and
-                          all trade parties in one single place where
-                          operations are automated, transaction processing
-                          time is reduced by using digitally-signed and
-                          committed documents.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          With a wealth of experience on financial domains,
-                          NCC build a team of 10 dedicated engineers to work
-                          on this project. Our smart contract masters use
-                          smart contract guided mechanisms to help the
-                          platform minimize manual interaction. We also use
-                          DTL to provides an audit trail for traceability,
-                          enhances transparency in workflows, mitigates credit
-                          risks in financing transactions, and facilitates
-                          lower fees and barriers to trade.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-5')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-FS-6" onclick="openPopup('pop-FS-6')">
-                    Asset valuation & managementt
-                  </p>
-                  <span class="popuptext" id="pop-FS-6">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A Blockchain / Distributed Ledger Technology (DLT)
-                          solution provider, offering DLT software
-                          development, deployment, and operations support.
-                          Specializing in building enterprise grade DLT
-                          systems and applications, with a focus on Commercial
-                          Trade, Insurance Technology (InsurTech), and Real
-                          Estate Development industries.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A solution using Distributed Ledger Technology (DLT)
-                          to help financial institutions and surveyors
-                          digitize and streamline the processes of asset
-                          valuation and also simplify the complexity of
-                          end-to-end workflows of the asset valuation and
-                          management industry.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on NCC's experience in enterprise mobility,
-                          our mobile team designed a user friendly
-                          web/application with a strong security solution to
-                          protect customer data. Providing the customer with
-                          an analysis on the existing UX/UI, we helped the
-                          customer to refresh all parts of the customer
-                          journey on the application and created a
-                          mobile-first design that reflects their corporate
-                          brand identity.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-6')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-FS-7" onclick="openPopup('pop-FS-7')">
-                    Insurtech
-                  </p>
-                  <span class="popuptext" id="pop-FS-7">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A Blockchain / Distributed Ledger Technology (DLT)
-                          solution provider, offering DLT software
-                          development, deployment, and operations support.
-                          Specializing in building enterprise grade DLT
-                          systems and applications, with a focus on Commercial
-                          Trade, Insurance Technology (InsurTech), and Real
-                          Estate Development industries.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A reliable software partner who can develop a
-                          production-ready platform with greater security,
-                          accountability, transparency, and streamlined and
-                          enhanced user experience. It is designed for Hong
-                          Kong motor insurance companies, intermediaries, the
-                          Transport Department, the Hong Kong Police Force,
-                          and the general public.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC provided a dedicated and skilled team with
-                          around 10 engineers to support the project. By
-                          applying innovative technologies, NCC successfully
-                          delivered the product to design and build a DLT
-                          platform that facilitates the real-time
-                          authentication of motor insurance documents by
-                          multiple parties. Blockchain technology,
-                          Multi-stakeholder Verification, Privacy Protection,
-                          Fraud Prevention, and Interconnectivity are the
-                          outstanding features that makes the product go live
-                          successfully.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-7')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-shopping-cart fa-2xl"></i>
-                  <p class="item-name">Retails & Ecommerce</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" data-bs-target="pop-RE-1" onclick="openPopup('pop-RE-1')">
-                    Restaurant
-                  </p>
-                  <span class="popuptext" id="pop-RE-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>A restaurant system in Australia</td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          Online ordering system for restaurants. A website to
-                          assist eateries and food vendors in increasing
-                          customer traffic to their own ordering websites,
-                          which reduces administration time and costs for the
-                          third-party platform.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          A team of 6 developers are used to build the website
-                          in which QR order, online order, order management
-                          dashboard and menu customization are intergrated for
-                          minimize costs, maximize return and enhance
-                          customers relationship. Retaurants can find more
-                          customer nearby by using Orderich For this case, our
-                          developers team focus on using Python and NodeJs to
-                          create the platform.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-RE-1')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-RE-2" onclick="openPopup('pop-RE-2')">
-                    Trailer retail
-                  </p>
-                  <span class="popuptext" id="pop-RE-2">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          Founded nearly 30 years ago, the company is now the
-                          largest manufacturer, sales and distributionof
-                          trailer in Australia
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A system is created to help customers and
-                          franchisees easily access the trailer company.
-                          Trailer company: can create franchisee accounts,
-                          manage all franchisee and customer actions and
-                          charge customers automatically. Franchisee: can
-                          offer their trailer for rent, manage bookings to
-                          deliver or pick up trailers to customers, and
-                          receive money from customers. Customer: can rent the
-                          trailer and pay the hiring fee by credit card.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on customer needs, we create 3 platforms
-                          including Admin panel, franchisee app and customer
-                          app which are closely linked together. Besides, the
-                          system integrated with stripe to automatically
-                          charge customers periodically helps customers pay
-                          and receive money exactly on time.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-RE-2')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-RE-3" onclick="openPopup('pop-RE-3')">
-                    E-commerce
-                  </p>
-                  <span class="popuptext" id="pop-RE-3">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          An Australian e-commerce company dealing in POD
-                          (printed on demand) products
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A simple designing picture website with many color
-                          styles, presets, layout to print.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC made a team of 6 to develop a website to take
-                          order by uploading designed images and choosing art
-                          styles which are available on site. The website have
-                          many features such as manage account for admin,
-                          login, signup, preview for users. We concentrate on
-                          using PHP, Python, Nextjs when it comes to
-                          technologies.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-RE-3')"></i>
-                  </span>
-                  <p class="detail-pop-title" onclick="openPopup('pop-RE-4')" data-bs-target="pop-RE-4">
-                    Working space
-                  </p>
-                  <span class="popuptext" id="pop-RE-4">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A leading provider of an integrated workspace
-                          booking solution that will simplify the booking of
-                          desks, meeting rooms and collaborative spaces in
-                          Australia
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          The real-time reservation, payment management and
-                          CRM tool designed to integrate seamlessly into your
-                          website. Another version was requested as the old
-                          version is out-dated and lack of functions.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          We formed a team of 5 developers and 2 tester to
-                          find the new solutions for meeting hub and come up
-                          with a different layout for the website. The client
-                          request was analysed throughly and the team
-                          suggested a new layout and solutions for the website
-                          For technology, this project is mainly developed
-                          with PHP.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-RE-4')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-football fa-2xl"></i>
-                  <p class="item-name">Sport</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" onclick="openPopup('pop-Sp-1')" data-bs-target="pop-Sp-1">
-                    Football
-                  </p>
-                  <span class="popuptext" id="pop-Sp-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          An UK-based company specializing in developing
-                          innovative forms of data based sporting analysis, to
-                          provide simple and practical bespoke solutions for
-                          our clients
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A dedicated team to carry out a project on analyzing
-                          football matches and each player through matches in
-                          the UK and US markets. The project consists of 3
-                          sites depending on each other: - A site that
-                          analyzes players and matches for the US U12-U19
-                          market - Analysis of players and matches for the UK
-                          market - A place to store and analyze players,
-                          matches and return data for the other 2 pages.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC gathered up and built a dedicated team with 4
-                          developers and 4 QAs. The selected 4 developers are
-                          qualified in both frontend and backend, able to
-                          communicate with other stakeholders, get along, work
-                          based on the spirit of contribution for the common
-                          goal. The Automation QA has good logic and is able
-                          to code JS (due to the requirement to perform
-                          automation with combination of selenium and
-                          cucumber). 3 manual QA have good thinking, ability
-                          to exchange business with stakeholders and test
-                          manual. Because of the specificity of the project,
-                          the QAs often have to do BA tasks such as analyzing
-                          customer requirements, writing user stories and
-                          supporting the dev team. When approaching the
-                          project, the team work with PO from client to
-                          clarify about the product, deployed functions, and
-                          upcoming functions. Based on the available
-                          documents, the team embarked on business research
-                          and cleared the questions if any. The team always
-                          tries to connect with other stakeholders in the team
-                          in Belfast and India to be able to transparent
-                          requirements, as well as support each other in their
-                          work. Utilize the professional knowledge, skill and
-                          powerful teamwork, the team can promote both
-                          individual and collective strengths to archive the
-                          common goal to complete the product and go live in
-                          the market successfully.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Sp-1')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-book-bookmark fa-2xl"></i>
-                  <p class="item-name">Education</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" data-bs-target="pop-Sp-1" onclick="openPopup('pop-Ed-1')">
-                    Language learning
-                  </p>
-                  <span class="popuptext" id="pop-Ed-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A company specializes in Relational, NoSQL and Big
-                          Data solutions. Its consultants have provided
-                          database services for Fortune 1000 and EMEA
-                          companies, and SMBs since the 1980s
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          An outsourcing team to build a language exchange
-                          system which allows users from around the world to
-                          learn a new language through interactive chat and
-                          social posts.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on customer needs, NCC formed a dedicated team
-                          with developers, testers, technical architect,
-                          business analyst, UX/UI designers and technical
-                          support staff to handle all aspects of development
-                          for the product portfolio: Instant translation,
-                          Language boards, Building profile to gain global
-                          popularity & engaging, Correcting grammar &
-                          spelling, Interact with follower. Agile/scrum model
-                          was applied for the full cycle development so that
-                          after each phase, the team reviewed the portfolio
-                          with the customer to identify the issue and
-                          limitation in the previous phase that needed to be
-                          omitted and areas that needed to be enhanced in the
-                          next phase.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Ed-1')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-Ed-2" onclick="openPopup('pop-Ed-2')">
-                    Certificate management
-                  </p>
-                  <span class="popuptext" id="pop-Ed-2">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A Blockchain / Distributed Ledger Technology (DLT)
-                          solution provider, offering DLT software
-                          development, deployment, and operations support.
-                          Specializing in building enterprise grade DLT
-                          systems and applications, with a focus on Commercial
-                          Trade, Education, Insurance Technology (InsurTech),
-                          and Real Estate Development industries.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A skilled team to develop a certificate management
-                          and verification blockchain system.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          To meet the requirements of client, our team focuses
-                          on blockchain technology and API to not only to
-                          build a digital decentralized system but also
-                          seamlessly integratie to user existing system and
-                          both systems can be operated at the same time for
-                          different purposes that save time at issuing,
-                          sending and verifying certificates. They are
-                          traceable and verifiable, allowing user program
-                          participants to present their credentials and
-                          achievements anytime, anywhere, and turning user
-                          certificates into a referral marketing tool for your
-                          program.This solution also reduced effort and
-                          development time to allow the client to launch the
-                          in a short time.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Ed-2')"></i>
-                  </span>
-                  <p class="detail-pop-title" onclick="openPopup('pop-Ed-3')" data-bs-target="pop-Ed-3">
-                    E-learning system
-                  </p>
-                  <span class="popuptext" id="pop-Ed-3">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A Singaporean company with roots of providing
-                          peer-to-peer learning apps for content exchange
-                          among entrepreneurs from the Founders Forum network,
-                          this company is now building a platform that turns
-                          professional knowledge into revenue.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A professional team to implement an e-learning
-                          platform that allows many organizations to create
-                          courses, learning paths, and assessments for their
-                          employees to learn and evaluate them after a course
-                          or to issue a certificate after completing the
-                          learning path.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC allocate a team of 14 members to build the
-                          product. We use microservices with Java and Postgres
-                          Mysql, deploy on AWS and ec2 dynamoDB, AWS SNS, AWS
-                          SQS, AWS Redshift. With intensive knowledge and
-                          extensive experience in many previous projects, we
-                          satisfy client with the product launched
-                          sucessfully. We also offer excellent maintenance
-                          service for client. Thus, we have esteblished a long
-                          term partnership with client during 5 years.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Ed-3')"></i>
-                  </span>
-                  <p class="detail-pop-title" onclick="openPopup('pop-Ed-4')" data-bs-target="pop-Ed-4">
-                    Edugame
-                  </p>
-                  <span class="popuptext" id="pop-Ed-4">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A global edtech company. It is providing the tools
-                          and asset libraries to digitize the content, collect
-                          data, and make a personalized learning path for
-                          every student. It is a dynamic, all-in-one education
-                          ecosystem that combines class with interactive
-                          activities for use in a traditional or online
-                          classroom. It is specialized inplatform, contents,
-                          curriculum, artificial intelligence, edtech, early
-                          childhood education, and more
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          An e-learning game for children aged 3 to 5 to learn
-                          English. delivers holistic learning through
-                          traditional and digital methods, helping a young
-                          learner’s physical, emotional, social, and creative
-                          development.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Selected and ramped up a team of 9 skilled and
-                          dedicated developers and testers within 10 months.
-                          The team was not only professional on technology and
-                          development but also had game passion so they could
-                          start the projects quickly and deliver product
-                          sucessfully. "
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Ed-4')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-toolbox fa-2xl"></i>
-                  <p class="item-name">Enterprise solution</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" onclick="openPopup('pop-ES-1')" data-bs-target="pop-ES-1">
-                    Work management software
-                  </p>
-                  <span class="popuptext" id="pop-FS-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A ‘customer focused organisation’ with a strong
-                          track record of collaborating with nbn to deliver
-                          new initiatives and technology trials. The company
-                          has provided innovative solutions to the
-                          telecommunications sector, connecting premises to
-                          our clients’ networks since 1990. Over the last 12
-                          years, it has been providing in-home broadband
-                          connection services across a variety of
-                          technologies, including modem connection, testing
-                          and Wi-Fi setup across Australia and New Zealand
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A reliable software partner who can develop web
-                          applications and mobile applications that manage one
-                          of the key parts of their supply chain Web
-                          Application(ST3): - Work management software for
-                          many teams of client - New Zealand. + Control the
-                          progress, results and entire flow of activities of
-                          the team, companion partners. + The work management
-                          needs to be methodical, convenient, as well as
-                          efficient and intelligent. + Management departments
-                          need to monitor and control the whole process
-                          accurately and the system can send information via
-                          mail or message at groups on the system. - Reports,
-                          finance, invoices. + Accurate reporting and
-                          calculations, saving costs and avoiding manual
-                          resources Air Mobile Application(ST3): + Convenient
-                          for task management, easy exchange of work-related
-                          messaging. The system provides the ability to fill
-                          and update work-related forms easily and
-                          efficiently. + Receive work-related notifications
-                          conveniently and easily from the mobile app. + The
-                          application provides the ability to exchange work
-                          through messages easily Scheduler App Web
-                          Application: - The system provides the ability to
-                          easily schedule work for teams and assign to
-                          partners and the ability to query work-related
-                          information easily. B2B web application: - The
-                          system provides easy data exchange between ST3 and
-                          Chorus, ....
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on client's needs, NCC allocated a team of 20
-                          dedicated and skilled engineers support the project
-                          by applying advanced technologies and modern
-                          technological solutions such as: Cross-platform
-                          technology can develop applications on different
-                          platforms such as IOS, ANDROID, UWP and modern
-                          microservice architecture. We have successfully
-                          delivered the product to users across Australia and
-                          New Zealand and support multiple languages ​​for
-                          customers. Based high quality service, we have
-                          established a long-term software partner for more
-                          than 4 years.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-ES-1')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-money-check fa-2xl"></i>
-                  <p class="item-name">Real estate</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" onclick="openPopup('pop-ReE-1')" data-bs-target="pop-FS-1">
-                    Matching platform for landlords and tenants
-                  </p>
-                  <span class="popuptext" id="pop-FS-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          An Australian start-up determined to create a
-                          transparent marketplace to help both landlords and
-                          tenants make better decisions when renting.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A dedicated team to complete existing functions and
-                          develop new features including an app and website
-                          for managing and resolving tenant and lessor
-                          requests, the target market at first is Australia,
-                          then opening expanding to the US, Europe and Asian
-                          countries. Products aimed at end users have the
-                          best, most convenient and effective experience, as
-                          well as efficient management and fulfillment of user
-                          requests.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on client needs, we formed a teams of FEs,
-                          BEs, QA, BA and Designers. We use AI/NODEJS/ANGULAR
-                          JS/ AWS CDK/ IOS SWIFT/ IONIC/AWS CLOUD/GOOGLE
-                          DIALOGFLOW to build an app and a console website.
-                          The app is to answer requests from app users and
-                          reach to agent to solve the issue when needed, the
-                          console website is a place to store user
-                          information, conversations and make requests from
-                          app users. We take the user data from real estate
-                          management businesses and integrated with console
-                          and App. During implementation, we keep close
-                          discussion and team work with PO, PM and Technical
-                          advisor from client side to make sure that
-                          everything is following their expectation and plan.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-FS-1')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-heart-circle-check fa-2xl"></i>
-                  <p class="item-name">Healthcare</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" onclick="openPopup('pop-Hc-1')">
-                    Life sign recognition system
-                  </p>
-                  <span class="popuptext" id="pop-Hc-1" data-bs-target="pop-Hc-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A Japanese company focusing on developing biometric
-                          information monitoring system "FL millimeter-wave
-                          vital sensor" that applies millimeter-wave radar
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A reliable team to develop a system to measure the
-                          people’s chest placement, and estimate people’s
-                          breathing rate and heart rate.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC formed a dedicated team with around 10 engineers
-                          in different skill sets to provide full solutions.
-                          The team has helped the client to develop and
-                          deliver complex features for the core platform,
-                          taking full responsibility for designing,
-                          prototyping and testing new features. Based on the
-                          quality services we have provided over the last 4
-                          years, NCC has become the client’s strategic
-                          software partner in helping the customer expand
-                          their product portfolio and grow the business.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Hc-1')"></i>
-                  </span>
-                  <p class="detail-pop-title" onclick="openPopup('pop-Hc-2')" data-bs-target="pop-Hc-2">
-                    Disease diagnosis app
-                  </p>
-                  <span class="popuptext" id="pop-Hc-2">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>An Australian medical company</td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A professional team to develop an app which can
-                          dianose Covid 19 and some other diseases through
-                          certain indicators and signs. Users can test
-                          themselves at home with the app when it is not
-                          convenient to go to a medical facility.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on client requirements, NCC formed a team of
-                          10 members with 1 Techlead, 1 BA, 2 QAs, 1 Designer
-                          and 5 Developers to implement the project. The BA
-                          with excellent business analysis knowledge and
-                          experience working in medial project worked with
-                          client's PO to clarify every single ... of the
-                          project and make a clear plan for the team. The
-                          Techlead with strong capabilities and experience
-                          defined the tenical architecture for the app with
-                          ..... The team helped client to develop and deliver
-                          the app with outstanding features on schedule. The
-                          products gained a lot of positive comments from
-                          user, helping to detect Covid early and contributing
-                          to preventing the Covid pandemic.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Hc-2')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-shield fa-2xl"></i>
-                  <p class="item-name">Prison management</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" onclick="openPopup('pop-Pm-1')" data-bs-target="pop-FS-1">
-                    Prison management
-                  </p>
-                  <span class="popuptext" id="pop-FS-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A software company specializing in interactive
-                          offender technology solutions. Their solutions
-                          assist offenders in custody, on probation and
-                          serving community sentences to take an active role
-                          in transitioning back into the community
-                          successfully
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A professional team to develop an offender focused
-                          platform, created to accelerate positive change in
-                          the justice system and improve outcomes. This
-                          platform is to support managing inmates in the
-                          prison, staff, and people who have connections with
-                          inmates such as friends and family.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC allocated 12 employees for this project and the
-                          team deployed many functions including
-                          communications, medias, jobs, calendar, request,
-                          meals, sports. The app also supports to manage the
-                          locations and groups within prison, and applications
-                          (Visits, Messaging, Tuckshop, …). User will be
-                          interactive by application, therefore, both website
-                          and mobile app are developed for immate, immate's
-                          relatives, managers.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Pm-1')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-gamepad fa-2xl"></i>
-                  <p class="item-name">Game</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" onclick="openPopup('pop-G-1')" data-bs-target="pop-G-1">
-                    NFT game
-                  </p>
-                  <span class="popuptext" id="pop-G-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>Many game studios and software companies</td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          Since the demand of play-to-earn has been increasing
-                          dramatically recently, NCC received requirements of
-                          many clients from US, Canada, APAC. The games are in
-                          different genres and types such as shooter, match3,
-                          RTS, adventure, etc but they have the common points
-                          are multiplayer and play-to-ern features.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          With professional experience in game development,
-                          especially blockchain/NFT game, NCC form the
-                          specific teams based on the scale of each project.
-                          In some games we cooperate with clients in
-                          development and testing phases while in most of the
-                          game we are incharge for full cycle. Regarding the
-                          technical solutions, we mainly use Unity to support
-                          multi-platforms (PC, Web, Mobile,...) server
-                          Smartfox to support high horizontal & vertical
-                          scalability, and Java spring, MySql & Redis for
-                          backend logic, data storage and catching. Within two
-                          years, we completed and released 3 top ranking game
-                          titles in its genre and still on processing 3 large
-                          scale projects.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-G-1')"></i>
-                  </span>
-                  <p class="detail-pop-title" onclick="openPopup('pop-G-2')" data-bs-target="pop-G-2">
-                    2D/3D game
-                  </p>
-                  <span class="popuptext" id="pop-G-2">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A game studio which can build a game which become
-                          the first of its kind when it comes to multi-player
-                          real-time strategy game. The main concept of this
-                          game folows some legendary battles in Chinese
-                          history.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC allocated a team of 15 engineers including
-                          Techlead, PM, Devs, QAs, Artist & Designers. With
-                          intensive knowlege and professional experience in 3D
-                          video game development, we create for the game a
-                          balanced game mechanic and true strategy, as well as
-                          a fair level playing field to all players so that
-                          the product launched very sucessfully attact
-                          millions of players in the community.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-G-2')"></i>
-                  </span>
-                  <p class="detail-pop-title" onclick="openPopup('pop-G-3')" data-bs-target="pop-G-3">
-                    Edu game
-                  </p>
-                  <span class="popuptext" id="pop-G-3">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A global edtech company. It is providing the tools
-                          and asset libraries to digitize the content, collect
-                          data, and make a personalized learning path for
-                          every student. It is a dynamic, all-in-one education
-                          ecosystem that combines class with interactive
-                          activities for use in a traditional or online
-                          classroom. It is specialized inplatform, contents,
-                          curriculum, artificial intelligence, edtech, early
-                          childhood education, and more
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          An e-learning game for children aged 3 to 5 to learn
-                          English. delivers holistic learning through
-                          traditional and digital methods, helping a young
-                          learner’s physical, emotional, social, and creative
-                          development.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Selected and ramped up a team of 9 skilled and
-                          dedicated developers and testers within 10 months.
-                          The team was not only professional on technology and
-                          development but also had game passion so they could
-                          start the projects quickly and deliver product
-                          sucessfully.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-G-3')"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="bottom-detail">
-                <div class="detail-title">
-                  <i class="fas fa-globe-asia fa-2xl"></i>
-                  <p class="item-name">Social network</p>
-                </div>
-                <div class="content" style="height: 240px">
-                  <p class="detail-pop-title" onclick="openPopup('pop-Sn-1')" data-bs-target="pop-Sn-1">Dating app</p>
-                  <span class="popuptext" id="pop-Sn-1">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A Global Startup based in San Francisco, Tokyo and Hanoi focusing on AI driven solutions for
-                          many industries such as social network, real estate, etc.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          A outsourcing team having the ability to provide end-to-end solutions to develop a dating app
-                          for Japanese people with the folowing standard features
-                          - Dating and Scheduling.
-                          - Matching system based on preferences, hobbies, personality, etc.
-                          - Chat.
-                          - Payment system.
-                          - Mobile application.
-                          - Web administration.
-                          - AWS deployment
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-FS-1')"
+                      >
+                        ESG
+                      </p>
+                      <span class="popuptext" id="pop-FS-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A dynamic and innovative, technology-focused
+                              Singaporean provider of collection, management and
+                              disclosure of material and actionable data
+                              solutions to businesses
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A network for events planner and attendance to
+                              connect and exchange. It is relied on NFC readers
+                              and blockchains. The network strives to be among
+                              the top solutions for resolving the problem of
+                              mistrust between event stakeholders and offering
+                              the ecosystem necessary to produce self-organizing
+                              programmable events.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC create a team of 9 people in which 6 are devs
+                              and 2 are QAs. We came up with the solution of
+                              using tickets which is unique to each event for
+                              atendance to use and exchange for drinks, food,
+                              and others in the event. Every purchase is
+                              contactless which enhance the trust between
+                              stakeholders and event organizer. We built 2
+                              version of the network: One use Stellar and the
+                              other use Polygon. We also utilized React - native
+                              NodeJS and Microservice.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-FS-2')"
+                      >
+                        Financial and Legacy Planning
+                      </p>
+                      <span class="popuptext" id="pop-FS-2">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              Global consulting firm that partners with leaders
+                              in business and society to tackle their most
+                              important challenges and capture their greatest
+                              opportunities
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A centralized location to keep track of all
+                              investment portfolio in mutiple currencies and
+                              owning assets and liabilities.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC used a team of 4 people to analyse and come up
+                              with the solution with back-end, front-end. Both
+                              mobile and web are built following a strictly
+                              schedule to keep up with clients demand. The team
+                              also ensure quality of product as the QA is
+                              allocated. The team delivered the updates for API
+                              integration, features are deployed weekly, the
+                              end-to-end flow for deployment & release run
+                              smoothly. The team mainly used react, graphql, aws
+                              and serverless technology for the hybrid app.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-FS-3')"
+                      >
+                        Research and analysis
+                      </p>
+                      <span class="popuptext" id="pop-FS-3">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              Global consulting firm that partners with leaders
+                              in business and society to tackle their most
+                              important challenges and capture their greatest
+                              opportunities.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A platform for users to conduct their own research
+                              to identify and compare industry players, trace
+                              funding transactions and other connections among
+                              companies & analyze market trends. The main
+                              components are: Atlas Search Navigator for
+                              classifying fintechs across technology, business,
+                              and product lines and drilling down into precise
+                              subcategories; Smart Visualize for creating
+                              dynamic maps, trend charts, and other data
+                              visualizations; and the Fintech Profile Pages for
+                              diving deep into startups’ partnerships, use
+                              cases, and financials.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Base on the professional experience on fintech
+                              industry, NCC formed a team of 20 skilled members
+                              including PM, Technical Leader, BA, Developers,
+                              QA, DevOps. The tickets in project were devided
+                              into two main flows, the first one for ETL
+                              sub-team and the second one for backend& frontend.
+                              The ETL sub-team was in charged of checking and
+                              finding fintech companies that have not been added
+                              to DB via client source and external source via
+                              AWS. The backend & frontend focused on displaying
+                              the fintech companies that have not been added to
+                              internal database. Testers in the ETL folow needed
+                              to query data in DB to compare with data API
+                              returned to each company. In the Frontend& Backend
+                              flow, they had to double check the features
+                              sharing functions such as realtime company, filter
+                              in other features to assure that there is no
+                              mistake with the current data flow. The main issue
+                              in most of tasks is depending on data from
+                              external API so if there was a wrong external data
+                              the team would have to detech and check all of
+                              data flow of ETL and Frontend & Backend to figure
+                              out the mistake. To handle this challenge, the
+                              team is active in implementing, creating test case
+                              and follow data in advance so that can take time
+                              and have plan to solve the arising problem but not
+                              affect the progress of project. With this
+                              professional and effective working manner, NCC has
+                              become the trusted partner of client for 3 years.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-FS-4')"
+                      >
+                        Investment
+                      </p>
+                      <span class="popuptext" id="pop-FS-4">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              An independent professional services group of
+                              companies located in Singapore, providing a range
+                              of services focused on private equity, venture
+                              capital, mezzanine and other alternative and
+                              cross-border investments throughout Southeast
+                              Asia.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              As a web-app to store all information of
+                              individuals and Corporates who focus on private
+                              equity, venture capital, mezzanine, and other
+                              alternative and cross-border investments
+                              throughout Southeast Asia.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on experience on developing products for
+                              finance and investment industry, NCC found a
+                              dedicated and skill team of 15 engineers to
+                              implement this project. We use ASP.NET MVC 5/ .NET
+                              framework 4.8/ .NET core 3.1, Razor, Entity
+                              framework 6, Asp.net Identity, AWS sdk, PDF sharp,
+                              Hello Sign, Bootstrap, Jquery for this project.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-FS-5')"
+                      >
+                        DLT-based trade finance platform
+                      </p>
+                      <span class="popuptext" id="pop-FS-5">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A Blockchain / Distributed Ledger Technology (DLT)
+                              solution provider, offering DLT software
+                              development, deployment, and operations support.
+                              Specializing in building enterprise grade DLT
+                              systems and applications, with a focus on
+                              Commercial Trade, Insurance Technology
+                              (InsurTech), and Real Estate Development
+                              industries.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A team can build a DLT-based trade finance
+                              platform which a fully digitized platform to
+                              accelerate trade business by connecting corporates
+                              and financiers and all trade parties in one single
+                              place where operations are automated, transaction
+                              processing time is reduced by using
+                              digitally-signed and committed documents.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              With a wealth of experience on financial domains,
+                              NCC build a team of 10 dedicated engineers to work
+                              on this project. Our smart contract masters use
+                              smart contract guided mechanisms to help the
+                              platform minimize manual interaction. We also use
+                              DTL to provides an audit trail for traceability,
+                              enhances transparency in workflows, mitigates
+                              credit risks in financing transactions, and
+                              facilitates lower fees and barriers to trade.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-FS-6')"
+                      >
+                        Asset valuation & managementt
+                      </p>
+                      <span class="popuptext" id="pop-FS-6">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A Blockchain / Distributed Ledger Technology (DLT)
+                              solution provider, offering DLT software
+                              development, deployment, and operations support.
+                              Specializing in building enterprise grade DLT
+                              systems and applications, with a focus on
+                              Commercial Trade, Insurance Technology
+                              (InsurTech), and Real Estate Development
+                              industries.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A solution using Distributed Ledger Technology
+                              (DLT) to help financial institutions and surveyors
+                              digitize and streamline the processes of asset
+                              valuation and also simplify the complexity of
+                              end-to-end workflows of the asset valuation and
+                              management industry.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on NCC's experience in enterprise mobility,
+                              our mobile team designed a user friendly
+                              web/application with a strong security solution to
+                              protect customer data. Providing the customer with
+                              an analysis on the existing UX/UI, we helped the
+                              customer to refresh all parts of the customer
+                              journey on the application and created a
+                              mobile-first design that reflects their corporate
+                              brand identity.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
 
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          Based on client needs, NCC formed a dedicated team with 12 engineers that helped customers
-                          handle new features, design, implement and increase test automation. NCC utilized the strength
-                          in AI technology to build a bot which help to collect and analyze the information about hobby,
-                          interest, and the tendency of users, etc, to match them with the suitable partner.
-                          Bachelorapp’s mission is to become the connection among people and bring love and happiness to
-                          the world.
-                          By applying optimal solutions, NCC became the client’s reliable technology partner in 3 years,
-                          helped the client complete the project on time, and expanded the scope of work from sustaining
-                          to full-cycle development.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Sn-1')"></i>
-                  </span>
-                  <p class="detail-pop-title" data-bs-target="pop-Sn-2" onclick="openPopup('pop-Sn-2')">
-                    Social network
-                  </p>
-                  <span class="popuptext" id="pop-Sn-2" data-bs-target="pop-Sn-2">
-                    <table>
-                      <tr>
-                        <th>Clients</th>
-                        <td>
-                          A French software company
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Client Needs</th>
-                        <td>
-                          An outsourcing team with skills and experience to build a social network that allows users to
-                          easily solicit community for their opinions, and preferences.
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Our solutions</th>
-                        <td>
-                          NCC setup a dedicated engineering team with social network domain experiences to implement
-                          this project.
-                          By providing excellent product engineering services, the team received many customer quality
-                          and performance awards and expanded its scope from 1 product to 5 products and increased the
-                          team size to 50 members in total.
-                        </td>
-                      </tr>
-                    </table>
-                    <i class="fas fa-close fa-2xl" onclick="closePopup('pop-Sn-2')"></i>
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-FS-7')"
+                      >
+                        Insurtech
+                      </p>
+                      <span class="popuptext" id="pop-FS-7">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A Blockchain / Distributed Ledger Technology (DLT)
+                              solution provider, offering DLT software
+                              development, deployment, and operations support.
+                              Specializing in building enterprise grade DLT
+                              systems and applications, with a focus on
+                              Commercial Trade, Insurance Technology
+                              (InsurTech), and Real Estate Development
+                              industries.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A reliable software partner who can develop a
+                              production-ready platform with greater security,
+                              accountability, transparency, and streamlined and
+                              enhanced user experience. It is designed for Hong
+                              Kong motor insurance companies, intermediaries,
+                              the Transport Department, the Hong Kong Police
+                              Force, and the general public.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC provided a dedicated and skilled team with
+                              around 10 engineers to support the project. By
+                              applying innovative technologies, NCC successfully
+                              delivered the product to design and build a DLT
+                              platform that facilitates the real-time
+                              authentication of motor insurance documents by
+                              multiple parties. Blockchain technology,
+                              Multi-stakeholder Verification, Privacy
+                              Protection, Fraud Prevention, and
+                              Interconnectivity are the outstanding features
+                              that makes the product go live successfully.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-shopping-cart fa-2xl"></i>
+                    <p class="item-name">Retails & Ecommerce</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-RE-1')"
+                      >
+                        Restaurant
+                      </p>
+                      <span class="popuptext" id="pop-RE-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>A restaurant system in Australia</td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              Online ordering system for restaurants. A website
+                              to assist eateries and food vendors in increasing
+                              customer traffic to their own ordering websites,
+                              which reduces administration time and costs for
+                              the third-party platform.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              A team of 6 developers are used to build the
+                              website in which QR order, online order, order
+                              management dashboard and menu customization are
+                              intergrated for minimize costs, maximize return
+                              and enhance customers relationship. Retaurants can
+                              find more customer nearby by using Orderich For
+                              this case, our developers team focus on using
+                              Python and NodeJs to create the platform.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-RE-2')"
+                      >
+                        Trailer retail
+                      </p>
+                      <span class="popuptext" id="pop-RE-2">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              Founded nearly 30 years ago, the company is now
+                              the largest manufacturer, sales and distributionof
+                              trailer in Australia
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A system is created to help customers and
+                              franchisees easily access the trailer company.
+                              Trailer company: can create franchisee accounts,
+                              manage all franchisee and customer actions and
+                              charge customers automatically. Franchisee: can
+                              offer their trailer for rent, manage bookings to
+                              deliver or pick up trailers to customers, and
+                              receive money from customers. Customer: can rent
+                              the trailer and pay the hiring fee by credit card.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on customer needs, we create 3 platforms
+                              including Admin panel, franchisee app and customer
+                              app which are closely linked together. Besides,
+                              the system integrated with stripe to automatically
+                              charge customers periodically helps customers pay
+                              and receive money exactly on time.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-RE-3')"
+                      >
+                        E-commerce
+                      </p>
+                      <span class="popuptext" id="pop-RE-3">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              An Australian e-commerce company dealing in POD
+                              (printed on demand) products
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A simple designing picture website with many color
+                              styles, presets, layout to print.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC made a team of 6 to develop a website to take
+                              order by uploading designed images and choosing
+                              art styles which are available on site. The
+                              website have many features such as manage account
+                              for admin, login, signup, preview for users. We
+                              concentrate on using PHP, Python, Nextjs when it
+                              comes to technologies.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-RE-4')"
+                      >
+                        Working space
+                      </p>
+                      <span class="popuptext" id="pop-RE-4">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A leading provider of an integrated workspace
+                              booking solution that will simplify the booking of
+                              desks, meeting rooms and collaborative spaces in
+                              Australia
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              The real-time reservation, payment management and
+                              CRM tool designed to integrate seamlessly into
+                              your website. Another version was requested as the
+                              old version is out-dated and lack of functions.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              We formed a team of 5 developers and 2 tester to
+                              find the new solutions for meeting hub and come up
+                              with a different layout for the website. The
+                              client request was analysed throughly and the team
+                              suggested a new layout and solutions for the
+                              website For technology, this project is mainly
+                              developed with PHP.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-football fa-2xl"></i>
+                    <p class="item-name">Sport</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Sp-1')"
+                      >
+                        Football
+                      </p>
+                      <span class="popuptext" id="pop-Sp-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              An UK-based company specializing in developing
+                              innovative forms of data based sporting analysis,
+                              to provide simple and practical bespoke solutions
+                              for our clients
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A dedicated team to carry out a project on
+                              analyzing football matches and each player through
+                              matches in the UK and US markets. The project
+                              consists of 3 sites depending on each other: - A
+                              site that analyzes players and matches for the US
+                              U12-U19 market - Analysis of players and matches
+                              for the UK market - A place to store and analyze
+                              players, matches and return data for the other 2
+                              pages.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC gathered up and built a dedicated team with 4
+                              developers and 4 QAs. The selected 4 developers
+                              are qualified in both frontend and backend, able
+                              to communicate with other stakeholders, get along,
+                              work based on the spirit of contribution for the
+                              common goal. The Automation QA has good logic and
+                              is able to code JS (due to the requirement to
+                              perform automation with combination of selenium
+                              and cucumber). 3 manual QA have good thinking,
+                              ability to exchange business with stakeholders and
+                              test manual. Because of the specificity of the
+                              project, the QAs often have to do BA tasks such as
+                              analyzing customer requirements, writing user
+                              stories and supporting the dev team. When
+                              approaching the project, the team work with PO
+                              from client to clarify about the product, deployed
+                              functions, and upcoming functions. Based on the
+                              available documents, the team embarked on business
+                              research and cleared the questions if any. The
+                              team always tries to connect with other
+                              stakeholders in the team in Belfast and India to
+                              be able to transparent requirements, as well as
+                              support each other in their work. Utilize the
+                              professional knowledge, skill and powerful
+                              teamwork, the team can promote both individual and
+                              collective strengths to archive the common goal to
+                              complete the product and go live in the market
+                              successfully.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-book-bookmark fa-2xl"></i>
+                    <p class="item-name">Education</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Ed-1')"
+                      >
+                        Language learning
+                      </p>
+                      <span class="popuptext" id="pop-Ed-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A company specializes in Relational, NoSQL and Big
+                              Data solutions. Its consultants have provided
+                              database services for Fortune 1000 and EMEA
+                              companies, and SMBs since the 1980s
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              An outsourcing team to build a language exchange
+                              system which allows users from around the world to
+                              learn a new language through interactive chat and
+                              social posts.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on customer needs, NCC formed a dedicated
+                              team with developers, testers, technical
+                              architect, business analyst, UX/UI designers and
+                              technical support staff to handle all aspects of
+                              development for the product portfolio: Instant
+                              translation, Language boards, Building profile to
+                              gain global popularity & engaging, Correcting
+                              grammar & spelling, Interact with follower.
+                              Agile/scrum model was applied for the full cycle
+                              development so that after each phase, the team
+                              reviewed the portfolio with the customer to
+                              identify the issue and limitation in the previous
+                              phase that needed to be omitted and areas that
+                              needed to be enhanced in the next phase.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Ed-2')"
+                      >
+                        Certificate management
+                      </p>
+                      <span class="popuptext" id="pop-Ed-2">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A Blockchain / Distributed Ledger Technology (DLT)
+                              solution provider, offering DLT software
+                              development, deployment, and operations support.
+                              Specializing in building enterprise grade DLT
+                              systems and applications, with a focus on
+                              Commercial Trade, Education, Insurance Technology
+                              (InsurTech), and Real Estate Development
+                              industries.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A skilled team to develop a certificate management
+                              and verification blockchain system.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              To meet the requirements of client, our team
+                              focuses on blockchain technology and API to not
+                              only to build a digital decentralized system but
+                              also seamlessly integratie to user existing system
+                              and both systems can be operated at the same time
+                              for different purposes that save time at issuing,
+                              sending and verifying certificates. They are
+                              traceable and verifiable, allowing user program
+                              participants to present their credentials and
+                              achievements anytime, anywhere, and turning user
+                              certificates into a referral marketing tool for
+                              your program.This solution also reduced effort and
+                              development time to allow the client to launch the
+                              in a short time.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Ed-3')"
+                      >
+                        E-learning system
+                      </p>
+                      <span class="popuptext" id="pop-Ed-3">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A Singaporean company with roots of providing
+                              peer-to-peer learning apps for content exchange
+                              among entrepreneurs from the Founders Forum
+                              network, this company is now building a platform
+                              that turns professional knowledge into revenue.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A professional team to implement an e-learning
+                              platform that allows many organizations to create
+                              courses, learning paths, and assessments for their
+                              employees to learn and evaluate them after a
+                              course or to issue a certificate after completing
+                              the learning path.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC allocate a team of 14 members to build the
+                              product. We use microservices with Java and
+                              Postgres Mysql, deploy on AWS and ec2 dynamoDB,
+                              AWS SNS, AWS SQS, AWS Redshift. With intensive
+                              knowledge and extensive experience in many
+                              previous projects, we satisfy client with the
+                              product launched sucessfully. We also offer
+                              excellent maintenance service for client. Thus, we
+                              have esteblished a long term partnership with
+                              client during 5 years.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Ed-4')"
+                      >
+                        Edugame
+                      </p>
+                      <span class="popuptext" id="pop-Ed-4">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A global edtech company. It is providing the tools
+                              and asset libraries to digitize the content,
+                              collect data, and make a personalized learning
+                              path for every student. It is a dynamic,
+                              all-in-one education ecosystem that combines class
+                              with interactive activities for use in a
+                              traditional or online classroom. It is specialized
+                              inplatform, contents, curriculum, artificial
+                              intelligence, edtech, early childhood education,
+                              and more
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              An e-learning game for children aged 3 to 5 to
+                              learn English. delivers holistic learning through
+                              traditional and digital methods, helping a young
+                              learner’s physical, emotional, social, and
+                              creative development.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Selected and ramped up a team of 9 skilled and
+                              dedicated developers and testers within 10 months.
+                              The team was not only professional on technology
+                              and development but also had game passion so they
+                              could start the projects quickly and deliver
+                              product sucessfully. "
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-toolbox fa-2xl"></i>
+                    <p class="item-name">Enterprise solution</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-ES-1')"
+                      >
+                        Work management software
+                      </p>
+                      <span class="popuptext" id="pop-FS-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A ‘customer focused organisation’ with a strong
+                              track record of collaborating with nbn to deliver
+                              new initiatives and technology trials. The company
+                              has provided innovative solutions to the
+                              telecommunications sector, connecting premises to
+                              our clients’ networks since 1990. Over the last 12
+                              years, it has been providing in-home broadband
+                              connection services across a variety of
+                              technologies, including modem connection, testing
+                              and Wi-Fi setup across Australia and New Zealand
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A reliable software partner who can develop web
+                              applications and mobile applications that manage
+                              one of the key parts of their supply chain Web
+                              Application(ST3): - Work management software for
+                              many teams of client - New Zealand. + Control the
+                              progress, results and entire flow of activities of
+                              the team, companion partners. + The work
+                              management needs to be methodical, convenient, as
+                              well as efficient and intelligent. + Management
+                              departments need to monitor and control the whole
+                              process accurately and the system can send
+                              information via mail or message at groups on the
+                              system. - Reports, finance, invoices. + Accurate
+                              reporting and calculations, saving costs and
+                              avoiding manual resources Air Mobile
+                              Application(ST3): + Convenient for task
+                              management, easy exchange of work-related
+                              messaging. The system provides the ability to fill
+                              and update work-related forms easily and
+                              efficiently. + Receive work-related notifications
+                              conveniently and easily from the mobile app. + The
+                              application provides the ability to exchange work
+                              through messages easily Scheduler App Web
+                              Application: - The system provides the ability to
+                              easily schedule work for teams and assign to
+                              partners and the ability to query work-related
+                              information easily. B2B web application: - The
+                              system provides easy data exchange between ST3 and
+                              Chorus, ....
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on client's needs, NCC allocated a team of
+                              20 dedicated and skilled engineers support the
+                              project by applying advanced technologies and
+                              modern technological solutions such as:
+                              Cross-platform technology can develop applications
+                              on different platforms such as IOS, ANDROID, UWP
+                              and modern microservice architecture. We have
+                              successfully delivered the product to users across
+                              Australia and New Zealand and support multiple
+                              languages ​​for customers. Based high quality
+                              service, we have established a long-term software
+                              partner for more than 4 years.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-money-check fa-2xl"></i>
+                    <p class="item-name">Real estate</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-ReE-1')"
+                      >
+                        Matching platform for landlords and tenants
+                      </p>
+                      <span class="popuptext" id="pop-ReE-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              An Australian start-up determined to create a
+                              transparent marketplace to help both landlords and
+                              tenants make better decisions when renting.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A dedicated team to complete existing functions
+                              and develop new features including an app and
+                              website for managing and resolving tenant and
+                              lessor requests, the target market at first is
+                              Australia, then opening expanding to the US,
+                              Europe and Asian countries. Products aimed at end
+                              users have the best, most convenient and effective
+                              experience, as well as efficient management and
+                              fulfillment of user requests.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on client needs, we formed a teams of FEs,
+                              BEs, QA, BA and Designers. We use
+                              AI/NODEJS/ANGULAR JS/ AWS CDK/ IOS SWIFT/
+                              IONIC/AWS CLOUD/GOOGLE DIALOGFLOW to build an app
+                              and a console website. The app is to answer
+                              requests from app users and reach to agent to
+                              solve the issue when needed, the console website
+                              is a place to store user information,
+                              conversations and make requests from app users. We
+                              take the user data from real estate management
+                              businesses and integrated with console and App.
+                              During implementation, we keep close discussion
+                              and team work with PO, PM and Technical advisor
+                              from client side to make sure that everything is
+                              following their expectation and plan.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-heart-circle-check fa-2xl"></i>
+                    <p class="item-name">Healthcare</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Hc-1')"
+                      >
+                        Life sign recognition system
+                      </p>
+                      <span class="popuptext" id="pop-Hc-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A Japanese company focusing on developing
+                              biometric information monitoring system "FL
+                              millimeter-wave vital sensor" that applies
+                              millimeter-wave radar
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A reliable team to develop a system to measure the
+                              people’s chest placement, and estimate people’s
+                              breathing rate and heart rate.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC formed a dedicated team with around 10
+                              engineers in different skill sets to provide full
+                              solutions. The team has helped the client to
+                              develop and deliver complex features for the core
+                              platform, taking full responsibility for
+                              designing, prototyping and testing new features.
+                              Based on the quality services we have provided
+                              over the last 4 years, NCC has become the client’s
+                              strategic software partner in helping the customer
+                              expand their product portfolio and grow the
+                              business.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Hc-2')"
+                      >
+                        Disease diagnosis app
+                      </p>
+                      <span class="popuptext" id="pop-Hc-2">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>An Australian medical company</td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A professional team to develop an app which can
+                              dianose Covid 19 and some other diseases through
+                              certain indicators and signs. Users can test
+                              themselves at home with the app when it is not
+                              convenient to go to a medical facility.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on client requirements, NCC formed a team of
+                              10 members with 1 Techlead, 1 BA, 2 QAs, 1
+                              Designer and 5 Developers to implement the
+                              project. The BA with excellent business analysis
+                              knowledge and experience working in medial project
+                              worked with client's PO to clarify every single
+                              ... of the project and make a clear plan for the
+                              team. The Techlead with strong capabilities and
+                              experience defined the tenical architecture for
+                              the app with ..... The team helped client to
+                              develop and deliver the app with outstanding
+                              features on schedule. The products gained a lot of
+                              positive comments from user, helping to detect
+                              Covid early and contributing to preventing the
+                              Covid pandemic.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-shield fa-2xl"></i>
+                    <p class="item-name">Prison management</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Pm-1')"
+                      >
+                        Prison management
+                      </p>
+                      <span class="popuptext" id="pop-FS-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A software company specializing in interactive
+                              offender technology solutions. Their solutions
+                              assist offenders in custody, on probation and
+                              serving community sentences to take an active role
+                              in transitioning back into the community
+                              successfully
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A professional team to develop an offender focused
+                              platform, created to accelerate positive change in
+                              the justice system and improve outcomes. This
+                              platform is to support managing inmates in the
+                              prison, staff, and people who have connections
+                              with inmates such as friends and family.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC allocated 12 employees for this project and
+                              the team deployed many functions including
+                              communications, medias, jobs, calendar, request,
+                              meals, sports. The app also supports to manage the
+                              locations and groups within prison, and
+                              applications (Visits, Messaging, Tuckshop, …).
+                              User will be interactive by application,
+                              therefore, both website and mobile app are
+                              developed for immate, immate's relatives,
+                              managers.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-gamepad fa-2xl"></i>
+                    <p class="item-name">Game</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-G-1')"
+                      >
+                        NFT game
+                      </p>
+                      <span class="popuptext" id="pop-G-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>Many game studios and software companies</td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              Since the demand of play-to-earn has been
+                              increasing dramatically recently, NCC received
+                              requirements of many clients from US, Canada,
+                              APAC. The games are in different genres and types
+                              such as shooter, match3, RTS, adventure, etc but
+                              they have the common points are multiplayer and
+                              play-to-ern features.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              With professional experience in game development,
+                              especially blockchain/NFT game, NCC form the
+                              specific teams based on the scale of each project.
+                              In some games we cooperate with clients in
+                              development and testing phases while in most of
+                              the game we are incharge for full cycle. Regarding
+                              the technical solutions, we mainly use Unity to
+                              support multi-platforms (PC, Web, Mobile,...)
+                              server Smartfox to support high horizontal &
+                              vertical scalability, and Java spring, MySql &
+                              Redis for backend logic, data storage and
+                              catching. Within two years, we completed and
+                              released 3 top ranking game titles in its genre
+                              and still on processing 3 large scale projects.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-G-2')"
+                      >
+                        2D/3D game
+                      </p>
+                      <span class="popuptext" id="pop-G-2">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A game studio which can build a game which become
+                              the first of its kind when it comes to
+                              multi-player real-time strategy game. The main
+                              concept of this game folows some legendary battles
+                              in Chinese history.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC allocated a team of 15 engineers including
+                              Techlead, PM, Devs, QAs, Artist & Designers. With
+                              intensive knowlege and professional experience in
+                              3D video game development, we create for the game
+                              a balanced game mechanic and true strategy, as
+                              well as a fair level playing field to all players
+                              so that the product launched very sucessfully
+                              attact millions of players in the community.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-G-3')"
+                      >
+                        Edu game
+                      </p>
+                      <span class="popuptext" id="pop-G-3">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A global edtech company. It is providing the tools
+                              and asset libraries to digitize the content,
+                              collect data, and make a personalized learning
+                              path for every student. It is a dynamic,
+                              all-in-one education ecosystem that combines class
+                              with interactive activities for use in a
+                              traditional or online classroom. It is specialized
+                              inplatform, contents, curriculum, artificial
+                              intelligence, edtech, early childhood education,
+                              and more
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              An e-learning game for children aged 3 to 5 to
+                              learn English. delivers holistic learning through
+                              traditional and digital methods, helping a young
+                              learner’s physical, emotional, social, and
+                              creative development.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Selected and ramped up a team of 9 skilled and
+                              dedicated developers and testers within 10 months.
+                              The team was not only professional on technology
+                              and development but also had game passion so they
+                              could start the projects quickly and deliver
+                              product sucessfully.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-detail">
+                  <div class="detail-title">
+                    <i class="fas fa-globe-asia fa-2xl"></i>
+                    <p class="item-name">Social network</p>
+                  </div>
+                  <div class="content">
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Sn-1')"
+                      >
+                        Dating app
+                      </p>
+                      <span class="popuptext" id="pop-Sn-1">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>
+                              A Global Startup based in San Francisco, Tokyo and
+                              Hanoi focusing on AI driven solutions for many
+                              industries such as social network, real estate,
+                              etc.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              A outsourcing team having the ability to provide
+                              end-to-end solutions to develop a dating app for
+                              Japanese people with the folowing standard
+                              features - Dating and Scheduling. - Matching
+                              system based on preferences, hobbies, personality,
+                              etc. - Chat. - Payment system. - Mobile
+                              application. - Web administration. - AWS
+                              deployment
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              Based on client needs, NCC formed a dedicated team
+                              with 12 engineers that helped customers handle new
+                              features, design, implement and increase test
+                              automation. NCC utilized the strength in AI
+                              technology to build a bot which help to collect
+                              and analyze the information about hobby, interest,
+                              and the tendency of users, etc, to match them with
+                              the suitable partner. Bachelorapp’s mission is to
+                              become the connection among people and bring love
+                              and happiness to the world. By applying optimal
+                              solutions, NCC became the client’s reliable
+                              technology partner in 3 years, helped the client
+                              complete the project on time, and expanded the
+                              scope of work from sustaining to full-cycle
+                              development.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+
+                    <div class="content-popup">
+                      <p
+                        class="detail-pop-title"
+                        onclick="openPopup('pop-Sn-2')"
+                      >
+                        Social network
+                      </p>
+                      <span class="popuptext" id="pop-Sn-2">
+                        <table>
+                          <tr>
+                            <th>Clients</th>
+                            <td>A French software company</td>
+                          </tr>
+                          <tr>
+                            <th>Client Needs</th>
+                            <td>
+                              An outsourcing team with skills and experience to
+                              build a social network that allows users to easily
+                              solicit community for their opinions, and
+                              preferences.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Our solutions</th>
+                            <td>
+                              NCC setup a dedicated engineering team with social
+                              network domain experiences to implement this
+                              project. By providing excellent product
+                              engineering services, the team received many
+                              customer quality and performance awards and
+                              expanded its scope from 1 product to 5 products
+                              and increased the team size to 50 members in
+                              total.
+                            </td>
+                          </tr>
+                        </table>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section-4">
-      <div class="container flex" style="justify-content: center">
-        <div class="left">
-          <span class="flex">
-            <p class="name">GET STARTED</p>
-          </span>
-          <p class="title">Get Started & Tell Us About Your Requirements</p>
-          <p class="desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
-        <div class="right">
-          <div class="grid">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+      </section>
+      <section class="section-4">
+        <div class="container">
+          <div class="left">
+            <span>GET STARTED </span>
+            <h2>Get Started & Tell Us About Your Requirements</h2>
           </div>
-          <input class="input" type="text" placeholder="Subject" />
-          <textarea class="message" rows="4" placeholder="Message"></textarea>
-          <div class="btn">SEND</div>
+          <div class="right">
+            <div class="contact">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <input class="input" type="text" placeholder="Subject" />
+            <textarea class="message" rows="4" placeholder="Message"></textarea>
+            <div class="btn">SEND</div>
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top flex">
-        <h1>Shevia.</h1>
-        <p>
-          Utenim ad minim veniam quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <div class="flex">
-          <input type="email" placeholder="Email" />
-          <div class="btn">SUBSCRIBE</div>
-        </div>
-      </div>
-      <hr />
-      <div class="footer-middle flex">
-        <div class="box">
-          <div class="title">Company</div>
-          <ul>
-            <li>About</li>
-            <li>Investor</li>
-            <li>Clients</li>
-            <li>Legal</li>
-          </ul>
-        </div>
-        <div class="box">
-          <div class="title">Useful Links</div>
-          <ul>
-            <li>News</li>
-            <li>Our Process</li>
-            <li>Team</li>
-            <li>Knowledbase</li>
-          </ul>
-        </div>
-        <div class="box">
-          <div class="title">Services</div>
-          <ul>
-            <li>Mobile Apps</li>
-            <li>Web Apps</li>
-            <li>Custom Applications</li>
-            <li>Digital Marketing</li>
-          </ul>
-        </div>
-        <div class="box">
-          <div class="title">Follow Us</div>
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-        </div>
-        <div class="box grid">
-          <a href="#">
-            <img src="/image/img_1.jpg" />
-          </a>
-          <a href="#">
-            <img src="/image/img_2.jpg" />
-          </a>
-          <a href="#">
-            <img src="/image/img_3.jpg" />
-          </a>
-          <a href="#">
-            <img src="/image/img_4.jpg" />
-          </a>
-          <a href="#">
-            <img src="/image/img_5.jpg" />
-          </a>
-          <a href="#">
-            <img src="/image/img_6.jpg" />
-          </a>
-        </div>
-      </div>
-      <hr />
-      <div class="footer-bottom">
-        <p>Copyright © 2021 Envalab.com</p>
-      </div>
+      </section>
     </div>
-  </footer>
-  <script>
-    function openPopup(id) {
-      var popup = document.getElementById(id);
-      popup.classList.add("show");
-    }
-    function closePopup(id) {
-      var popup = document.getElementById(id);
-      popup.classList.remove("show");
-    }
-    
-    // window.addEventListener("click", ({ target }) => {
-    //   const popups = [...document.getElementsByClassName("content-popup")];
-    //   const popup = target.closest(".content-popup");
-    //   const clickedOnClosedPopup = popup && !popup.classList.contains("show");
-
-    //   popups.forEach((p) => p.classList.remove("show"));
-
-    //   if (clickedOnClosedPopup) popup.classList.add("show");
-    // });
-
-  </script>
-</body>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top flex">
+          <h1>Shevia.</h1>
+          <p>
+            Utenim ad minim veniam quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="flex">
+            <input type="email" placeholder="Email" />
+            <div class="btn">SUBSCRIBE</div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-middle flex">
+          <div class="box">
+            <div class="title">Company</div>
+            <ul>
+              <li>About</li>
+              <li>Investor</li>
+              <li>Clients</li>
+              <li>Legal</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="title">Useful Links</div>
+            <ul>
+              <li>News</li>
+              <li>Our Process</li>
+              <li>Team</li>
+              <li>Knowledbase</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="title">Services</div>
+            <ul>
+              <li>Mobile Apps</li>
+              <li>Web Apps</li>
+              <li>Custom Applications</li>
+              <li>Digital Marketing</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div class="title">Follow Us</div>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+          <div class="box grid">
+            <a href="#">
+              <img src="/image/img_1.jpg" />
+            </a>
+            <a href="#">
+              <img src="/image/img_2.jpg" />
+            </a>
+            <a href="#">
+              <img src="/image/img_3.jpg" />
+            </a>
+            <a href="#">
+              <img src="/image/img_4.jpg" />
+            </a>
+            <a href="#">
+              <img src="/image/img_5.jpg" />
+            </a>
+            <a href="#">
+              <img src="/image/img_6.jpg" />
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <p>Copyright © 2021 Envalab.com</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
