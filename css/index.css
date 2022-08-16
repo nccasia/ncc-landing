@@ -303,13 +303,14 @@
 /*-----------------image---------------------*/
 .section-5 {
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 700px;
     width: 100%;
     position: relative;
     color: white;
     background-position: bottom right;
-    background-image: linear-gradient(190deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg"); 
+    background-image: linear-gradient(240deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg"); 
     opacity: 0.88;
 }
 
@@ -673,7 +674,8 @@
     }
 
     .section-3 .box {
-        width: 93%;
+        width: 100%;
+        padding: 60px 0 120px 0;
     }
 
     .section-3 .wrapper .list_reason {
@@ -720,7 +722,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin: 10% 0 0 30%;
+        margin: 5% 0 0 30%;
         grid-gap: 80px;
     }
 
@@ -798,11 +800,12 @@
     }
 
     .section-1 .bottom .slide {
-        padding: 165% 0 100px 5%;
+        padding: 155% 0 100px 5%;
+        width: 90%;
     }
 
     .section-1 .wrap {
-        margin-top: -240%;
+        margin-top: -225%;
     }
 
     .slide_heading{
@@ -812,5 +815,10 @@
     .section-2 .left .title::before{
         display: none;
     }
+
+    .section-2 .left .box{
+        width: 300px;
+    }
+
 }
 

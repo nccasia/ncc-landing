@@ -70,7 +70,7 @@
     color: white;
 }
 
-@media only screen and (max-width: 768px),(max-width: 414px){
+@media only screen and (max-width: 768px){
     .footer .flex {
         display: block;
         text-align: center;
@@ -103,4 +103,10 @@
     .grid a img {
         width: 85%;
     }
+}
+
+@media only screen and (max-width: 414px){
+    .footer-top .btn {
+        margin: 20px 0 0 3%;
+      }
 }
