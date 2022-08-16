@@ -545,6 +545,7 @@ th {
   .section-4 .container {
     flex-direction: column;
     max-width: 100%;
+    align-items: center;
   }
 
   .section-4 .top {
@@ -572,7 +573,7 @@ th {
   .section-4 .right {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 120px);
     align-items: center;
     gap: 30px;
   }
