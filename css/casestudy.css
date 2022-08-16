@@ -566,6 +566,7 @@ th {
   .section-4 .left h2 {
     text-align: center;
     max-width: calc(100% - 60px);
+    font-size: 40px;
   }
 
   .section-4 .right {
@@ -585,21 +586,21 @@ th {
   }
 
   .section-4 .contact input {
-    width: calc(100% - 120px);
+    width: calc(100% - 135px);
     padding: 15px;
     margin: 0;
     height: 100%;
   }
 
   .section-4 .right .input {
-    width: calc(100% - 120px);
+    width: calc(100% - 135px);
     margin: 0;
     padding: 15px;
     height: 100%;
   }
 
   .section-4 .right .message {
-    width: calc(100% - 120px);
+    width: calc(100% - 135px);
     padding: 15px;
     margin: 0;
     height: 100%;
