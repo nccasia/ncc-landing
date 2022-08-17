@@ -3,6 +3,18 @@
   color: white;
   padding: 100px 0 20px 0;
   font-weight: 500;
+  box-sizing: border-box;
+}
+
+.wrapper_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper_top .logo {
+  width: 56px;
+  height: 56px;
 }
 
 .footer hr {
@@ -16,17 +28,36 @@
 }
 
 .footer-top p {
-  max-width: 500px;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 0.1em;
 }
 
 .footer-top input {
   width: 200px;
-  margin-right: 20px;
+  height: 60px;
   padding-left: 20px;
 }
 
 .footer-top .btn {
   width: 100px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.footer-top .top-left {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.footer-top .top-right {
+  display: flex;
+  width: 100%;
+  gap: 30px;
 }
 
 .footer-middle {
@@ -41,7 +72,7 @@
   text-align: left;
 }
 
-.footer-middle ul li {
+.footer-middle ul li a {
   padding-top: 10px;
   cursor: pointer;
   color: #f2f7fb;
@@ -70,8 +101,21 @@
   color: white;
 }
 
+.submit_subscribe {
+  display: flex;
+  width: 100%;
+}
+
+.submit_subscribe .btn {
+  width: 40%;
+}
+
+.submit_subscribe .email {
+  width: 60%;
+}
+
 @media only screen and (max-width: 767px) {
-  .footer .flex {
+  .footer .wrapper_top {
     display: block;
     text-align: center;
   }
@@ -80,20 +124,38 @@
     text-align: center;
   }
 
+  .footer-top .top-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+  }
+
   .footer-top p {
     max-width: 90%;
     text-align: center;
-    margin: 15px 0 15px 27px;
+    padding: 30px;
   }
 
   .footer-top input {
     width: 80%;
     padding: 15px;
+    height: 100%;
+    margin-right: 0;
   }
 
   .footer-top .btn {
     width: 80%;
-    margin: 20px 0 0 6%;
+    height: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .footer .flex {
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer-middle .box {
@@ -101,6 +163,48 @@
   }
 
   .grid a img {
-    width: 85%;
+    width: 60%;
+  }
+
+  .submit_subscribe {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .submit_subscribe .email {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .footer-top .wrapper_top {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+    padding: 60px;
+  }
+
+  .footer-top input {
+    width: 100%;
+  }
+
+  .footer-middle .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-middle {
+    padding: 60px;
+  }
+
+  .footer-top input {
+    width: 100%;
+  }
+
+  .submit_subscribe .btn {
+    width: 70%;
+  }
+
+  .submit_subscribe .email {
+    width: 30%;
   }
 }

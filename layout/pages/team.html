@@ -26,112 +26,136 @@
     <title>NCC - Team - Welcome to Shevia</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-left">
-          <div
+        <div
           class="header-title"
           style="display: flex; align-items: center; gap: 5px"
-          >
+        >
           <img
-              src="/image/logo.png"
-              alt="logo-ncc"
-              style="width: 40px; height: 40px"
+            src="/image/logo.png"
+            alt="logo-ncc"
+            style="width: 56px; height: 56px"
           />
-          </div>
-          <div class="header-menu">
+        </div>
+        <div class="header-menu">
           <ul class="menu-content">
-              <li class="menu-item">
+            <li class="menu-item">
               <a href="./index.html">Home</a>
-              </li>
-              <li class="menu-item"><a href="./about.html">About</a></li>
-              <li class="menu-item">
+            </li>
+            <li class="menu-item"><a href="./about.html">About</a></li>
+            <li class="menu-item">
               <a href="#"
-                  ><span>Pages <i class="fa-solid fa-angle-down"></i></span
+                ><span>Pages <i class="fa-solid fa-angle-down"></i></span
               ></a>
               <ul class="menu-dropdown">
-                  <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
-                  <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
-                  <li><a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    
+                    href="/pages/service"
+                    >SERVICE</a
+                  >
+                </li>
+                <li><a style="color: #ff7d90" class="dropdown-item" href="/pages/team">TEAM</a></li>
+                <li>
+                  <a class="dropdown-item" href="/pages/casestudy"
+                    >CASE STUDY</a
+                  >
+                </li>
               </ul>
-              </li>
-              <li class="menu-item"><a href="./contact.html">Contact</a></li>
+            </li>
+            <li class="menu-item"><a href="./contact.html">Contact</a></li>
           </ul>
-          </div>
+        </div>
       </div>
       <div class="navbar_menu">
-          <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>
       </div>
       <div class="header-right">
-          <div class="header-button">
+        <div class="header-button">
           <button class="header-btn" type="button">Get Quoatation</button>
-          </div>
-          <span class="nav-bar">
-          <i id="openIcon" class="fa-solid fa-bars fa-xl" onclick="openSidebar()"></i>
-          </span>
+        </div>
+        <span class="nav-bar">
+          <i
+            id="openIcon"
+            class="fa-solid fa-bars fa-xl"
+            onclick="openSidebar()"
+          ></i>
+        </span>
       </div>
     </header>
     <div class="small_menu">
       <ul class="menu-content">
-          <li class="menu-item">
-              <a href="**">HOME</a>
-          </li>                
-          <li class="menu-item">
-              <a href="/about">ABOUT</a>
-          </li>
-          <li class="menu-item">
-              <a href="#"><span>PAGES <i class="fa-solid fa-angle-down"></i></span
-                  ></span></a>
-              <ul class="menu-dropdown">
-                  <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
-                  <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
-                  <li><a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a></li>
-              </ul>
-          </li>
-          <li class="menu-item"><a href="./contact.html">CONTACT</a></li>
+        <li class="menu-item">
+          <a href="**">HOME</a>
+        </li>
+        <li class="menu-item">
+          <a href="/about">ABOUT</a>
+        </li>
+        <li class="menu-item">
+          <a href="#"
+            ><span>PAGES <i class="fa-solid fa-angle-down"></i></span
+          ></a>
+          <ul class="menu-dropdown">
+            <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
+            <li><a class="dropdown-item" style="color: #ff7d90" href="/pages/team">TEAM</a></li>
+            <li>
+              <a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="./contact.html">CONTACT</a></li>
       </ul>
     </div>
     <div class="sidebar" id="sidebar">
-          <i id="closeIcon" class="fa-solid fa-xmark" onclick="closeSidebar()" style="font-size:24px ;"></i>
-          <div class="wrapper">
-          <p class="sidebar_header">Shevia</p>
-          <p class="sidebar_desc">luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-          <p class="sidebar_name">Services</p>
-          <ul>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">Mobile Development</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">Web Development</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">
-                      Data Science</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">IoT Development</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">Enterprise Application</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">User Interfice Design</p>
-              </li>
-          </ul>
-          <p class="sidebar_name">Follow Us</p>
-          <ul class="flex">
-              <li><i class="icon fa-brands fa-facebook"></i></li>
-              <li><i class="icon fa-brands fa-twitter"></i></li>
-              <li><i class="icon fa-brands fa-linkedin"></i></li>
-              <li><i class="icon fa-brands fa-youtube"></i></li>
-          </ul>
-  </div>
-    </div> -->
+      <i
+        id="closeIcon"
+        class="fa-solid fa-xmark"
+        onclick="closeSidebar()"
+        style="font-size: 24px"
+      ></i>
+      <div class="wrapper">
+        <p class="sidebar_header">Shevia</p>
+        <p class="sidebar_desc">
+          luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <p class="sidebar_name">Services</p>
+        <ul>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Mobile Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Web Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Data Science</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">IoT Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Enterprise Application</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">User Interfice Design</p>
+          </li>
+        </ul>
+        <p class="sidebar_name">Follow Us</p>
+        <ul class="flex">
+          <li><i class="icon fa-brands fa-facebook"></i></li>
+          <li><i class="icon fa-brands fa-twitter"></i></li>
+          <li><i class="icon fa-brands fa-linkedin"></i></li>
+          <li><i class="icon fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
     <div class="section-container">
       <div class="section-1">
         <div class="container">

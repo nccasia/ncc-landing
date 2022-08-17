@@ -329,18 +329,22 @@
   border-width: 1px 1px 1px 1px;
   font-size: 16px;
   min-height: 47px;
-  padding: 6px 16px;
+  padding: 6px 0 0 0;
   border-radius: 4px;
   width: calc(100% / 2);
 }
 
-.section_6 .right .btn {
-  width: 35%;
+.section_6 .right .btn_send {
+  width: 40%;
+  color: white;
   text-align: center;
   margin-top: 20px;
+  background-color: var(--e-global-color-primary);
+  padding: 15px;
+  border-radius: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .btn {
     margin-left: 40%;
   }
@@ -375,6 +379,7 @@
 
   .section_2 .left {
     width: 100%;
+    padding: 60px 0 0 0;
   }
 
   .section_2 .desc {
@@ -481,7 +486,7 @@
 
   .section_5 .grid {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 35%;
+    margin-left: 25%;
   }
 
   .section_5 .titles {
@@ -508,14 +513,53 @@
     margin: 20px 20px 0 0;
   }
 
+  .section_6 .right input {
+    width: 80%;
+  }
+
   .section_6 .right .input {
     margin: 20px 20px 0 0;
-    width: 50%;
+    width: 80%;
+  }
+  .section_6 .right .btn {
+    width: 80%;
+    margin-left: 30px;
+  }
+  .section_6 .right .btn_send {
+    width: 75%;
+    margin-left: 8%;
   }
 }
 
 @media only screen and (max-width: 414px) {
+  .section_1 .name {
+    font-size: 25px;
+  }
+
+  .section_2 .left .name {
+    text-align: center;
+    margin-left: 0;
+  }
+  .section_6 .right input {
+    width: 80%;
+  }
+
+  .section_6 .right .input {
+    width: 80%;
+  }
+
+  .section_6 .right .btn {
+    width: 80%;
+    margin-left: 3%;
+  }
+
   .section_5 .grid {
     margin-left: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+  .section_3 .counter_number {
+    font-size: 40px;
   }
 }

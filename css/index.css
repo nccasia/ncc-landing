@@ -1,4 +1,12 @@
 /*-------------------section-1---------------*/
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .section-1 .top {
   background-color: #f2f7fb;
   padding: 50px 0 40px 20px;
@@ -184,24 +192,25 @@
 .section-3 .box {
   background-color: var(--e-global-color-secondary);
   width: 60%;
+  position: relative;
   padding: 60px 15px 120px 30px;
 }
 
 .section-3 .title {
   color: #ff7d90;
   text-transform: uppercase;
-  margin-left: 130px;
+
   font-size: 16px;
   text-align: left;
 }
 
 .section-3 .title::before {
+  display: inline-block;
   content: "";
-  position: absolute;
-  width: 120px;
-  height: 1px;
-  background: var(--e-global-color-primary);
-  margin: 10px 0 0 -130px;
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 30%;
+  margin: 0 1rem;
+  transform: translateY(-0.3rem);
 }
 
 .section-3 .introduct {
@@ -220,19 +229,38 @@
 
 .section-3 .item {
   padding-top: 10px;
+  display: flex;
+  align-items: center;
 }
 .section-3 .item i {
   margin-right: 10px;
 }
 
-.section-3 .btn {
-  width: 180px;
+.owl-carousel .owl-nav {
+  display: none;
 }
 
-.section-3 .btn p {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-left: 15px;
+.image_2 {
+  position: relative;
+  width: 45%;
+  background-size: cover;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-image: url("../image/img_4.jpg");
+}
+
+.site_slide {
+  background-color: white;
+  width: 105%;
+  margin-left: 30%;
+  z-index: 99;
+  margin-top: 77%;
+  position: absolute;
+}
+
+.slide img {
+  width: 160px;
+  height: 100px;
 }
 
 /*------------------services-----------------*/
@@ -242,11 +270,11 @@
 }
 
 .section-4 .top .title {
-  color: var(--e-global-color-secondary);
+  color: var(--e-gloval-color-secondary);
   font-size: 50px;
   text-transform: capitalize;
   line-height: 1.1em;
-  margin: 25px 0 25px 0;
+  padding: 25px 0 25px 0;
   text-align: center;
 }
 
@@ -281,8 +309,6 @@
   color: var(--e-global-color-secondary);
   font-size: 21px;
   line-height: 1.4em;
-  /* margin: 10px;
-  text-align: center; */
 }
 
 .section-4 .bottom .detail {
@@ -584,11 +610,7 @@
   width: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-  /* .container {
-      width: 100%;
-  } */
-
+@media only screen and (max-width: 767px) {
   .section-1 .top .name {
     text-align: center;
   }
@@ -604,7 +626,7 @@
     margin-left: 50%;
     width: 50%;
     position: absolute;
-    margin-top: -100%;
+    margin-top: -99%;
   }
 
   .wrap .box_content {
@@ -658,8 +680,8 @@
     margin-bottom: 10px;
   }
 
-  .section-2 .left .title:last-child::before {
-    width: 260px;
+  .section-2 .left .title::before {
+    display: none;
   }
 
   .section-2 .left .box {
@@ -671,16 +693,45 @@
   }
 
   .section-3 .flex {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-3 .introduct {
+    text-align: center;
   }
 
   .section-3 img {
     width: 100%;
   }
 
+  .image_2 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding: 0;
+  }
+
+  .site_slide {
+    width: 60%;
+    margin-left: 0;
+    height: 100px;
+    margin-top: 52%;
+  }
+
+  .slide img {
+    padding: 10px;
+  }
+
   .section-3 .box {
     width: 100%;
     padding: 60px 0 120px 0;
+  }
+
+  .section-3 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .section-3 .wrapper .list_reason {
@@ -799,6 +850,30 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-1 .bottom .slide {
+    padding: 40% 0 100px 5%;
+  }
+
+  .section-2 .right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    max-width: 100%;
+    width: 20%;
+  }
+
+  .section-2 .right .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .wrap {
+    margin-left: 56%;
+    margin-top: -75%;
+  }
+}
 @media only screen and (max-width: 414px) {
   .section-1 .image {
     height: 800px;
@@ -823,5 +898,9 @@
 
   .section-2 .left .box {
     width: 300px;
+  }
+
+  .site_slide {
+    margin-top: 100%;
   }
 }

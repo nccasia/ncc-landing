@@ -9,6 +9,10 @@ function openSidebar() {
   document.getElementById("sidebar").style.display = "block";
 }
 
+function closeSidebar() {
+  document.getElementById("sidebar").style.display = "none";
+}
+
 function toggleItem(id1, id2, itemTitle, itemContent) {
   document.getElementById(id1).classList.toggle("none");
   document.getElementById(id2).classList.toggle("none");
