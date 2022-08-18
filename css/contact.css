@@ -34,7 +34,7 @@
   display: inline-block;
   content: "";
   border-top: 1px solid var(--e-global-color-primary);
-  width: 4rem;
+  width: 15%;
   margin: 0 1rem;
   transform: translateY(0.5em);
 }
@@ -164,11 +164,20 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  color: var(--e-global-color-secondary);
+  color: var(--e-global-color-primary);
   text-transform: uppercase;
   align-items: flex-start;
-  height: 44px;
-  font-size: 40px;
+  font-size: 16px;
+}
+
+.contact-detail span::before,
+.contact-detail span::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 15%;
+  margin: 0 1rem;
+  transform: translateY(0.5em);
 }
 
 .contact-detail h2 {
@@ -196,7 +205,6 @@
 .contact-detail .contact {
   display: flex;
   width: 100%;
-
   gap: 15px;
   height: 100%;
 }
@@ -233,35 +241,56 @@
 
 .section-3 {
   width: 100%;
+  box-sizing: border-box;
 }
 
-.section-3 .head {
+.section-3 .head-title {
+  width: 100%;
+}
+
+.section-3 span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  text-transform: uppercase;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.section-3 span::before,
+.section-3 span::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 15%;
+  margin: 0 1rem;
+  transform: translateY(0.7em);
+}
+
+.section-3 .head-title h1 {
   width: 100%;
   text-align: center;
   font-size: 50px;
+  font-weight: 500;
   text-transform: capitalize;
-  height: 44px;
   color: var(--e-global-color-secondary);
+  padding: 30px;
+  box-sizing: border-box;
 }
 
-.section-3 .phone {
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: var(--e-global-color-secondary);
-  height: 44px;
-}
-
-.section-3 .email {
+.section-3 .head-title p {
   color: var(--e-global-color-secondary);
   width: 100%;
   text-align: center;
-  height: 44px;
   font-size: 24px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
-.section-3 .email a {
+.section-3 .head-title p a {
   color: var(--e-global-color-primary);
   font-style: italic;
 }
@@ -347,6 +376,7 @@
     width: 100%;
     height: 50%;
     padding: 0;
+    gap: 0;
   }
 
   .section-1-content span {
@@ -357,6 +387,14 @@
     width: 100%;
     height: 50%;
     margin-top: 30px;
+  }
+
+  .section-1-content h1 {
+    font-size: 40px;
+  }
+
+  .section-1-content p {
+    padding: 30px;
   }
 
   .contact {
@@ -379,10 +417,26 @@
 
   .section-2-img {
     width: 100%;
+    height: 440px;
   }
 
   .section-2-content {
     width: 100%;
+  }
+
+  .contact-detail {
+    padding: 30px;
+  }
+
+  .section-3 span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section-3 h1 {
+    font-size: 40px;
+    line-height: 1em;
   }
 
   .section-3 .address {
