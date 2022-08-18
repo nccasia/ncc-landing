@@ -218,7 +218,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     color: white;
-    margin:20px 0 20px 0;
+    margin:20px 0 20px 40px;
 }
 
 .section-3 .item {
