@@ -942,6 +942,10 @@
         font-size: 40px;
     }
 
+    .section-2 .flex_section2 {
+        flex-direction: column;
+    }
+    
     .section-2 .left .title::before{
         display: none;
     }

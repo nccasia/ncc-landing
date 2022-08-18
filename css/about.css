@@ -279,13 +279,50 @@
     background-color: var(--e-global-color-9bed8f9);
 }
 
+.flex_section6{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_img {
+    display: flex;
+    justify-content: space-around;
+}
+
 .section_6 .flex {
     justify-content: space-between;
+}
+
+.section_6 .left .box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    height: 50%;
+}
+
+.section_6 .left img {
+    width: 120px;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var( --e-global-color-2c6ecd4 );
+}
+
+.section_6 .left img:hover {
+    opacity: 0.5;
+}
+
+.section_6 h4 {
+    color: var(--e-global-color-secondary);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3em;
 }
 
 .section_6 .middle {
     max-width: 300px;
     padding: 20px 30px;
+    margin-left: 40px;
 }
 
 .desc {
@@ -498,8 +535,9 @@
         margin-left: 0;
     }
 
-    .section_6 .flex {
-        display: block;
+    .flex_section6 {
+        flex-direction: column;
+        justify-content: normal;
     }
 
     .section_6 .middle {
@@ -544,6 +582,16 @@
         text-align: center;
         margin-left: 0;
     }
+
+    .section_5 .grid{
+        margin-left: 5%;
+    }
+
+    .section_6 .left {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     .section_6 .right input{
         width: 80%;
     }
@@ -557,8 +605,13 @@
         margin-left: 3%;
     }
 
-    .section_5 .grid{
-        margin-left: 5%;
+    .flex_img {
+        flex-direction: column;
+    }
+
+    .section_6 .flex_icon {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -569,5 +622,26 @@
     
     .section_6 .right .input {
         width: 99%;
+    }
+
+    .section_6 .left .box {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .section_6 .wrapper {
+        padding-left: 20px;
+    }
+
+    .section_6 h4 {
+        margin-top: 60px;
+    }
+
+    .section_6 .right {
+        margin-top: 20px;
+        padding: 0 20px 0 20px;
+    }
+
+    .flex_section6 {
+        flex-direction: column;
     }
 }
