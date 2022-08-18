@@ -562,8 +562,12 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1025px){
+@media (min-width: 768px) and (max-width: 1025px){
     .section_3 .counter_number{
         font-size: 40px;
-    } 
+    }
+    
+    .section_6 .right .input {
+        width: 99%;
+    }
 }
