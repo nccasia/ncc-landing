@@ -263,7 +263,7 @@
 }
 
 .section-4 .top .title {
-    color: var(--e-gloval-color-secondary);
+    color:  var(--e-global-color-secondary);
     font-size: 50px;
     text-transform: capitalize;
     line-height: 1.1em;
