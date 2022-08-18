@@ -32,6 +32,11 @@
   padding: 30px;
 }
 
+.header-title img {
+  width: 56px;
+  height: 56px;
+}
+
 .header-title h3 {
   color: var(--e-global-color-secondary);
   font-family: var(--e-global-typography-font-family), Sans-serif;

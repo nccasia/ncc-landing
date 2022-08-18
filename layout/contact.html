@@ -21,114 +21,142 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
       rel="stylesheet"
     />
-    <title>About</title>
+
+    <link rel="icon" href="/image/logo.png" type="image/png" />
+    <title>Contact</title>
   </head>
   <body>
     <header class="header">
       <div class="header-left">
-          <div
+        <div
           class="header-title"
           style="display: flex; align-items: center; gap: 5px"
-          >
+        >
           <img
-              src="/image/logo.png"
-              alt="logo-ncc"
-              style="width: 40px; height: 40px"
+            src="/image/logo.png"
+            alt="logo-ncc"
+            style="width: 56px; height: 56px"
           />
-          </div>
-          <div class="header-menu">
+        </div>
+        <div class="header-menu">
           <ul class="menu-content">
-              <li class="menu-item">
+            <li class="menu-item">
               <a href="./index.html">Home</a>
-              </li>
-              <li class="menu-item"><a href="./about.html">About</a></li>
-              <li class="menu-item">
+            </li>
+            <li class="menu-item"><a href="./about.html">About</a></li>
+            <li class="menu-item">
               <a href="#"
-                  ><span>Pages <i class="fa-solid fa-angle-down"></i></span
+                ><span>Pages <i class="fa-solid fa-angle-down"></i></span
               ></a>
               <ul class="menu-dropdown">
-                  <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
-                  <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
-                  <li><a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a></li>
+                <li>
+                  <a class="dropdown-item" href="/pages/service">SERVICE</a>
+                </li>
+                <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
+                <li>
+                  <a class="dropdown-item" href="/pages/casestudy"
+                    >CASE STUDY</a
+                  >
+                </li>
               </ul>
-              </li>
-              <li class="menu-item"><a href="./contact.html">Contact</a></li>
+            </li>
+            <li class="menu-item">
+              <a style="color: #ff7d90" href="./contact.html">Contact</a>
+            </li>
           </ul>
-          </div>
+        </div>
       </div>
       <div class="navbar_menu">
-          <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>
       </div>
       <div class="header-right">
-          <div class="header-button">
+        <div class="header-button">
           <button class="header-btn" type="button">Get Quoatation</button>
-          </div>
-          <span class="nav-bar">
-          <i id="openIcon" class="fa-solid fa-bars fa-xl" onclick="openSidebar()"></i>
-          </span>
+        </div>
+        <span class="nav-bar">
+          <i
+            id="openIcon"
+            class="fa-solid fa-bars fa-xl"
+            onclick="openSidebar()"
+          ></i>
+        </span>
       </div>
     </header>
     <div class="small_menu">
       <ul class="menu-content">
-          <li class="menu-item">
-              <a href="**">HOME</a>
-          </li>                
-          <li class="menu-item">
-              <a href="/about">ABOUT</a>
-          </li>
-          <li class="menu-item">
-              <a href="#"><span>PAGES <i class="fa-solid fa-angle-down"></i></span
-                  ></span></a>
-              <ul class="menu-dropdown">
-                  <li><a class="dropdown-item" href="/pages/service">SERVICE</a></li>
-                  <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
-                  <li><a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a></li>
-              </ul>
-          </li>
-          <li class="menu-item"><a href="./contact.html">CONTACT</a></li>
+        <li class="menu-item">
+          <a href="**">HOME</a>
+        </li>
+        <li class="menu-item">
+          <a href="/about">ABOUT</a>
+        </li>
+        <li class="menu-item">
+          <a href="#"
+            ><span>PAGES <i class="fa-solid fa-angle-down"></i></span
+          ></a>
+          <ul class="menu-dropdown">
+            <li>
+              <a class="dropdown-item" href="/pages/service">SERVICE</a>
+            </li>
+            <li><a class="dropdown-item" href="/pages/team">TEAM</a></li>
+            <li>
+              <a class="dropdown-item" href="/pages/casestudy">CASE STUDY</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item">
+          <a style="color: #ff7d90" href="./contact.html">CONTACT</a>
+        </li>
       </ul>
     </div>
     <div class="sidebar" id="sidebar">
-          <i id="closeIcon" class="fa-solid fa-xmark" onclick="closeSidebar()" style="font-size:24px ;"></i>
-          <div class="wrapper">
-          <p class="sidebar_header">Shevia</p>
-          <p class="sidebar_desc">luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-          <p class="sidebar_name">Services</p>
-          <ul>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">Mobile Development</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">Web Development</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">
-                      Data Science</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">IoT Development</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">Enterprise Application</p>
-              </li>
-              <li class="flex">
-                  <i class="fa-solid fa-check"></i>
-                  <p class="sidebar_item">User Interfice Design</p>
-              </li>
-          </ul>
-          <p class="sidebar_name">Follow Us</p>
-          <ul class="flex">
-              <li><i class="icon fa-brands fa-facebook"></i></li>
-              <li><i class="icon fa-brands fa-twitter"></i></li>
-              <li><i class="icon fa-brands fa-linkedin"></i></li>
-              <li><i class="icon fa-brands fa-youtube"></i></li>
-          </ul>
-  </div>
+      <i
+        id="closeIcon"
+        class="fa-solid fa-xmark"
+        onclick="closeSidebar()"
+        style="font-size: 24px"
+      ></i>
+      <div class="wrapper">
+        <p class="sidebar_header">Shevia</p>
+        <p class="sidebar_desc">
+          luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <p class="sidebar_name">Services</p>
+        <ul>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Mobile Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Web Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Data Science</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">IoT Development</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">Enterprise Application</p>
+          </li>
+          <li class="flex">
+            <i class="fa-solid fa-check"></i>
+            <p class="sidebar_item">User Interfice Design</p>
+          </li>
+        </ul>
+        <p class="sidebar_name">Follow Us</p>
+        <ul class="flex">
+          <li><i class="icon fa-brands fa-facebook"></i></li>
+          <li><i class="icon fa-brands fa-twitter"></i></li>
+          <li><i class="icon fa-brands fa-linkedin"></i></li>
+          <li><i class="icon fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
     </div>
     <div class="section-container">
       <div class="section-1">
@@ -147,67 +175,134 @@
       </div>
       <div class="section-2">
         <div class="container">
-          <div class="boxImage"></div>
-          <div class="content1">
-            <div class="boxContent">
-              <p class="name">GET IN TOUCH</p>
-              <p class="massage">Send Us Message</p>
-              <p class="a">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-              <div class="grid">
-                <input class="name1" type="name" placeholder="Name" />
-                <input class="email" type="email" placeholder="Email" />
+          <div class="section-2-img"></div>
+          <div class="section-2-content">
+            <div class="container">
+              <div class="contact-detail">
+                <div class="title">
+                  <span>get in touch</span>
+                  <h2>Send us message</h2>
+                </div>
+                <div class="contact">
+                  <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                </div>
+                <input class="input" type="text" placeholder="Subject" />
+                <textarea
+                  class="message"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+                <div class="btn">SEND</div>
               </div>
-              <div class="grid">
-                <input class="phone" type="phone" placeholder="Phone" />
-                <input class="subject" type="subject" placeholder="Subject" />
-              </div>
-
-              <textarea
-                class="message1"
-                rows="4"
-                placeholder="Message"
-              ></textarea>
-
-              <div class="btn">SEND</div>
             </div>
           </div>
-          <div class="headOffince">
-            <p>contact us</p>
-            <h2 class="head">Head Office</h2>
-            <div class="upton">
-              <p>HOTLINE: (+84) 24 6687 4606</p>
-              <p>EMAIL: info@ncc.asia</p>
-              <p>
-                HA NOI 1: 5th Floor, A2 Ecolife Building, 58 To Huu St., Nam Tu
-                Liem Dist., Hanoi, Vietnam.
-              </p>
-              <p>
-                HA NOI 2: 7th Floor, 8 Pham Hung St., Cau Giay Dist., Hanoi,
-                Vietnam.
-              </p>
-              <p>
-                SAI GON 1: 5th Floor, The Office, 340/15A Ung Van Khiem St.,
-                Binh Thanh Dist., HCMC, Vietnam.
-              </p>
-              <p>
-                SAI GON 2: 1th Floor, Phong Phu Tower, 93/10 Quang Trung, Kp1,
-                Hiep Phu Ward, Thu Duc, HCMC, Vietnam.
-              </p>
-              <p>
-                DA NANG: 4th Floor, Ricco Building, 363 Nguyen Huu Tho St., Cam
-                Le Dist., Da Nang, Vietnam.
-              </p>
-              <p>
-                VINH: 4th Floor, 138 Ha Huy Tap St., Vinh City, Nghe An
-                Province, Vietnam.
-              </p>
-              <p>
-                QUY NHON: 3th Floor, 307 Nguyen Thi Minh Khai St., Quy Nhon
-                City, Binh Dinh Province, Vietnam.
-              </p>
+        </div>
+      </div>
+      <div class="section-3">
+        <div class="head-title">
+          <h1 class="head">contact us</h1>
+          <p class="phone">HOTLINE: (+84) 24 6687 4606</p>
+          <p class="email">EMAIL: <a href="#">info@ncc.asia</a></p>
+        </div>
+        <div class="address">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/image/logo.png" alt="Avatar" />
+              </div>
+              <div class="flip-card-back">
+                <h2>Head Office</h2>
+                <h1>HA NOI</h1>
+                <p>
+                  HA NOI 1: 5th Floor, A2 Ecolife Building, 58 To Huu St., Nam
+                  Tu Liem Dist., Hanoi, Vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/image/logo.png" alt="Avatar" />
+              </div>
+              <div class="flip-card-back">
+                <h1>HA NOI</h1>
+                <p>
+                  HA NOI 2: 7th Floor, 8 Pham Hung St., Cau Giay Dist., Hanoi,
+                  Vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/image/logo.png" alt="Avatar" />
+              </div>
+              <div class="flip-card-back">
+                <h1>SAI GON</h1>
+                <p>
+                  SAI GON 1: 5th Floor, The Office, 340/15A Ung Van Khiem St.,
+                  Binh Thanh Dist., HCMC, Vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/image/logo.png" alt="Avatar" />
+              </div>
+              <div class="flip-card-back">
+                <h1>SAI GON</h1>
+                <p>
+                  SAI GON 2: 1th Floor, Phong Phu Tower, 93/10 Quang Trung, Kp1,
+                  Hiep Phu Ward, Thu Duc, HCMC, Vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/image/logo.png" alt="Avatar" />
+              </div>
+              <div class="flip-card-back">
+                <h1>DA NANG</h1>
+                <p>
+                  DA NANG: 4th Floor, Ricco Building, 363 Nguyen Huu Tho St.,
+                  Cam Le Dist., Da Nang, Vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/image/logo.png" alt="Avatar" />
+              </div>
+              <div class="flip-card-back">
+                <h1>VINH</h1>
+                <p>
+                  VINH: 4th Floor, 138 Ha Huy Tap St., Vinh City, Nghe An
+                  Province, Vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/image/logo.png" alt="Avatar" />
+              </div>
+              <div class="flip-card-back">
+                <h1>QUY NHON</h1>
+                <p>
+                  QUY NHON: 3th Floor, 307 Nguyen Thi Minh Khai St., Quy Nhon
+                  City, Binh Dinh Province, Vietnam.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -216,15 +311,18 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer-top flex">
-          <h1>Shevia.</h1>
-          <p>
-            Utenim ad minim veniam quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <div class="flex">
-            <input type="email" placeholder="Email" />
-            <div class="btn">SUBSCRIBE</div>
+        <div class="footer-top">
+          <div class="wrapper_top">
+            <div class="top-left">
+              <img src="/image/logo.png" class="logo" />
+              <p>We do<i style="color: red">&nbsp;it&nbsp;</i>with passion</p>
+            </div>
+            <div class="top-right">
+              <div class="submit_subscribe">
+                <input type="email" placeholder="Email" />
+                <div class="btn">SUBSCRIBE</div>
+              </div>
+            </div>
           </div>
         </div>
         <hr />
@@ -232,57 +330,45 @@
           <div class="box">
             <div class="title">Company</div>
             <ul>
-              <li>About</li>
-              <li>Investor</li>
-              <li>Clients</li>
-              <li>Legal</li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Vision & Mission</a></li>
             </ul>
           </div>
           <div class="box">
-            <div class="title">Useful Links</div>
+            <div class="title">Outstandings</div>
             <ul>
-              <li>News</li>
-              <li>Our Process</li>
-              <li>Team</li>
-              <li>Knowledbase</li>
-            </ul>
-          </div>
-          <div class="box">
-            <div class="title">Services</div>
-            <ul>
-              <li>Mobile Apps</li>
-              <li>Web Apps</li>
-              <li>Custom Applications</li>
-              <li>Digital Marketing</li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Process</a></li>
+              <li><a href="#">Case study</a></li>
             </ul>
           </div>
           <div class="box">
             <div class="title">Follow Us</div>
             <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Linkedin</a></li>
+              <li><a href="#">Youtube</a></li>
             </ul>
           </div>
           <div class="box grid">
             <a href="#">
-              <img src="../image/img_1.jpg" />
+              <img src="/image/img_1.jpg" />
             </a>
             <a href="#">
-              <img src="../image/img_2.jpg" />
+              <img src="/image/img_2.jpg" />
             </a>
             <a href="#">
-              <img src="../image/img_3.jpg" />
+              <img src="/image/img_3.jpg" />
             </a>
             <a href="#">
-              <img src="../image/img_4.jpg" />
+              <img src="/image/img_4.jpg" />
             </a>
             <a href="#">
-              <img src="../image/img_5.jpg" />
+              <img src="/image/img_5.jpg" />
             </a>
             <a href="#">
-              <img src="../image/img_6.jpg" />
+              <img src="/image/img_6.jpg" />
             </a>
           </div>
         </div>
@@ -292,14 +378,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      function openSidebar() {
-        document.getElementById("sidebar").style.display = "block";
-      }
-
-      function closeSidebar() {
-        document.getElementById("sidebar").style.display = "none";
-      }
-    </script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
