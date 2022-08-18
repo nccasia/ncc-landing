@@ -444,10 +444,23 @@
     width: 100%;
     height: 50%;
     padding: 0;
+    gap: 0;
   }
 
   .section-1-content span {
-    padding: 30px 0;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .section-1-content h1 {
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+
+  .section-1-content p {
+    box-sizing: border-box;
+    padding: 30px;
   }
 
   .section-1-img {
@@ -459,11 +472,13 @@
   .section-2 {
     width: 100%;
     max-width: 425px;
-    padding: 30px 0 30px 0;
+    box-sizing: border-box;
+    padding: 30px;
     gap: 30px;
     height: 100%;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
 
   .section-2-content {
@@ -493,7 +508,7 @@
   }
 
   .section-2-content h1 {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 1.1em;
   }
 
@@ -509,7 +524,8 @@
     background-position: bottom right;
   }
   .section-2-detail .detail-item {
-    padding: 10px;
+    padding: 30px;
+    box-sizing: border-box;
   }
 
   .section-2-detail .section-3 {
@@ -523,12 +539,14 @@
   .section-3-content span {
     display: flex;
     justify-content: center;
-    padding: 30px 0 30px 0;
+    padding: 30px;
+    box-sizing: border-box;
   }
 
   .section-3-content h2 {
     display: flex;
     text-align: center;
+    font-size: 36px;
     padding: 30px;
   }
 
@@ -587,6 +605,7 @@
 
   .section-4 .box h2 {
     padding: 30px;
+    font-size: 36px;
   }
 
   .section-4 .box .list {

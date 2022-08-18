@@ -33,8 +33,9 @@
   width: 100%;
   color: var(--e-global-color-primary);
   align-items: flex-start;
-  height: 44px;
   text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .section-1-content span::before,
@@ -66,13 +67,16 @@
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
-  height: 84px;
   width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .section-1-content p {
   display: flex;
   text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .section-1-img {
@@ -85,14 +89,14 @@
 
 .section-2 {
   width: 100%;
-  margin-top: 100px;
 }
 
 .section-2 .top .name {
   color: var(--e-global-color-primary);
   text-transform: uppercase;
-  /* margin-left: 70px; */
   text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .section-2 .top .title {
@@ -102,6 +106,8 @@
   text-transform: capitalize;
   line-height: 1.1em;
   text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .section-2 .bottom .grid {
@@ -158,20 +164,19 @@
 .text h2 {
   display: flex;
   font-size: 24px;
-  padding: 10px;
+  padding: 15px 24px;
 }
 
 .text .description {
   font-size: 18px;
-  padding: 0 10px;
+  padding: 15px 24px;
   font-style: italic;
-  bottom: 20%;
 }
 
 .text .position {
   font-size: 20px;
-  margin-bottom: 30px;
-  padding: 0 10px;
+  padding: 0 24px 15px 24px;
+  box-sizing: border-box;
 }
 
 .section-2 .btn {
@@ -499,7 +504,6 @@
   margin-right: 10px;
   width: 30px;
   height: 30px;
-  /* padding: 6px; */
   text-align: center;
 }
 
@@ -513,7 +517,7 @@
   .section-1 .container {
     flex-direction: column;
     max-width: 100%;
-    height: 550px;
+    height: 600px;
     justify-content: center;
     align-items: center;
   }
@@ -527,8 +531,9 @@
   }
 
   .section-1-content h1 {
-    font-size: 45px;
+    font-size: 36px;
     line-height: 1em;
+    padding: 0 30px 30px;
   }
 
   .section-1-content p {
@@ -560,8 +565,13 @@
     padding: 0 30px 0 30px;
   }
 
+  .section-2 .top .title {
+    font-size: 36px;
+  }
+
   .section-2 .bottom .grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     row-gap: 30px;
   }
 
@@ -576,17 +586,18 @@
   }
 
   .text h2 {
-    padding: 30px;
+    padding: 15px;
     font-size: 30px;
   }
 
   .text .position {
-    padding: 30px;
+    padding: 15px;
   }
 
   .text .description {
-    padding: 30px;
-    line-height: 1.5em;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
   }
 
   .section-3 {
@@ -607,6 +618,10 @@
 
   .section-3-title span {
     justify-content: center;
+  }
+
+  .section-3-title h2 {
+    font-size: 36px;
   }
 
   .section-3-detail {
@@ -639,6 +654,10 @@
   .section-4 .top {
     width: 100%;
   }
+
+  .section-4 .top .title {
+    font-size: 36px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -655,6 +674,7 @@
 
   .section-1-content {
     padding: 30px;
+    gap: 0;
   }
 
   .section-2 {
@@ -666,7 +686,7 @@
   }
 
   .section-2 .top .title {
-    padding: 30px;
+    padding: 0 30px 30px;
   }
 
   .section-2 .bottom .grid {
@@ -693,16 +713,16 @@
 
   .text h2 {
     font-size: 30px;
-    padding: 30px;
+    padding: 15px 30px;
   }
 
   .text .position {
-    padding: 30px;
+    padding: 15px 30px;
     margin-bottom: 0;
   }
 
   .text .description {
-    padding: 30px;
+    padding: 15px 30px;
     line-height: 1.5em;
   }
 
