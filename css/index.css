@@ -902,6 +902,7 @@
 
     .section-7 .grid{
         grid-template-columns: repeat(3,1fr);
+        margin-left: 10px;
     }
 
     .section-7 .title {
