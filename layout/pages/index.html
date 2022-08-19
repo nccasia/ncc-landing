@@ -25,6 +25,7 @@
     <div class="header-left">
         <div
         class="header-title"
+        style="display: flex; align-items: center; gap: 5px"
         >
         <img
             src="/image/logo.png"
@@ -37,7 +38,7 @@
             <li class="menu-item">
             <a href="./index.html">Home</a>
             </li>
-            <li class="menu-item"><a href="./layout/about.html">About</a></li>
+            <li class="menu-item"><a href="./about.html">About</a></li>
             <li class="menu-item">
             <a href="#"
                 ><span>Pages <i class="fa-solid fa-angle-down"></i></span
@@ -70,7 +71,7 @@
             <a href="./index.html">HOME</a>
         </li>                
         <li class="menu-item">
-            <a href="./layout/about.html">ABOUT</a>
+            <a href="./about.html">ABOUT</a>
         </li>
         <li class="menu-item">
             <a href="#"><span>PAGES <i class="fa-solid fa-angle-down"></i></span
@@ -146,14 +147,6 @@
                             <p class="slide_heading">Digital Disruption</p>
                             <div class="slide_btn">learn more</div>
                         </div>
-                        <div class="wrapper">
-                          <p class="slide_heading">Digital Disruption 2</p>
-                          <div class="slide_btn">learn more</div>
-                      </div>
-                      <div class="wrapper">
-                        <p class="slide_heading">Digital Disruption 3</p>
-                        <div class="slide_btn">learn more</div>
-                    </div>
                     </div>
                 </div>
                 
@@ -175,29 +168,45 @@
     <div class="container">
         <div class="flex_section2">
             <div class="left">
-                <div class="box">
-                    <p class="title">Finance & Insurance</p>
+                <div class="wrapper grid">
+                    <div class="box">
+                        <p class="title">Finance & Insurance</p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Retails & Ecommerce</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <p class="title">Retails & Ecommerce</p>
+                <div class="wrapper grid">
+                    <div class="box">
+                        <p class="title">Sport</p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Educatione</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <p class="title">Sport</p>
+                <div class="wrapper grid">
+                    <div class="box">
+                        <p class="title">Enterprise solution</p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Real estate</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <p class="title">Education</p>
+                <div class="wrapper grid">
+                    <div class="box">
+                        <p class="title">Healthcare</p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Prison management</p>
+                    </div>
                 </div>
-                <div class="box">
-                    <p class="title">Enterprise solution</p>
-                </div>
-                <div class="box">
-                    <p class="title">Real estate</p>
-                </div>
-                <div class="box">
-                    <p class="title">Healthcare</p>
-                </div>
-                <div class="box">
-                    <p class="title">Prison management</p>
+                <div class="wrapper grid">
+                    <div class="box">
+                        <p class="title">Game</p>
+                    </div>
+                    <div class="box">
+                        <p class="title">Social network & Entertainment</p>
+                    </div>
                 </div>
             </div>
             <div class="right">
@@ -511,21 +520,21 @@
     </div>
 </div>
 <div class="section-8">
-    <div class="container flex">
+    <div class="container flex" style="justify-content:center ;">
         <div class="left">
-              <div class="flex">
-                    <p class="name">GET STARTED</p>
-              </div>
-              <p class="title">Get Started & Tell Us About Your Requirement</p>
+            <div class="flex">
+                <p class="name">GET STARTED</p>
+            </div>
+            <p class="title">Get Started & Tell Us About Your Requirement</p>
         </div>
         <div class="right">
-              <div class="grid">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-              </div>
-              <input class="input" type="text" placeholder="Subject" />
-              <textarea class="message" rows="4" placeholder="Message"></textarea>
-              <div class="btn">SEND</div>
+            <div class="grid">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+            </div>
+            <input class="input" type="text" placeholder="Subject" />
+            <textarea class="message" rows="4" placeholder="Message"></textarea>
+            <div class="btn">SEND</div>
         </div>
     </div>
 </div>
@@ -550,7 +559,7 @@
         <div class="box">
           <div class="title">Company</div>
           <ul>
-            <li><a href="./about.html">About</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Vision & Mission</a></li>
           </ul>
@@ -566,9 +575,9 @@
         <div class="box">
           <div class="title">Follow Us</div>
           <ul>
-            <li><a href="https://www.facebook.com/nccsoft.com.vn">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/company/nccsoft-vietnam/">Linkedin</a></li>
-            <li><a href="https://www.youtube.com/channel/UChFpCEl2FP22M_BybYhWjnA/featured">Youtube</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Youtube</a></li>
           </ul>
         </div>
         <div class="box grid">
@@ -600,14 +609,15 @@
   </footer>
 <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
 <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
-<script src="../js/script.js"></script>
+<script src="../../js/script.js"></script>
+
 <script>
     $(".slide2").owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
         autoplay:true,
-    autoplayTimeout:3000,
+    autoplayTimeout:1000,
     autoplayHoverPause:true,
         responsive: {
         0: {

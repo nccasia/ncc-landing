@@ -130,7 +130,8 @@
 }
 
 .section-2 .right {
-  margin-left: 15%;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .section-2 .right .name_industries {
@@ -141,6 +142,11 @@
   margin: 25px 0 25px 0;
   margin-left: 0px;
   max-width: 420px;
+}
+
+.section-2 .right .name {
+  box-sizing: border-box;
+  padding: 0 30px;
 }
 
 .section-2 .right .icon {
@@ -557,7 +563,6 @@
   text-transform: capitalize;
   line-height: 1.1em;
   max-width: 420px;
-  margin: 15px 0 15px 0;
   text-align: left;
 }
 
@@ -645,6 +650,7 @@
       flex-direction: column;
   }
 
+<<<<<<< HEAD
   .section-2 .left .grid {
       grid-template-columns: repeat(1,1fr);
   }
@@ -996,6 +1002,10 @@
   .section-2 .left .box::after {
     margin: 0 42%;
     width: 15%;
+  }
+
+  .section-2 .flex_section2 {
+    flex-direction: column;
   }
 
   .section-2 .left .box:last-child::after{

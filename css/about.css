@@ -278,7 +278,7 @@
   background-color: var(--e-global-color-9bed8f9);
 }
 
-.flex_section6{
+.flex_section6 {
   display: flex;
   justify-content: space-between;
 }

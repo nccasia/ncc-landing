@@ -113,6 +113,12 @@
 .submit_subscribe .email {
   width: 60%;
 }
+@media (max-width: 414px) {
+  .footer-top p {
+    letter-spacing: 0;
+    font-size: 26px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .footer .wrapper_top {
