@@ -1,1180 +1,634 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/libs/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Home</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-left">
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Home</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
         <div
-          class="header-title"
-          style="display: flex; align-items: center; gap: 5px"
+        class="header-title"
         >
-          <img src="/image/logo.png" alt="logo-ncc" class="logo" />
+        <img
+            src="/image/logo.png"
+            alt="logo-ncc"
+            class="logo"
+        />
         </div>
         <div class="header-menu">
-          <ul class="menu-content">
+        <ul class="menu-content">
             <li class="menu-item">
-              <a href="./index.html">Home</a>
+            <a href="./index.html">Home</a>
             </li>
+            <li class="menu-item"><a href="./about.html">About</a></li>
             <li class="menu-item">
-              <a style="color: #ff7d90" href="./about.html">About</a>
-            </li>
-            <li class="menu-item">
-              <a href="#"
+            <a href="#"
                 ><span>Pages <i class="fa-solid fa-angle-down"></i></span
-              ></a>
-              <ul class="menu-dropdown">
+            ></a>
+            <ul class="menu-dropdown">
                 <li><a class="dropdown-item" href="#">Service</a></li>
                 <li><a class="dropdown-item" href="#">Team</a></li>
                 <li><a class="dropdown-item" href="#">Case Study</a></li>
-              </ul>
+            </ul>
             </li>
             <li class="menu-item"><a href="./contact.html">Contact</a></li>
-          </ul>
+        </ul>
         </div>
-      </div>
-      <div class="navbar_menu">
+    </div>
+    <div class="navbar_menu">
         <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="header-right">
+    </div>
+    <div class="header-right">
         <div class="header-button">
-          <button class="header-btn" type="button">Get Quoatation</button>
+        <button class="header-btn" type="button">Get Quoatation</button>
         </div>
         <span class="nav-bar">
-          <i
-            id="openIcon"
-            class="fa-solid fa-bars fa-xl"
-            onclick="openSidebar()"
-          ></i>
+        <i id="openIcon" class="fa-solid fa-bars fa-xl" onclick="openSidebar()"></i>
         </span>
-      </div>
-    </header>
-    <div class="small_menu">
-      <ul class="menu-content">
+    </div>
+</header>
+<div class="small_menu">
+    <ul class="menu-content">
         <li class="menu-item">
-          <a href="./index.html">HOME</a>
+            <a href="./index.html">HOME</a>
+        </li>                
+        <li class="menu-item">
+            <a href="./about.html">ABOUT</a>
         </li>
         <li class="menu-item">
-          <a href="./about.html">ABOUT</a>
-        </li>
-        <li class="menu-item">
-          <a href="#"
-            ><span>PAGES <i class="fa-solid fa-angle-down"></i></span
-          ></a>
-          <ul class="menu-dropdown">
-            <li><a class="dropdown-item" href="#">SERVICE</a></li>
-            <li><a class="dropdown-item" href="#">TEAM</a></li>
-            <li><a class="dropdown-item" href="#">CASE STUDY</a></li>
-          </ul>
+            <a href="#"><span>PAGES <i class="fa-solid fa-angle-down"></i></span
+                ></span></a>
+            <ul class="menu-dropdown">
+                <li><a class="dropdown-item" href="#">SERVICE</a></li>
+                <li><a class="dropdown-item" href="#">TEAM</a></li>
+                <li><a class="dropdown-item" href="#">CASE STUDY</a></li>
+            </ul>
         </li>
         <li class="menu-item"><a href="./contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-    <div class="sidebar" id="sidebar">
-      <i
-        id="closeIcon"
-        class="fa-solid fa-xmark"
-        onclick="closeSidebar()"
-        style="font-size: 24px"
-      ></i>
-      <div class="wrapper">
+    </ul>
+</div>
+<div class="sidebar" id="sidebar">
+        <i id="closeIcon" class="fa-solid fa-xmark" onclick="closeSidebar()" style="font-size:24px ;"></i>
+        <div class="wrapper">
         <p class="sidebar_header">Shevia</p>
-        <p class="sidebar_desc">
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
+        <p class="sidebar_desc">luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         <p class="sidebar_name">Services</p>
         <ul>
-          <li class="flex">
-            <i class="fa-solid fa-check"></i>
-            <p class="sidebar_item">Mobile Development</p>
-          </li>
-          <li class="flex">
-            <i class="fa-solid fa-check"></i>
-            <p class="sidebar_item">Web Development</p>
-          </li>
-          <li class="flex">
-            <i class="fa-solid fa-check"></i>
-            <p class="sidebar_item">Data Science</p>
-          </li>
-          <li class="flex">
-            <i class="fa-solid fa-check"></i>
-            <p class="sidebar_item">IoT Development</p>
-          </li>
-          <li class="flex">
-            <i class="fa-solid fa-check"></i>
-            <p class="sidebar_item">Enterprise Application</p>
-          </li>
-          <li class="flex">
-            <i class="fa-solid fa-check"></i>
-            <p class="sidebar_item">User Interfice Design</p>
-          </li>
+            <li class="flex">
+                <i class="fa-solid fa-check"></i>
+                <p class="sidebar_item">Mobile Development</p>
+            </li>
+            <li class="flex">
+                <i class="fa-solid fa-check"></i>
+                <p class="sidebar_item">Web Development</p>
+            </li>
+            <li class="flex">
+                <i class="fa-solid fa-check"></i>
+                <p class="sidebar_item">Data Science</p>
+            </li>
+            <li class="flex">
+                <i class="fa-solid fa-check"></i>
+                <p class="sidebar_item">IoT Development</p>
+            </li>
+            <li class="flex">
+                <i class="fa-solid fa-check"></i>
+                <p class="sidebar_item">Enterprise Application</p>
+            </li>
+            <li class="flex">
+                <i class="fa-solid fa-check"></i>
+                <p class="sidebar_item">User Interfice Design</p>
+            </li>
         </ul>
         <p class="sidebar_name">Follow Us</p>
         <ul class="flex">
-          <li><i class="icon fa-brands fa-facebook"></i></li>
-          <li><i class="icon fa-brands fa-twitter"></i></li>
-          <li><i class="icon fa-brands fa-linkedin"></i></li>
-          <li><i class="icon fa-brands fa-youtube"></i></li>
+            <li><i class="icon fa-brands fa-facebook"></i></li>
+            <li><i class="icon fa-brands fa-twitter"></i></li>
+            <li><i class="icon fa-brands fa-linkedin"></i></li>
+            <li><i class="icon fa-brands fa-youtube"></i></li>
         </ul>
-      </div>
-    </div>
-    <div class="section-container">
-      <div class="section-1">
-        <div class="top">
-          <div class="container">
+</div>
+</div>
+<div class="section-1">
+    <div class="top">
+        <div class="container">
             <p class="name">NCC CODE</p>
             <h1 class="headline">
-              <span class="headline_plain">We build your</span>
-              <span class="headline_dynamic">Custom Software</span>
-              <span class="headline_plain"
-                >show you optimized solutions and help you to digitalize your
-                business.</span
-              >
+                <span class="headline_plain">We build your</span>
+                <span class="headline_dynamic">Custom Software</span>
+                <span class="headline_plain">show you optimized solutions and help you to digitalize your business.</span>
             </h1>
-          </div>
         </div>
-        <div class="bottom">
-          <div class="image">
+    </div>
+    <div class="bottom">
+        <div class="image">
             <div class="overlay"></div>
             <div class="box">
-              <div class="slide">
-                <div class="owl-carousel slide2" id="slide2">
-                  <div class="wrapper">
-                    <p class="slide_heading">Digital Disruption</p>
-                    <div class="slide_btn">learn more</div>
-                  </div>
+                <div class="slide">
+                    <div class="owl-carousel slide2" id="slide2">
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                
             </div>
             <div class="wrap">
-              <p class="box_title">Client Applications Development</p>
-              <p class="box_title">Web System Devemopment</p>
-              <p class="box_title">Cloud and Microservice development</p>
-              <p class="box_title">Software Testing</p>
-              <p class="box_title">Game Development</p>
-              <p class="box_title">Blockchain Development</p>
-              <p class="box_title">AI and IoT</p>
-              <p class="box_title">VoIP Development</p>
+                <p class="box_title">Client Applications Development</p>
+                <p class="box_title">Web System Devemopment</p>
+                <p class="box_title">Cloud and Microservice development</p>
+                <p class="box_title">Software Testing</p>
+                <p class="box_title">Game Development</p>
+                <p class="box_title">Blockchain Development</p>
+                <p class="box_title">AI and IoT</p>
+                <p class="box_title">VoIP Development</p>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="section-2">
-        <div class="container">
-          <div class="flex" style="justify-content: space-around">
+    </div>
+</div>
+<div class="section-2">
+    <div class="container">
+        <div class="flex_section2">
             <div class="left">
-              <div class="wrapper grid">
                 <div class="box">
-                  <p class="title">Finance & Insurance</p>
+                    <p class="title">Finance & Insurance</p>
                 </div>
                 <div class="box">
-                  <p class="title">Retails & Ecommerce</p>
-                </div>
-              </div>
-              <div class="wrapper grid">
-                <div class="box">
-                  <p class="title">Sport</p>
+                    <p class="title">Retails & Ecommerce</p>
                 </div>
                 <div class="box">
-                  <p class="title">Educatione</p>
-                </div>
-              </div>
-              <div class="wrapper grid">
-                <div class="box">
-                  <p class="title">Enterprise solution</p>
+                    <p class="title">Sport</p>
                 </div>
                 <div class="box">
-                  <p class="title">Real estate</p>
-                </div>
-              </div>
-              <div class="wrapper grid">
-                <div class="box">
-                  <p class="title">Healthcare</p>
+                    <p class="title">Education</p>
                 </div>
                 <div class="box">
-                  <p class="title">Prison management</p>
-                </div>
-              </div>
-              <div class="wrapper grid">
-                <div class="box">
-                  <p class="title">Game</p>
+                    <p class="title">Enterprise solution</p>
                 </div>
                 <div class="box">
-                  <p class="title">Social network & Entertainment</p>
+                    <p class="title">Real estate</p>
                 </div>
-              </div>
+                <div class="box">
+                    <p class="title">Healthcare</p>
+                </div>
+                <div class="box">
+                    <p class="title">Prison management</p>
+                </div>
             </div>
             <div class="right">
-              <p class="name">our industries</p>
-              <p class="name_industries">
-                Software Solutions For Big Industries
-              </p>
-              <div class="flex" style="justify-content: space-between">
-                <div class="flex">
-                  <i class="icon fa-solid fa-gear"></i>
-                  <div class="content">
-                    <p class="number">250+</p>
-                    <p class="detail">Projects done</p>
-                  </div>
+                <p class="name">our industries</p>
+                <p class="name_industries">
+                    Software Solutions For Big Industries
+                </p>
+                <div class="flex" style="justify-content:space-between ;">
+                    <div class="flex_icon">
+                        <i class="icon fa-solid fa-gear"></i>
+                        <div class="content">
+                            <p class="number">250+</p>
+                            <p class="detail">Projects done</p>
+                        </div>
+                    </div>
+                    <div class="flex_icon">
+                        <i class="icon fa-solid fa-people-group"></i>
+                        <div class="content">
+                            <p class="number">300+</p>
+                            <p class="detail">Programmers</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex">
-                  <i class="icon fa-solid fa-people-group"></i>
-                  <div class="content">
-                    <p class="number">300+</p>
-                    <p class="detail">Programmers</p>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="section-3">
-        <div class="wrapper flex">
-          <div class="image_2">
+    </div>
+</div>
+<div class="section-3">
+    <div class="wrapper flex">
+        <div class="image_2">
             <div class="site_slide">
-              <div class="owl-carousel slide1" id="slide1">
-                <div class="slide">
-                  <img src="/image/Logo-1.png" alt="" />
+                <div class="owl-carousel slide1" id="slide1">
+                    <div class="slide">
+                    <img src="/image/Logo-1.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-2.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-5.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-6.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-1.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-2.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-5.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-6.png" alt="" />
+                    </div>
+                    <div class="slide">
+                    <img src="/image/Logo-7.png" alt="" />
+                    </div>
                 </div>
-                <div class="slide">
-                  <img src="/image/Logo-2.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="/image/Logo-5.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="/image/Logo-6.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="/image/Logo-1.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="/image/Logo-2.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="/image/Logo-5.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="/image/Logo-6.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img src="/image/Logo-7.png" alt="" />
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="box">
-            <p class="title">why choose us?</p>
-            <p class="introduct">
-              We Create Powerful Softwares and Digital Solutions That Drive
-              Meaningful
-            </p>
-            <div class="list_reason">
-              <div class="item flex_icon">
-                <i class="fa-solid fa-check"></i>
-                <p>Advanced technologies</p>
-              </div>
-              <div class="item flex_icon">
-                <i class="fa-solid fa-check"></i>
-                <p>Cutting-edge solutions</p>
-              </div>
-              <div class="item flex_icon">
-                <i class="fa-solid fa-check"></i>
-                <p>International Standards</p>
-              </div>
-              <div class="item flex_icon">
-                <i class="fa-solid fa-check"></i>
-                <p>Professional experience</p>
-              </div>
-              <div class="item flex_icon">
-                <i class="fa-solid fa-check"></i>
-                <p>Considerable commitment</p>
-              </div>
-              <div class="item flex_icon">
-                <i class="fa-solid fa-check"></i>
-                <p>Reasonable cost</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="box">
+            <p class="title">why choose us?</p> 
+            <p class="introduct">
+                We Create Powerful Softwares and Digital Solutions That Drive Meaningful
+            </p> 
+            <div class="list_reason">
+                <div class="item flex_icon">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Advanced technologies</p>
+                </div>
+                <div class="item flex_icon">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Cutting-edge solutions</p>
+                </div>
+                <div class="item flex_icon">
+                    <i class="fa-solid fa-check"></i>
+                    <p>International Standards</p>
+                </div>
+                <div class="item flex_icon">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Professional experience</p>
+                </div>
+                <div class="item flex_icon">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Considerable commitment</p>
+                </div>
+                <div class="item flex_icon">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Reasonable cost</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
 
-      <div class="section-4">
-        <div class="container">
-          <div class="top">
+<div class="section-4">
+    <div class="container">
+        <div class="top">
             <p class="name">our services</p>
             <p class="title">Build Your Custom Software For Your Business</p>
-          </div>
-          <div class="bottom">
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">Client Application Development</p>
-              </div>
-              <div class="content">
-                <p class="detail">Native and Hybrid mobile app development</p>
-                <p class="detail">Cross platform development</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">Web System Development</p>
-              </div>
-              <div class="content">
-                <p class="detail">Custom website development</p>
-                <p class="detail">CMS system development</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">Cloud and Microservice Development</p>
-              </div>
-              <div class="content">
-                <p class="detail">
-                  Cloud services and on-premise microservices development.
-                </p>
-                <p class="detail">ERP and Enterprise system development</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">Software Testing</p>
-              </div>
-              <div class="content">
-                <p class="detail">Full product quality assurance</p>
-                <p class="detail">Test planning & Execution</p>
-                <p class="detail">Automation testing</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">Game Development</p>
-              </div>
-              <div class="content">
-                <p class="detail">Cross platform 2D/3D development</p>
-                <p class="detail">Blockchain/NFT game development</p>
-                <p class="detail">Game economy design</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">Blockchain Development</p>
-              </div>
-              <div class="content">
-                <p class="detail">Blockchain consulting</p>
-                <p class="detail">Smart contract development</p>
-                <p class="detail">App development</p>
-                <p class="detail">Tokenization development</p>
-                <p class="detail">Gamefi development</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">AI and IoT</p>
-              </div>
-              <div class="content">
-                <p class="detail">AI consulting & development</p>
-                <p class="detail">IOT system consulting & development</p>
-                <p class="detail">Data service</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="flex" style="margin-bottom: 15px; height: 90px">
-                <i class="icon fa-solid fa-mobile-screen"></i>
-                <p class="item_name">VoIP Development</p>
-              </div>
-              <div class="content">
-                <p class="detail">VoIP consulting & implementation</p>
-                <p class="detail">VoIP system development</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="section-5">
-        <div class="grid">
-          <div class="project">
+        <div class="bottom">
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">Client Application Development</p>
+                </div>
+                <div class="content">
+                    <p class="detail">Native and Hybrid mobile app development</p>
+                    <p class="detail">Cross platform development</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px ;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">Web System Development</p>
+                </div>
+                <div class="content">
+                    <p class="detail">Custom website development</p>
+                    <p class="detail">CMS system development</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px ;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">Cloud and Microservice Development</p>
+                </div>
+                <div class="content">
+                    <p class="detail">Cloud services and on-premise microservices development.</p>
+                    <p class="detail">ERP and Enterprise system development</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px ;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">Software Testing</p>
+                </div>
+                <div class="content">
+                    <p class="detail">Full product quality assurance</p>
+                    <p class="detail">Test planning & Execution</p>
+                    <p class="detail">Automation testing</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px ;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">Game Development</p>
+                </div>
+                <div class="content">
+                    <p class="detail">Cross platform 2D/3D development</p>
+                    <p class="detail">Blockchain/NFT game development</p>
+                    <p class="detail">Game economy design</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px ;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">Blockchain Development</p>
+                </div>
+                <div class="content">
+                    <p class="detail">Blockchain consulting</p>
+                    <p class="detail">Smart contract development</p>
+                    <p class="detail">App development</p>
+                    <p class="detail">Tokenization development</p>
+                    <p class="detail">Gamefi development</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px ;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">AI and IoT
+                    </p>
+                </div>
+                <div class="content">
+                    <p class="detail">AI consulting & development</p>
+                    <p class="detail">IOT system consulting & development</p>
+                    <p class="detail">Data service</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="flex" style="margin-bottom:15px ;height: 90px;">
+                    <i class="icon fa-solid fa-mobile-screen"></i>
+                    <p class="item_name">VoIP Development</p>
+                </div>
+                <div class="content">
+                    <p class="detail">VoIP consulting & implementation</p>
+                    <p class="detail">VoIP system development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-5">
+    <div class="grid">
+        <div class="project">
             <p class="number">250+</p>
             <p class="names">Project Completed</p>
-          </div>
-          <div class="clients">
+        </div>
+        <div class="clients">
             <p class="number">80+</p>
             <p class="names">Clients Served</p>
-          </div>
-          <div class="loyal">
+        </div>
+        <div class="loyal">
             <p class="number">80%</p>
             <p class="names">Loyal Clients</p>
-          </div>
         </div>
-      </div>
-      <div class="section-6">
-        <div class="container">
-          <div class="top">
-            <p class="name">the teams</p>
-            <p class="title">Meet Awesome Team</p>
-            <p class="desc">
-              From a team of four dedicated and enthusiastic engineer…..
-            </p>
-          </div>
-          <div class="bottom">
-            <div class="grid">
-              <div class="grid-item">
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Nhan Nguyen Tran</h2>
-                    <p>Chief Executive Officer</p>
-                  </div>
-                  <p>
-                    Graduated from Lomonosov Moscow State University with a
-                    bachelor's degree in Physics, but then Nhan discovered his
-                    passion in software development and he decided to learn to
-                    be a developer. Nhan has more than 15 years of working
-                    experience in software development and most of that time
-                    working with JAVA, C/C++, and mobile technologies (IOS,
-                    Android) and has gained a certain professionalism level as a
-                    Senior JAVA, C/C++ LINUX/MOBILE and cloud platform.
-                  </p>
+    </div>
+</div>
+<div class="section-6">
+    <div class="container">
+        <div class="top">
+        <p class="name">the teams</p>
+        <p class="title">Meet Awesome Team</p>
+        <p class="desc">From a team of four dedicated and enthusiastic engineer…..</p>
+        </div>
+        <div class="bottom">
+        <div class="grid">
+            <div class="grid-item">
+            <div class="overlay">
+                <div class="text">
+                <h2>Nhan Nguyen Tran</h2>
+                <p>Chief Executive Officer</p>
                 </div>
-              </div>
-              <div class="grid-item">
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Tien Pham Manh</h2>
-                    <p>Deputy Chief Executive Office</p>
-                  </div>
-                  <p>
-                    Tien Pham is a software engineer with a strong background in
-                    project management and IT process management. With more than
-                    10 years of experience, Tien has shown his potential in the
-                    position of technical leader. Tien has great knowledge of
-                    computers, network hardware, office facilities, especially
-                    Project Management Tools, blockchain, Ethereum network, and
-                    smart contracts.
-                  </p>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Phuc Duong Van</h2>
-                    <p>Chief Technology Officer</p>
-                  </div>
-                  <p>
-                    Phuc Duong has a Master’s degree in Computer Science and
-                    used to be a lecturer at a leading technology training
-                    university in Vietnam. Phuc has more than 10 years of
-                    experience in many specialties, such as .Net Framework, game
-                    development and mobile platform. With a problem - solving
-                    mindset, Phuc has become technical leader, project manager
-                    of many projects and received lots of appreciation from
-                    clients.
-                  </p>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Linh Nguyen Le</h2>
-                    <p>Chief Human Resource Officer</p>
-                  </div>
-                  <p>
-                    Linh Nguyen has spent a long time studying as a
-                    mathematician at Lomonosov Moscow State University and
-                    received a Doctorate in Mathematics. During this time, he
-                    self-taught and became a data engineer with expertise in
-                    PHP, C#, Java, VueJs in which he put his mathematics skills
-                    in need. Linh is passionate about numbers, data and
-                    programming, therefore, he usually worked as data engineer,
-                    project managers and technical leader in many projects for
-                    the last 10 years.
-                  </p>
-                </div>
-              </div>
+                <p>Graduated from Lomonosov Moscow State University with a bachelor's degree in Physics, but then Nhan discovered his passion in software development and he decided to learn to be a developer. Nhan has more than 15 years of working experience in software development and most of that time working with JAVA, C/C++, and mobile technologies (IOS, Android) and has gained a certain professionalism level as a Senior JAVA, C/C++ LINUX/MOBILE and cloud platform.</p>
             </div>
-          </div>
+            </div>
+            <div class="grid-item">
+            <div class="overlay">
+                <div class="text">
+                <h2>Tien Pham Manh</h2>
+                <p>Deputy Chief Executive Office</p>
+                </div>
+                <p>Tien Pham is a software engineer with a strong background in project management and IT process management. With more than 10 years of experience, Tien has shown his potential in the position of technical leader. Tien has great knowledge of computers, network hardware, office facilities, especially Project Management Tools, blockchain, Ethereum network, and smart contracts. 
+            </p>
+            </div>
+            </div>
+            <div class="grid-item">
+            <div class="overlay">
+                <div class="text">
+                <h2>Phuc Duong Van</h2>
+                <p>Chief Technology Officer</p>
+                </div>
+                <p>Phuc Duong has a Master’s degree in Computer Science and used to be a lecturer at a leading technology training university in Vietnam. Phuc has more than 10 years of experience in many specialties, such as .Net Framework, game development and mobile platform. With a problem - solving mindset, Phuc has become technical leader, project manager of many projects and received lots of appreciation from clients.</p>
+            </div>
+            </div>
+            <div class="grid-item">
+            <div class="overlay">
+                <div class="text">
+                <h2>Linh Nguyen Le</h2>
+                <p>Chief Human Resource Officer</p>
+                </div>
+                <p>Linh Nguyen has spent a long time studying as a mathematician at Lomonosov Moscow State University and received a Doctorate in Mathematics. During this time, he self-taught and became a data engineer with expertise in PHP, C#, Java, VueJs in which he put his mathematics skills in need. Linh is passionate about numbers, data and programming, therefore, he usually worked as data engineer, project managers and technical leader in many projects for the last 10 years.
+            </p>
+            </div>
+            </div>
         </div>
-      </div>
-      <div class="section-7">
-        <div class="container">
-          <div class="top">
+        </div>
+    </div>
+    </div>
+<div class="section-7">
+    <div class="container">
+        <div class="top">
             <p class="name">our process</p>
             <p class="title">We Build Your Enterprise Web & Mobile Apps</p>
-            <p class="desc">
-              We apply agile/scrum methodology to bring the most updated and
-              optimized product
-            </p>
-          </div>
-          <div class="grid" style="padding-top: 15px">
-            <div class="box">
-              <i class="icon-first fa-regular fa-envelope"></i>
-              <p class="box_name">Requirements analysis</p>
-              <p class="detail">
-                Requirement analysis is the most important and fundamental stage
-                in SDLC. This information is then used to plan the basic project
-                approach and to conduct product feasibility study in the
-                economical, operational and technical areas.
-              </p>
-            </div>
-            <div class="box">
-              <i class="icon fa-regular fa-paper-plane"></i>
-              <p class="box_name">Design and Architecture</p>
-              <p class="detail">
-                This phase comes out with the best architecture for the product
-                to be developed. Based on the requirements specified in the
-                previous phase, usually more than one design approach for the
-                product architecture is proposed and documented in a DDS
-              </p>
-            </div>
-            <div class="box">
-              <i class="icon fa-solid fa-rocket"></i>
-              <p class="box_name">Development</p>
-              <p class="detail">
-                After all architecture and design choices are already defined,
-                the actual coding starts. Quality assurance and software testing
-              </p>
-              <p class="detail">
-                In this phase, the developed software is tested thoroughly and
-                any defects found are assigned to developers to get them fixed.
-              </p>
-            </div>
-            <div class="box">
-              <i class="icon fa-regular fa-paper-plane"></i>
-              <p class="box_name">Deployment</p>
-              <p class="detail">
-                After the software has been tested, the final deployment takes
-                place. But, this is not as simple as the click of a button.
-                There are a lot of things to consider in this software
-                development life cycle process.
-              </p>
-            </div>
-            <div class="box">
-              <i class="icon fa-regular fa-paper-plane"></i>
-              <p class="box_name">Review</p>
-              <p class="detail">
-                In the final phase of the SDLC, it’s important to acknowledge
-                that all software requires review. If users find any issues, the
-                problem can be fixed in the next release
-              </p>
-            </div>
-          </div>
+            <p class="desc">We apply agile/scrum methodology to bring the most updated and optimized product</p>
         </div>
-      </div>
-      <div class="section-8">
-        <div class="container flex" style="justify-content: center">
-          <div class="left">
+        <div class="grid" style="padding-top:15px ;">
+            <div class="box">
+                <i class="icon-first fa-regular fa-envelope"></i>
+                <p class="box_name">
+                    Requirements analysis
+                </p>
+                <p class="detail">Requirement analysis is the most important and fundamental stage in SDLC. This information is then used to plan the basic project approach and to conduct product feasibility study in the economical, operational and technical areas.</p>
+            </div>
+            <div class="box">
+                <i class="icon fa-regular fa-paper-plane"></i>
+                <p class="box_name">
+                    Design and Architecture
+                </p>
+                <p class="detail">This phase comes out with the best architecture for the product to be developed. Based on the requirements specified in the previous phase, usually more than one design approach for the product architecture is proposed and documented in a DDS</p>
+            </div>
+            <div class="box">
+                <i class="icon fa-solid fa-rocket"></i>
+                <p class="box_name">
+                    Development
+                </p>
+                <p class="detail">After all architecture and design choices are already defined, the actual coding starts.
+                    Quality assurance and software testing
+                </p>
+                <p class="detail">In this phase, the developed software is tested thoroughly and any defects found are assigned to developers to get them fixed.</p>
+            </div>
+            <div class="box">
+                <i class="icon fa-regular fa-paper-plane"></i>
+                <p class="box_name">
+                    Deployment
+                </p>
+                <p class="detail">After the software has been tested, the final deployment takes place. But, this is not as simple as the click of a button. There are a lot of things to consider in this software development life cycle process.
+                </p>
+            </div>
+            <div class="box">
+                <i class="icon fa-regular fa-paper-plane"></i>
+                <p class="box_name">
+                    Review
+                </p>
+                <p class="detail">In the final phase of the SDLC, it’s important to acknowledge that all software requires review. If users find any issues, the problem can be fixed in the next release
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-8">
+    <div class="container flex">
+        <div class="left">
             <div class="flex">
-              <p class="name">GET STARTED</p>
+                <p class="name">GET STARTED</p>
             </div>
             <p class="title">Get Started & Tell Us About Your Requirement</p>
-          </div>
-          <div class="right">
+        </div>
+        <div class="right">
             <div class="grid">
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
             </div>
             <input class="input" type="text" placeholder="Subject" />
             <textarea class="message" rows="4" placeholder="Message"></textarea>
             <div class="btn">SEND</div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="section-1">
-      <div class="top">
-        <div class="container">
-          <p class="name">NCC CODE</p>
-          <h1 class="headline">
-            <span class="headline_plain">We build your</span>
-            <span class="headline_dynamic">Custom Software</span>
-            <span class="headline_plain"
-              >show you optimized solutions and help you to digitalize your
-              business.</span
-            >
-          </h1>
-        </div>
-      </div>
-      <div class="bottom">
-        <div class="image">
-          <div class="overlay"></div>
-          <div class="box">
-            <div class="slide">
-              <div class="owl-carousel slide2" id="slide2">
-                <div class="wrapper">
-                  <p class="slide_heading">Digital Disruption</p>
-                  <div class="slide_btn">learn more</div>
-                </div>
-              </div>
-            </div>
+</div>
+<footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="wrapper_top">
+          <div class="top-left">
+            <img src="/image/logo.png" class="logo" />
+            <p>We do<i style="color: red">&nbsp;it&nbsp;</i>with passion</p>
           </div>
-          <div class="wrap">
-            <p class="box_title">Client Applications Development</p>
-            <p class="box_title">Web System Devemopment</p>
-            <p class="box_title">Cloud and Microservice development</p>
-            <p class="box_title">Software Testing</p>
-            <p class="box_title">Game Development</p>
-            <p class="box_title">Blockchain Development</p>
-            <p class="box_title">AI and IoT</p>
-            <p class="box_title">VoIP Development</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-2">
-      <div class="container">
-        <div class="flex">
-          <div class="left">
-            <div class="wrapper grid">
-              <div class="box">
-                <p class="title">Finance & Insurance</p>
-              </div>
-              <div class="box">
-                <p class="title">Retails & Ecommerce</p>
-              </div>
-            </div>
-            <div class="wrapper grid">
-              <div class="box">
-                <p class="title">Sport</p>
-              </div>
-              <div class="box">
-                <p class="title">Educatione</p>
-              </div>
-            </div>
-            <div class="wrapper grid">
-              <div class="box">
-                <p class="title">Enterprise solution</p>
-              </div>
-              <div class="box">
-                <p class="title">Real estate</p>
-              </div>
-            </div>
-            <div class="wrapper grid">
-              <div class="box">
-                <p class="title">Healthcare</p>
-              </div>
-              <div class="box">
-                <p class="title">Prison management</p>
-              </div>
-            </div>
-            <div class="wrapper grid">
-              <div class="box">
-                <p class="title">Game</p>
-              </div>
-              <div class="box">
-                <p class="title">Social network & Entertainment</p>
-              </div>
-            </div>
-          </div>
-          <div class="right">
-            <p class="name">our industries</p>
-            <p class="name_industries">Software Solutions For Big Industries</p>
-            <div class="flex" style="justify-content: space-between">
-              <div class="flex">
-                <i class="icon fa-solid fa-gear"></i>
-                <div class="content">
-                  <p class="number">250+</p>
-                  <p class="detail">Projects done</p>
-                </div>
-              </div>
-              <div class="flex">
-                <i class="icon fa-solid fa-people-group"></i>
-                <div class="content">
-                  <p class="number">300+</p>
-                  <p class="detail">Programmers</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-3">
-      <div class="wrapper flex">
-        <div class="image_2">
-          <div class="site_slide">
-            <div class="owl-carousel slide1" id="slide1">
-              <div class="slide">
-                <img src="/image/Logo-1.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-2.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-5.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-6.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-1.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-2.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-5.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-6.png" alt="" />
-              </div>
-              <div class="slide">
-                <img src="/image/Logo-7.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <p class="title">why choose us?</p>
-          <p class="introduct">
-            We Create Powerful Softwares and Digital Solutions That Drive
-            Meaningful
-          </p>
-          <div class="list_reason">
-            <div class="item flex_icon">
-              <i class="fa-solid fa-check"></i>
-              <p>Advanced technologies</p>
-            </div>
-            <div class="item flex_icon">
-              <i class="fa-solid fa-check"></i>
-              <p>Cutting-edge solutions</p>
-            </div>
-            <div class="item flex_icon">
-              <i class="fa-solid fa-check"></i>
-              <p>International Standards</p>
-            </div>
-            <div class="item flex_icon">
-              <i class="fa-solid fa-check"></i>
-              <p>Professional experience</p>
-            </div>
-            <div class="item flex_icon">
-              <i class="fa-solid fa-check"></i>
-              <p>Considerable commitment</p>
-            </div>
-            <div class="item flex_icon">
-              <i class="fa-solid fa-check"></i>
-              <p>Reasonable cost</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-4">
-      <div class="container">
-        <div class="top">
-          <p class="name">our services</p>
-          <p class="title">Build Your Custom Software For Your Business</p>
-        </div>
-        <div class="bottom">
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">Client Application Development</p>
-            </div>
-            <div class="content">
-              <p class="detail">Native and Hybrid mobile app development</p>
-              <p class="detail">Cross platform development</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">Web System Development</p>
-            </div>
-            <div class="content">
-              <p class="detail">Custom website development</p>
-              <p class="detail">CMS system development</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">Cloud and Microservice Development</p>
-            </div>
-            <div class="content">
-              <p class="detail">
-                Cloud services and on-premise microservices development.
-              </p>
-              <p class="detail">ERP and Enterprise system development</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">Software Testing</p>
-            </div>
-            <div class="content">
-              <p class="detail">Full product quality assurance</p>
-              <p class="detail">Test planning & Execution</p>
-              <p class="detail">Automation testing</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">Game Development</p>
-            </div>
-            <div class="content">
-              <p class="detail">Cross platform 2D/3D development</p>
-              <p class="detail">Blockchain/NFT game development</p>
-              <p class="detail">Game economy design</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">Blockchain Development</p>
-            </div>
-            <div class="content">
-              <p class="detail">Blockchain consulting</p>
-              <p class="detail">Smart contract development</p>
-              <p class="detail">App development</p>
-              <p class="detail">Tokenization development</p>
-              <p class="detail">Gamefi development</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">AI and IoT</p>
-            </div>
-            <div class="content">
-              <p class="detail">AI consulting & development</p>
-              <p class="detail">IOT system consulting & development</p>
-              <p class="detail">Data service</p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="flex" style="margin-bottom: 15px; height: 90px">
-              <i class="icon fa-solid fa-mobile-screen"></i>
-              <p class="item_name">VoIP Development</p>
-            </div>
-            <div class="content">
-              <p class="detail">VoIP consulting & implementation</p>
-              <p class="detail">VoIP system development</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-5">
-      <div class="grid">
-        <div class="project">
-          <p class="number">250+</p>
-          <p class="names">Project Completed</p>
-        </div>
-        <div class="clients">
-          <p class="number">80+</p>
-          <p class="names">Clients Served</p>
-        </div>
-        <div class="loyal">
-          <p class="number">80%</p>
-          <p class="names">Loyal Clients</p>
-        </div>
-      </div>
-    </div>
-    <div class="section-6">
-      <div class="container">
-        <div class="top">
-          <p class="name">the teams</p>
-          <p class="title">Meet Awesome Team</p>
-          <p class="desc">
-            From a team of four dedicated and enthusiastic engineer…..
-          </p>
-        </div>
-        <div class="bottom">
-          <div class="grid">
-            <div class="grid-item">
-              <div class="overlay">
-                <div class="text">
-                  <h2>Nhan Nguyen Tran</h2>
-                  <p>Chief Executive Officer</p>
-                </div>
-                <p>
-                  Graduated from Lomonosov Moscow State University with a
-                  bachelor's degree in Physics, but then Nhan discovered his
-                  passion in software development and he decided to learn to be
-                  a developer. Nhan has more than 15 years of working experience
-                  in software development and most of that time working with
-                  JAVA, C/C++, and mobile technologies (IOS, Android) and has
-                  gained a certain professionalism level as a Senior JAVA, C/C++
-                  LINUX/MOBILE and cloud platform.
-                </p>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="overlay">
-                <div class="text">
-                  <h2>Tien Pham Manh</h2>
-                  <p>Deputy Chief Executive Office</p>
-                </div>
-                <p>
-                  Tien Pham is a software engineer with a strong background in
-                  project management and IT process management. With more than
-                  10 years of experience, Tien has shown his potential in the
-                  position of technical leader. Tien has great knowledge of
-                  computers, network hardware, office facilities, especially
-                  Project Management Tools, blockchain, Ethereum network, and
-                  smart contracts.
-                </p>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="overlay">
-                <div class="text">
-                  <h2>Phuc Duong Van</h2>
-                  <p>Chief Technology Officer</p>
-                </div>
-                <p>
-                  Phuc Duong has a Master’s degree in Computer Science and used
-                  to be a lecturer at a leading technology training university
-                  in Vietnam. Phuc has more than 10 years of experience in many
-                  specialties, such as .Net Framework, game development and
-                  mobile platform. With a problem - solving mindset, Phuc has
-                  become technical leader, project manager of many projects and
-                  received lots of appreciation from clients.
-                </p>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="overlay">
-                <div class="text">
-                  <h2>Linh Nguyen Le</h2>
-                  <p>Chief Human Resource Officer</p>
-                </div>
-                <p>
-                  Linh Nguyen has spent a long time studying as a mathematician
-                  at Lomonosov Moscow State University and received a Doctorate
-                  in Mathematics. During this time, he self-taught and became a
-                  data engineer with expertise in PHP, C#, Java, VueJs in which
-                  he put his mathematics skills in need. Linh is passionate
-                  about numbers, data and programming, therefore, he usually
-                  worked as data engineer, project managers and technical leader
-                  in many projects for the last 10 years.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-7">
-      <div class="container">
-        <div class="top">
-          <p class="name">our process</p>
-          <p class="title">We Build Your Enterprise Web & Mobile Apps</p>
-          <p class="desc">
-            We apply agile/scrum methodology to bring the most updated and
-            optimized product
-          </p>
-        </div>
-        <div class="grid" style="padding-top: 15px">
-          <div class="box">
-            <i class="icon-first fa-regular fa-envelope"></i>
-            <p class="box_name">Requirements analysis</p>
-            <p class="detail">
-              Requirement analysis is the most important and fundamental stage
-              in SDLC. This information is then used to plan the basic project
-              approach and to conduct product feasibility study in the
-              economical, operational and technical areas.
-            </p>
-          </div>
-          <div class="box">
-            <i class="icon fa-regular fa-paper-plane"></i>
-            <p class="box_name">Design and Architecture</p>
-            <p class="detail">
-              This phase comes out with the best architecture for the product to
-              be developed. Based on the requirements specified in the previous
-              phase, usually more than one design approach for the product
-              architecture is proposed and documented in a DDS
-            </p>
-          </div>
-          <div class="box">
-            <i class="icon fa-solid fa-rocket"></i>
-            <p class="box_name">Development</p>
-            <p class="detail">
-              After all architecture and design choices are already defined, the
-              actual coding starts. Quality assurance and software testing
-            </p>
-            <p class="detail">
-              In this phase, the developed software is tested thoroughly and any
-              defects found are assigned to developers to get them fixed.
-            </p>
-          </div>
-          <div class="box">
-            <i class="icon fa-regular fa-paper-plane"></i>
-            <p class="box_name">Deployment</p>
-            <p class="detail">
-              After the software has been tested, the final deployment takes
-              place. But, this is not as simple as the click of a button. There
-              are a lot of things to consider in this software development life
-              cycle process.
-            </p>
-          </div>
-          <div class="box">
-            <i class="icon fa-regular fa-paper-plane"></i>
-            <p class="box_name">Review</p>
-            <p class="detail">
-              In the final phase of the SDLC, it’s important to acknowledge that
-              all software requires review. If users find any issues, the
-              problem can be fixed in the next release
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section-8">
-      <div class="container flex" style="justify-content: center">
-        <div class="left">
-          <div class="flex">
-            <p class="name">GET STARTED</p>
-          </div>
-          <p class="title">Get Started & Tell Us About Your Requirement</p>
-        </div>
-        <div class="right">
-          <div class="grid">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-          </div>
-          <input class="input" type="text" placeholder="Subject" />
-          <textarea class="message" rows="4" placeholder="Message"></textarea>
-          <div class="btn">SEND</div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="wrapper_top">
-            <img src="../image/logo.png" class="logo" />
-            <p>We do it with passion</p>
+          <div class="top-right">
             <div class="submit_subscribe">
               <input type="email" placeholder="Email" />
               <div class="btn">SUBSCRIBE</div>
             </div>
           </div>
         </div>
-        <hr />
-        <div class="footer-middle flex">
-          <div class="box">
-            <div class="title">Company</div>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Vision & Mission</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <div class="title">Outstandings</div>
-            <ul>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Process</a></li>
-              <li><a href="#">Case study</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <div class="title">Follow Us</div>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Linkedin</a></li>
-              <li><a href="#">Youtube</a></li>
-            </ul>
-          </div>
-          <div class="box grid">
-            <a href="#">
-              <img src="../image/img_1.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_2.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_3.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_4.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_5.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_6.jpg" />
-            </a>
-          </div>
+      </div>
+      <hr />
+      <div class="footer-middle flex">
+        <div class="box">
+          <div class="title">Company</div>
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Vision & Mission</a></li>
+          </ul>
         </div>
-        <hr />
-        <div class="footer-bottom">
-          <p>Copyright © 2021 Envalab.com</p>
+        <div class="box">
+          <div class="title">Outstandings</div>
+          <ul>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="#">Case study</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <div class="title">Follow Us</div>
+          <ul>
+            <li><a href="https://www.facebook.com/nccsoft.com.vn">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/company/nccsoft-vietnam/">Linkedin</a></li>
+            <li><a href="https://www.youtube.com/channel/UChFpCEl2FP22M_BybYhWjnA/featured">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="box grid">
+          <a href="#">
+            <img src="/image/img_1.jpg" />
+          </a>
+          <a href="#">
+            <img src="/image/img_2.jpg" />
+          </a>
+          <a href="#">
+            <img src="/image/img_3.jpg" />
+          </a>
+          <a href="#">
+            <img src="/image/img_4.jpg" />
+          </a>
+          <a href="#">
+            <img src="/image/img_5.jpg" />
+          </a>
+          <a href="#">
+            <img src="/image/img_6.jpg" />
+          </a>
         </div>
       </div>
-    </footer>
-    <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
-    <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script>
-      $(".slide2").owlCarousel({
+      <hr />
+      <div class="footer-bottom">
+        <p>Copyright © 2021 Envalab.com</p>
+      </div>
+    </div>
+  </footer>
+<script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
+<script src="/libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="../js/script.js"></script>
+<script>
+    $(".slide2").owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true,
+        autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
         responsive: {
-          0: {
+        0: {
             items: 1,
             nav: true,
-          },
         },
-      });
-    </script>
-    <script>
-      $(".slide1").owlCarousel({
+        },
+    });
+</script>
+<script>
+    $(".slide1").owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
+        autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
         responsive: {
-          0: {
+        0: {
             items: 1,
             nav: true,
-          },
-          600: {
+        },
+        600: {
             items: 3,
             nav: false,
-          },
         },
-      });
-    </script>
-  </body>
+        },
+    });
+</script>
+
+</body>
 </html>

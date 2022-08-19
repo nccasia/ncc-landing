@@ -1,390 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="../css/about.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <title>About</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-left">
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oxygen:wght@300;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link rel="stylesheet" href="../css/about.css"/>
+   <link rel="stylesheet" href="../css/global.css" />
+  <title>About</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
         <div
-          class="header-title"
-          style="display: flex; align-items: center; gap: 5px"
+        class="header-title"
         >
-          <img
+        <img
             src="/image/logo.png"
             alt="logo-ncc"
-            style="width: 56px; height: 56px"
-          />
+            class="logo"
+        />
         </div>
         <div class="header-menu">
-          <ul class="menu-content">
+        <ul class="menu-content">
             <li class="menu-item">
-              <a href="./index.html">Home</a>
+            <a href="./index.html">Home</a>
             </li>
             <li class="menu-item"><a href="./about.html">About</a></li>
             <li class="menu-item">
-              <a href="#"
+            <a href="#"
                 ><span>Pages <i class="fa-solid fa-angle-down"></i></span
-              ></a>
-              <ul class="menu-dropdown">
+            ></a>
+            <ul class="menu-dropdown">
                 <li><a class="dropdown-item" href="#">Service</a></li>
                 <li><a class="dropdown-item" href="#">Team</a></li>
                 <li><a class="dropdown-item" href="#">Case Study</a></li>
-              </ul>
+            </ul>
             </li>
             <li class="menu-item"><a href="./contact.html">Contact</a></li>
-          </ul>
+        </ul>
         </div>
-      </div>
-      <div class="navbar_menu">
+    </div>
+    <div class="navbar_menu">
         <i class="fa-solid fa-bars"></i>
-      </div>
-      <div class="header-right">
+    </div>
+    <div class="header-right">
         <div class="header-button">
-          <button class="header-btn" type="button">Get Quoatation</button>
+        <button class="header-btn" type="button">Get Quoatation</button>
         </div>
         <span class="nav-bar">
-          <i
-            id="openIcon"
-            class="fa-solid fa-bars fa-xl"
-            onclick="openSidebar()"
-          ></i>
+        <i id="openIcon" class="fa-solid fa-bars fa-xl" onclick="openSidebar()"></i>
         </span>
-      </div>
-    </header>
-    <div class="small_menu">
-      <ul class="menu-content">
+    </div>
+</header>
+<div class="small_menu">
+    <ul class="menu-content">
         <li class="menu-item">
-          <a href="./index.html">HOME</a>
+            <a href="./index.html">HOME</a>
+        </li>                
+        <li class="menu-item">
+            <a href="./about.html">ABOUT</a>
         </li>
         <li class="menu-item">
-          <a href="./about.html">ABOUT</a>
-        </li>
-        <li class="menu-item">
-          <a href="#"
-            ><span>PAGES <i class="fa-solid fa-angle-down"></i></span
-          ></a>
-          <ul class="menu-dropdown">
-            <li><a class="dropdown-item" href="#">SERVICE</a></li>
-            <li><a class="dropdown-item" href="#">TEAM</a></li>
-            <li><a class="dropdown-item" href="#">CASE STUDY</a></li>
-          </ul>
+            <a href="#"><span>PAGES <i class="fa-solid fa-angle-down"></i></span
+                ></span></a>
+            <ul class="menu-dropdown">
+                <li><a class="dropdown-item" href="#">SERVICE</a></li>
+                <li><a class="dropdown-item" href="#">TEAM</a></li>
+                <li><a class="dropdown-item" href="#">CASE STUDY</a></li>
+            </ul>
         </li>
         <li class="menu-item"><a href="./contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-    <div class="sidebar" id="sidebar">
-      <i
-        id="closeIcon"
-        class="fa-solid fa-xmark"
-        onclick="closeSidebar()"
-        style="font-size: 24px"
-      ></i>
-      <div class="wrapper">
-        <p class="sidebar_header">Shevia</p>
-        <p class="sidebar_desc">
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-        <p class="sidebar_name">Services</p>
-        <ul>
-          <li class="flex">
+    </ul>
+</div>
+<div class="sidebar" id="sidebar">
+    <i id="closeIcon" class="fa-solid fa-xmark" onclick="closeSidebar()" style="font-size:24px ;"></i>
+    <div class="wrapper">
+    <p class="sidebar_header">Shevia</p>
+    <p class="sidebar_desc">luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    <p class="sidebar_name">Services</p>
+    <ul>
+        <li class="flex">
             <i class="fa-solid fa-check"></i>
             <p class="sidebar_item">Mobile Development</p>
-          </li>
-          <li class="flex">
+        </li>
+        <li class="flex">
             <i class="fa-solid fa-check"></i>
             <p class="sidebar_item">Web Development</p>
-          </li>
-          <li class="flex">
+        </li>
+        <li class="flex">
             <i class="fa-solid fa-check"></i>
-            <p class="sidebar_item">Data Science</p>
-          </li>
-          <li class="flex">
+            <p class="sidebar_item">
+                Data Science</p>
+        </li>
+        <li class="flex">
             <i class="fa-solid fa-check"></i>
             <p class="sidebar_item">IoT Development</p>
-          </li>
-          <li class="flex">
+        </li>
+        <li class="flex">
             <i class="fa-solid fa-check"></i>
             <p class="sidebar_item">Enterprise Application</p>
-          </li>
-          <li class="flex">
+        </li>
+        <li class="flex">
             <i class="fa-solid fa-check"></i>
             <p class="sidebar_item">User Interfice Design</p>
-          </li>
-        </ul>
-        <p class="sidebar_name">Follow Us</p>
-        <ul class="flex">
-          <li><i class="icon fa-brands fa-facebook"></i></li>
-          <li><i class="icon fa-brands fa-twitter"></i></li>
-          <li><i class="icon fa-brands fa-linkedin"></i></li>
-          <li><i class="icon fa-brands fa-youtube"></i></li>
-        </ul>
-      </div>
-    </div>
-    <div class="section_1">
-      <div class="container flex">
+        </li>
+    </ul>
+    <p class="sidebar_name">Follow Us</p>
+    <ul class="flex">
+        <li><i class="icon fa-brands fa-facebook"></i></li>
+        <li><i class="icon fa-brands fa-twitter"></i></li>
+        <li><i class="icon fa-brands fa-linkedin"></i></li>
+        <li><i class="icon fa-brands fa-youtube"></i></li>
+    </ul>
+</div>
+</div>
+<div class="section_1">
+    <div class="container flex">
         <div class="left">
-          <p class="name">about us</p>
-          <p class="desc">
-            Established in 2014 as a software firm and IT outsourcing service
-            provider, NCCPLUS has grown rapidly and become a trusted partner of
-            national and international businesses. We are a team of dynamic and
-            talented engineers pursuing the passion of transforming the world.
-          </p>
+            <p class="name">about us</p>
+            <p class="desc">Established in 2014 as a software firm and IT outsourcing service provider, NCCPLUS has grown rapidly and become a trusted partner of national and international businesses. We are a team of dynamic and talented engineers pursuing the passion of transforming the world.</p>
         </div>
         <div class="right"></div>
-      </div>
     </div>
-    <div class="section_2">
-      <div class="container flex">
+</div>
+<div class="section_2">
+    <div class="container flex">
         <div class="left">
-          <p class="name">about us</p>
-          <p class="name_section2">Our Vision</p>
-          <p class="desc">
-            NCC is making efforts to be one of the top software firms and
-            outsourcing service providers in national and international areas.
-            Our vision is to establish a global presence and become the trusted
-            partner of the world’s leading enterprises in all industries.
-          </p>
-          <p class="name_section2">Our Mission</p>
-          <p class="desc">
-            At NCC, we build everything around “People” because we understand
-            that human resource is the determining factor of success. We gather
-            and build up young and talented software engineers to professional
-            and international class levels. Our mission is to utilize advanced
-            technology, innovative solutions, and excellent human resources to
-            contribute to world transformation.
-          </p>
-        </div>
-        <div class="right"></div>
-      </div>
-    </div>
-    <div class="section_3">
-      <div class="container flex">
-        <div class="left">
-          <p class="name">expertise</p>
-          <h2 class="title">We Sre Built By A Team Of Highly Focused</h2>
+            <p class="name">about us</p>
+            <p class="name_section2">Our Vision</p>
+            <p class="desc">NCC is making efforts to be one of the top software firms and outsourcing service providers in national and international areas. Our vision is to establish a global presence and become the trusted partner of the world’s leading enterprises in all industries.</p>
+            <p class="name_section2">Our Mission</p>
+            <p class="desc">At NCC, we build everything around “People” because we understand that human resource is the determining factor of success. We gather and build up young and talented software engineers to professional and international class levels. Our mission is to utilize advanced technology, innovative solutions, and excellent human resources to contribute to world transformation.</p>
         </div>
         <div class="right">
-          <p class="desc_section3">
-            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-            dui. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.Vestibulum ac diam sit amet quam vehicula elementum sed sit
-            amet dui.
-          </p>
-          <div class="wrapper grid">
-            <div class="box">
-              <div class="flex_icon">
-                <span class="counter_number">100</span>
-                <span class="counter_number">%</span>
-              </div>
-              <h6>Project on time</h6>
-            </div>
-            <div class="box">
-              <div class="flex_icon">
-                <span class="counter_number">90</span>
-                <span class="counter_number">%</span>
-              </div>
-              <h6>Code Coverage</h6>
-            </div>
-            <div class="box">
-              <div class="flex_icon">
-                <span class="counter_number">100</span>
-                <span class="counter_number">%</span>
-              </div>
-              <h6>Keep Communication With Client</h6>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="section_4">
-      <div class="container flex">
+</div>
+<div class="section_3">
+    <div class="container flex">
+        <div class="left">
+            <p class="name">expertise</p>
+            <h2 class="title">We Sre Built By A Team Of Highly Focused</h2>
+        </div>
+        <div class="right">
+            <p class="desc_section3">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+            <div class="wrapper grid">
+                <div class="box">
+                    <div class="flex_icon">
+                        <span class="counter_number">100</span>
+                        <span class="counter_number">%</span>
+                    </div>
+                    <h6>Project on time</h6>
+                </div>
+                <div class="box">
+                    <div class="flex_icon">
+                        <span class="counter_number">90</span>
+                        <span class="counter_number">%</span>
+                    </div>
+                    <h6>Code Coverage</h6>
+                </div>
+                <div class="box">
+                    <div class="flex_icon">
+                        <span class="counter_number">100</span>
+                        <span class="counter_number">%</span>
+                    </div>
+                    <h6>Keep Communication With Client</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section_4">
+    <div class="container flex">
         <div class="left"></div>
         <div class="right">
-          <p class="name">From founder</p>
-          <h2 class="title">Treat Clients As Close Friends</h2>
-          <p class="desc">
-            NCC always treats clients as close friends because we believe NCC
-            and clients are not just the parties in the business contract but
-            also the good companion on the journey of discovering technology and
-            transforming the world, On that journey, the understanding, trust,
-            and unanimity of friendship are the foundation and motivation to go
-            further and faster.
-          </p>
+            <p class="name">From founder</p>
+            <h2 class="title">Treat Clients As Close Friends</h2>
+            <p class="desc">NCC always treats clients as close friends because we believe NCC and clients are not just the parties in the business contract but also the good companion on the journey of discovering technology and transforming the world, On that journey, the understanding, trust, and unanimity of friendship are the foundation and motivation to go further and faster.</p>
         </div>
-      </div>
     </div>
-    <div class="section_5">
-      <div class="container">
+</div>
+<div class="section_5">
+    <div class="container">
         <div class="top">
-          <p class="name">our history</p>
-          <h2 class="titles">
-            We Are Very Proud As A Company To Always Deliver On Our Word
-          </h2>
+            <p class="name">our history</p>
+            <h2 class="titles">We Are Very Proud As A Company To Always Deliver On Our Word</h2>
         </div>
         <div class="bottom grid">
-          <div class="box">
-            <div class="flex">
-              <i class="icon fa-solid fa-rocket"></i>
-              <div class="wrapper">
-                <p class="name_history">We Are Founded</p>
-              </div>
+            <div class="box">
+                <div class="flex">
+                    <i class="icon fa-solid fa-rocket"></i>
+                    <div class="wrapper">
+                        <p class="name_history">We Are Founded</p>
+                    </div>
+                </div>
+                <p class="time">2014</p>
             </div>
-            <p class="time">2014</p>
-          </div>
-          <div class="box">
-            <div class="flex">
-              <i class="icon fa-solid fa-rocket"></i>
-              <div class="wrapper">
-                <p class="name_history">10 programmers</p>
-                <p class="name_history">100m2 office</p>
-              </div>
+            <div class="box">
+                <div class="flex">
+                    <i class="icon fa-solid fa-rocket"></i>
+                    <div class="wrapper">
+                        <p class="name_history">10 programmers</p>
+                        <p class="name_history">100m2 office</p>
+                    </div>
+                </div>
+                <p class="time">2016</p>
             </div>
-            <p class="time">2016</p>
-          </div>
-          <div class="box">
-            <div class="flex">
-              <i class="icon fa-solid fa-rocket"></i>
-              <div class="wrapper">
-                <p class="name_history">91 programmers</p>
-                <p class="name_history">230m2 office</p>
-              </div>
+            <div class="box">
+                <div class="flex">
+                    <i class="icon fa-solid fa-rocket"></i>
+                    <div class="wrapper">
+                        <p class="name_history">91 programmers</p>
+                        <p class="name_history">230m2 office</p>
+                    </div>
+                </div>
+                <p class="time">2018</p>
             </div>
-            <p class="time">2018</p>
-          </div>
-          <div class="box">
-            <div class="flex">
-              <i class="icon fa-solid fa-rocket"></i>
-              <div class="wrapper">
-                <p class="name_history">150 programmers</p>
-                <p class="name_history">500m2 office</p>
-              </div>
+            <div class="box">
+                <div class="flex">
+                    <i class="icon fa-solid fa-rocket"></i>
+                    <div class="wrapper">
+                        <p class="name_history">150 programmers</p>
+                        <p class="name_history">500m2 office</p>
+                    </div>
+                </div>
+                <p class="time">2020</p>
             </div>
-            <p class="time">2020</p>
-          </div>
-          <div class="box">
-            <div class="flex">
-              <i class="icon fa-solid fa-rocket"></i>
-              <div class="wrapper">
-                <p class="name_history">300+ programmer</p>
-                <p class="name_history">1300m2 office</p>
-              </div>
+            <div class="box">
+                <div class="flex">
+                    <i class="icon fa-solid fa-rocket"></i>
+                    <div class="wrapper">
+                        <p class="name_history">300+ programmer</p>
+                        <p class="name_history">1300m2 office</p>
+                    </div>
+                </div>
+                <p class="time">2022</p>
             </div>
-            <p class="time">2022</p>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="section_6">
-      <div class="container flex">
-        <div class="middle">
-          <h3>Get in touch</h3>
-          <ul>
-            <li class="list_item">info@ncc.asia</li>
-            <li class="list_item">(+84) 2466874606</li>
-          </ul>
+</div>
+<div class="section_6">
+    <div class="container flex_section6">
+        <div class="wrapper flex_img">
+            <div class="left">
+                <div class="box">
+                    <img src="../image/Logo-1.png" />
+                    <img src="../image/Logo-2.png" />
+                    <img src="../image/Logo-1.png" />
+                    <img src="../image/Logo-2.png" />
+                </div>
+                    <h4>Our Professional Clients</h4>
+            </div>
+            <div class="middle">
+                <h3>Get in touch</h3>
+                <ul>
+                    <li class="list_item">info@ncc.asia</li>
+                    <li class="list_item">(+84) 2466874606</li>
+                </ul>
+            </div>
         </div>
         <div class="right">
-          <h4>ask us anything</h4>
-          <div class="flex">
-            <input type="text" placeholder="Name" style="margin-right: 20px" />
-            <input type="email" placeholder="Email" class="text" />
+            <h4>ask us anything</h4>
+            <div class="flex flex_icon">
+                <input type="text" placeholder="Name" style="margin-right:20px ;" />
+                <input type="email" placeholder="Email" class="text" />
+            </div>
+            <input class="input" type="text" placeholder="Message">
+            <div class="btn_send">SEND MESSAGE</div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="wrapper_top">
+        <div class="top-left">
+          <img src="/image/logo.png" class="logo" />
+          <p>We do<i style="color: red">&nbsp;it&nbsp;</i>with passion</p>
+        </div>
+        <div class="top-right">
+          <div class="submit_subscribe">
+            <input type="email" placeholder="Email" />
+            <div class="btn">SUBSCRIBE</div>
           </div>
-          <input class="input" type="text" placeholder="Message" />
-          <div class="btn_send">SEND MESSAGE</div>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="wrapper_top">
-            <img src="../image/logo.png" class="logo" />
-            <p>We do it with passion</p>
-            <div class="submit_subscribe">
-              <input type="email" placeholder="Email" />
-              <div class="btn">SUBSCRIBE</div>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="footer-middle flex">
-          <div class="box">
-            <div class="title">Company</div>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Vision & Mission</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <div class="title">Outstandings</div>
-            <ul>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Process</a></li>
-              <li><a href="#">Case study</a></li>
-            </ul>
-          </div>
-          <div class="box">
-            <div class="title">Follow Us</div>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Linkedin</a></li>
-              <li><a href="#">Youtube</a></li>
-            </ul>
-          </div>
-          <div class="box grid">
-            <a href="#">
-              <img src="../image/img_1.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_2.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_3.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_4.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_5.jpg" />
-            </a>
-            <a href="#">
-              <img src="../image/img_6.jpg" />
-            </a>
-          </div>
-        </div>
-        <hr />
-        <div class="footer-bottom">
-          <p>Copyright © 2021 Envalab.com</p>
-        </div>
+    <hr />
+    <div class="footer-middle flex">
+      <div class="box">
+        <div class="title">Company</div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Vision & Mission</a></li>
+        </ul>
       </div>
-    </footer>
+      <div class="box">
+        <div class="title">Outstandings</div>
+        <ul>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Process</a></li>
+          <li><a href="#">Case study</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="title">Follow Us</div>
+        <ul>
+          <li><a href="https://www.facebook.com/nccsoft.com.vn">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/nccsoft-vietnam/">Linkedin</a></li>
+          <li><a href="https://www.youtube.com/channel/UChFpCEl2FP22M_BybYhWjnA/featured">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="box grid">
+        <a href="#">
+          <img src="/image/img_1.jpg" />
+        </a>
+        <a href="#">
+          <img src="/image/img_2.jpg" />
+        </a>
+        <a href="#">
+          <img src="/image/img_3.jpg" />
+        </a>
+        <a href="#">
+          <img src="/image/img_4.jpg" />
+        </a>
+        <a href="#">
+          <img src="/image/img_5.jpg" />
+        </a>
+        <a href="#">
+          <img src="/image/img_6.jpg" />
+        </a>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <p>Copyright © 2021 Envalab.com</p>
+    </div>
+  </div>
+</footer>
     <script src="../js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
