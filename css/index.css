@@ -994,7 +994,8 @@
   }
 
   .section-2 .left .box::after {
-    margin: 0 35%;
+    margin: 0 42%;
+    width: 15%;
   }
 
   .section-2 .left .box:last-child::after{
@@ -1006,7 +1007,7 @@
   }
 
   .site_slide {
-      margin-top: 100%;
+      margin-top: 103%;
   }
 
   .slide img {
@@ -1019,5 +1020,15 @@
 
   .section-4 .bottom .item_name {
     margin-top: 10px;
+  }
+
+  .section-4 .bottom {
+    height: 550px;
+    overflow: scroll;
+  }
+
+  .section-7 .grid {
+    height: 550px;
+    overflow: scroll;
   }
 }
