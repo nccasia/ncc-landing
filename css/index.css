@@ -131,7 +131,7 @@
 
 .section-2 .right {
   box-sizing: border-box;
-  padding: 30px;
+  padding:0 30px;
 }
 
 .section-2 .right .name_industries {
@@ -650,7 +650,6 @@
       flex-direction: column;
   }
 
-<<<<<<< HEAD
   .section-2 .left .grid {
       grid-template-columns: repeat(1,1fr);
   }
@@ -845,6 +844,9 @@
       text-align: center;
       max-width: 100%;
       font-size: 36px;
+      box-sizing: border-box;
+      padding: 15px 0;
+  
   }
 
   .section-8 .left .desc {
@@ -991,6 +993,10 @@
   .slide_heading{
       font-size: 40px;
   }
+
+  .section-2 .right {
+    padding: 0;
+  }
   
   .section-2 .left {
     padding: 20px 0 20px 0;
@@ -1002,10 +1008,6 @@
   .section-2 .left .box::after {
     margin: 0 42%;
     width: 15%;
-  }
-
-  .section-2 .flex_section2 {
-    flex-direction: column;
   }
 
   .section-2 .left .box:last-child::after{
@@ -1038,7 +1040,7 @@
   }
 
   .section-7 .grid {
-    height: 550px;
+    height: 565px;
     overflow: scroll;
   }
 }
