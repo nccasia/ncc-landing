@@ -28,6 +28,10 @@ body {
   display: flex;
 }
 
+.flex_icon {
+  display: flex;
+}
+
 .btn {
   background-color: #ff7d90;
   padding: 15px;
@@ -62,20 +66,20 @@ body {
   text-transform: uppercase;
 }
 .name::before {
+  margin: 0 10px 0 -70px;
+  display: inline-block;
   content: "";
-  position: absolute;
+  border-top: 1px solid var(--e-global-color-primary);
   width: 60px;
-  height: 1px;
-  background: var(--e-global-color-primary);
-  margin: 10px 0 0 -70px;
+  transform: translateY(-0.4rem);
 }
 .name::after {
+  margin: 0 0 0 10px;
+  display: inline-block;
   content: "";
-  position: absolute;
+  border-top: 1px solid var(--e-global-color-primary);
   width: 60px;
-  height: 1px;
-  background: var(--e-global-color-primary);
-  margin: 10px 0 0 10px;
+  transform: translateY(-0.4rem);
 }
 
 .title {
