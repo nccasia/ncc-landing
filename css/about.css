@@ -8,6 +8,8 @@
   margin-bottom: 80px;
 }
 
+.section_1 .title {}
+
 .section_1 .left{
   padding-top: 100px;
   width: 50%;
@@ -23,8 +25,9 @@
 
 .section_1 .right {
   width: 50%;
-  background-image: url("../image/img_4.jpg");
+  background-image: url("../image/service-sec4.jpg");
   background-size: cover;
+  background-position: center;
   height: 460px;
 }
 
@@ -39,7 +42,7 @@
 }
 
 .section_2 .name {
-  text-align: left;
+  text-align: center;
   margin-left: 70px;
 }
 
@@ -51,7 +54,7 @@
 }
 
 .section_2 .right {
-  background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-JDHACMJ.jpg);
+  background-image: url("../image/team-sec1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,7 +160,7 @@
 
 .section_4 .left {
   width: 50%;
-  background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg);
+  background-image: url("../image/AnhNhan.jpg");
   background-position: center center;
   background-size: cover;
   height:585px;
@@ -594,6 +597,15 @@
       margin: 0 0 0 15%;
   }
 
+  .section_1 .title {
+    font-size: 36px;
+  padding: 15px 0;
+  }
+
+  .section_1 .desc {
+    margin-top: 0;
+  }
+
   .section_2 .right .flex {
     width: 100%;
   }
@@ -633,7 +645,6 @@
   .section_6 .left {
       margin-bottom: 20px;
       text-align: center;
-      padding-left: 6%;
   }
 
   .section-6 .top .name {

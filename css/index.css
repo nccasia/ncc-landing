@@ -38,7 +38,7 @@
 
 .section-1 .bottom .image{
   position: relative;
-  background-image: url(http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-EACCXCY.jpg);
+  background-image: url("../image/IMG_0003\ sua.jpg");
   position: relative;
   background-position: center center;
   background-size: cover;
@@ -234,8 +234,9 @@
   width: 45%; 
   background-size: cover;
   padding: 10px;
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../image/img_4.jpg');
+  background-image: url('../image/service-sec4.jpg');
 }
 
 .site_slide {
@@ -329,8 +330,7 @@
   width: 100%;
   position: relative;
   color: white;
-  background-position: bottom right;
-  background-image: linear-gradient(240deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg"); 
+  background-image: linear-gradient(240deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("../image/service-sec2.jpg"); 
   opacity: 0.88;
 }
 
@@ -398,9 +398,24 @@
   gap: 10px;
   width: 100%;
   height: 450px;
-  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-CMTLCDG.jpg");
   background-position: center center;
   background-size: cover;
+}
+
+.img1 {
+  background-image: url("../image/AnhNhan.jpg");
+}
+
+.img2 {
+  background-image: url("../image/AnhTien.jpg");
+}
+
+.img3 {
+  background-image: url("../image/AnhPhuc.jpg");
+}
+
+.img4 {
+  background-image: url("../image/AnhLinh.jpg");
 }
 
 .overlay {
@@ -548,14 +563,13 @@
   max-width: 40%;
 }
 
-.section-8 .left .name::before {
-  display: none;
-}
-
 .section-8 .right {
   max-width: 65%;
 }
 
+.section-8 .name::after {
+  display: none;
+}
 .left .title {
   color: var(--e-global-color-secondary);
   font-size: 50px;
@@ -631,10 +645,6 @@
 
   .headline_dynamic {
     font-size: 36px;
-  }
-
-  .section-1 .top .name {
-    margin-left: 0;
   }
 
   .section-2 .flex {
@@ -997,6 +1007,10 @@
   .section-2 .right {
     padding: 0;
   }
+
+  .section-2 .right .name {
+    margin-left: 60px;
+  }
   
   .section-2 .left {
     padding: 20px 0 20px 0;
@@ -1026,6 +1040,10 @@
     padding: 0;
   }
 
+  .section-4 .top .name {
+    margin-left: 60px;
+  }
+
   .section-4 .bottom {
     width: 100%;
   }
@@ -1039,8 +1057,20 @@
     overflow: scroll;
   }
 
+  .section-6 .top .name {
+    margin-left: 60px;
+  }
+
   .section-7 .grid {
     height: 565px;
     overflow: scroll;
+  }
+
+  .section-7 .name {
+    margin-left: 60px;
+  }
+
+  .section-8 .name {
+    margin-left: 60px;
   }
 }
