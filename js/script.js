@@ -49,3 +49,32 @@ window.addEventListener("click", ({ target }) => {
     popupContain.classList.add("show");
   }
 });
+
+$(".slide2").owlCarousel({
+  loop: true,
+  margin: 10,
+  items: 1,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+  },
+});
+
+$(".slide1").owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    600: {
+      items: 3,
+      nav: false,
+    },
+  },
+});

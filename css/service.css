@@ -495,7 +495,7 @@
   }
 
   .section-2-content .content-left h1 {
-    padding: 30px;
+    padding: 0 30px 30px;
   }
 
   .section-2-content .content-right {
@@ -528,7 +528,16 @@
     box-sizing: border-box;
   }
 
-  .section-2-detail .section-3 {
+  .section-2-detail .detail-item span {
+    font-size: 36px;
+  }
+
+  .section-2-detail .detail-item h6 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .section-2-detail {
     flex-direction: column;
   }
 
@@ -547,7 +556,7 @@
     display: flex;
     text-align: center;
     font-size: 36px;
-    padding: 30px;
+    padding: 30px 30px 0;
   }
 
   .section-3-detail {
@@ -571,6 +580,10 @@
     padding: 30px;
     text-align: center;
     height: 30px;
+  }
+
+  .section-3-detail .detail-item:last-child {
+    border-bottom: 0;
   }
 
   .section-4 {
@@ -631,12 +644,21 @@
     padding: 30px;
   }
 
+  .section-1-content span::before,
+  .section-1-content span::after {
+    transform: translateY(0.7em);
+  }
+
   .section-2 {
     width: 100%;
   }
 
   .section-2-content {
     padding: 0;
+  }
+
+  .section-2-content span::before {
+    transform: translateY(0.7em);
   }
 
   .section-2-content h1 {
@@ -665,6 +687,10 @@
     padding: 30px;
   }
 
+  .section-3-content span::before {
+    transform: translateY(0.7em);
+  }
+
   .section-3-content h2 {
     padding: 30px;
   }
@@ -689,7 +715,7 @@
   }
 
   .section-4 .box span::before {
-    transform: translateY(0.5em);
+    transform: translateY(0);
   }
 
   .section-4 .box h2 {
