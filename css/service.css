@@ -72,7 +72,7 @@
 .section-1-img {
   width: 50%;
   height: 100%;
-  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-QD6VBXB.jpg");
+  background-image: url(/image/service-sec1.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -150,7 +150,7 @@
       var(--e-global-color-f03f58e) 41%,
       var(--e-global-color-secondary) 97%
     ),
-    url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg");
+    url(/image/service-sec2.jpg);
   opacity: 0.88;
   background-size: cover;
 }
@@ -394,35 +394,6 @@
 .slide img {
   width: 170px;
   height: 48px;
-}
-
-/*-----------------image---------------------*/
-.image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-  width: 100%;
-  position: relative;
-  color: white;
-  background-image: linear-gradient(
-      180deg,
-      var(--e-global-color-f03f58e) 41%,
-      var(--e-global-color-secondary) 97%
-    ),
-    url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Photas-BJUF6U2.jpg");
-  opacity: 0.88;
-}
-
-.image .grid {
-  padding-top: 40%;
-  position: absolute;
-  margin-left: 60px;
-  grid-gap: 60px;
-}
-
-.image .number {
-  font-size: 60px;
-  font-weight: 300;
 }
 
 @media (max-width: 767px) {

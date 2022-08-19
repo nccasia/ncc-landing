@@ -37,7 +37,7 @@
   border-top: 1px solid var(--e-global-color-primary);
   width: 4rem;
   margin: 0 1rem;
-  transform: translateY(0.5em);
+  transform: translateY(0.7em);
 }
 
 .section-1-content {
@@ -47,8 +47,7 @@
   width: 50%;
   align-items: center;
   justify-content: flex-start;
-  padding: 96px 30px 96px 30px;
-  gap: 30px;
+  padding: 60px 30px 60px 30px;
 }
 
 .section-1-content h1 {
@@ -74,7 +73,7 @@
 .section-1-img {
   width: 50%;
   height: 100%;
-  background-image: url("http://tkpro-demos.envalab.com/22/wp-content/uploads/sites/33/2021/11/Image-P7QTJ8G.jpg");
+  background-image: url(/image/case-sec1.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -82,6 +81,27 @@
 .section-2 {
   margin: 100px 0 100px 0;
   box-sizing: border-box;
+}
+
+.section-2 .top span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  align-items: flex-start;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.section-2 .top span::before,
+.section-2 .top span::after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.7em);
 }
 
 .section-2 .title {
@@ -511,6 +531,7 @@ th {
     height: 100%;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
 
   .section-2 .top {
@@ -797,5 +818,16 @@ th {
     margin: 0;
     height: 100%;
     box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1320px) {
+  .bottom-detail .content-popup .popuptext {
+    width: calc(100vw - 120px);
+    left: -60%;
+  }
+
+  .bottom .bottom-detail:nth-child(2n) .content-popup .popuptext {
+    left: -170%;
   }
 }

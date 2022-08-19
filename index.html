@@ -600,19 +600,23 @@
   </footer>
 <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
 <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
-<script src="../js/script.js"></script>
+<script src="/js/script.js"></script>
 <script>
     $(".slide2").owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
         autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
         responsive: {
         0: {
             items: 1,
             nav: true,
+        },
+        600: {
+            items: 3,
+            nav: false,
         },
         },
     });
@@ -623,8 +627,8 @@
         margin: 10,
         responsiveClass: true,
         autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
         responsive: {
         0: {
             items: 1,
