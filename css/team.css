@@ -486,7 +486,7 @@
   display: flex;
   align-items: center;
   width: fit-content;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -540,7 +540,19 @@
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 414px) {
+  .section-1-content span::before,
+  .section-1-content span::after {
+    width: 19%;
+  }
+
+  .section-2 .top span::before,
+  .section-2 .top span::after {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .section-1 {
     width: 100%;
     max-width: 100%;
@@ -664,7 +676,7 @@
 
   .section-3-detail .detail-toggle {
     width: 100%;
-    padding: 48px 30px;
+    padding: 0 30px 30px;
     gap: 0;
   }
 

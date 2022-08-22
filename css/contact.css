@@ -390,7 +390,7 @@
   }
 
   .section-1-content h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .section-1-content p {
@@ -445,6 +445,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .section-1-content h1 {
+    font-size: 36px;
+  }
+
   .section-2 .container {
     flex-direction: column;
   }

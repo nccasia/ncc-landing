@@ -143,8 +143,8 @@
   align-items: flex-end;
   position: relative;
   gap: 30px;
-  width: calc(100% - 60px);
-  height: 500px;
+  width: 100%;
+  height: 700px;
   background-image: linear-gradient(
       180deg,
       var(--e-global-color-f03f58e) 41%,
@@ -153,6 +153,7 @@
     url(/image/service-sec2.jpg);
   opacity: 0.88;
   background-size: cover;
+  background-position: center center;
 }
 .section-2-detail .detail-item {
   display: flex;
@@ -160,7 +161,7 @@
   align-items: center;
   gap: 16px;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .section-2-detail .detail-item span {
@@ -252,6 +253,8 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 30px;
+  overflow: scroll;
+  height: 700px;
 }
 
 .section-3-detail .detail-item {
@@ -396,7 +399,18 @@
   height: 48px;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 414px) {
+  .section-1-content span::before,
+  .section-1-content span::after {
+    width: 19%;
+  }
+
+  .section-3 .detail-table {
+    height: 850px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .section-1 {
     width: 100%;
     max-width: 100%;
@@ -406,7 +420,7 @@
   .section-1 .container {
     flex-direction: column;
     max-width: 100%;
-    height: 550px;
+    height: 570px;
     justify-content: center;
     align-items: center;
   }
@@ -431,7 +445,7 @@
 
   .section-1-content p {
     box-sizing: border-box;
-    padding: 30px;
+    padding: 20px;
   }
 
   .section-1-img {
@@ -485,14 +499,14 @@
 
   .section-2-detail {
     width: 100%;
-    max-width: calc(100% - 60px);
+    max-width: calc(100% - 30px);
     height: 100%;
     max-height: 800px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
-    background-position: bottom right;
+    background-position: 20%;
   }
   .section-2-detail .detail-item {
     padding: 30px;
@@ -536,6 +550,11 @@
     padding: 0;
   }
 
+  .section-3 .detail-table {
+    height: 775px;
+    overflow: scroll;
+  }
+
   .section-3-detail .detail-item {
     justify-content: center;
     align-items: center;
@@ -573,7 +592,9 @@
 
   .section-4 .box {
     width: 100%;
-    height: 65%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
   }
 
   .section-4 .box span {
@@ -588,7 +609,7 @@
   }
 
   .section-4 .box h2 {
-    padding: 30px;
+    padding: 0 30px 30px;
     font-size: 36px;
   }
 

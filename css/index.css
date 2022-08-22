@@ -240,7 +240,7 @@
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('/image/service-sec4.jpg');
+  background-image: url("/image/service-sec4.jpg");
   background-image: url("../image/service-sec4.jpg");
 }
 
@@ -261,7 +261,8 @@
 /*------------------services-----------------*/
 
 .section-4 {
-  margin: 100px 0 100px 20px;
+  box-sizing: border-box;
+  padding: 96px 60px;
 }
 
 .section-4 .top .title {
@@ -285,27 +286,34 @@
 }
 
 .section-4 .bottom {
-  margin-right: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .section-4 .box {
-  margin-top: 20px;
-  max-width: 360px;
+  padding: 30px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.box-detail {
+  display: flex;
+  margin-bottom: 15px;
+  height: 90px;
+  width: 100%;
+  gap: 10px;
+}
+
+.box .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }
 
 .section-4 .bottom .icon {
   background-color: var(--e-global-color-secondary);
   border: 1px solid var(--e-global-color-secondary);
-}
-
-.section-4 .bottom .item_name {
-  color: var(--e-global-color-secondary);
-  font-size: 21px;
-  line-height: 1.4em;
-  /* margin: 10px;
-  text-align: center; */
 }
 
 .section-4 .bottom .detail {
@@ -318,11 +326,16 @@
   margin-top: 15px;
 }
 
-.section-4 .bottom .box i {
-  margin-right: 10px;
+.box-detail .item_name {
+  color: var(--e-global-color-secondary);
+  font-size: 21px;
+  line-height: 1.4em;
+  width: 80%;
+}
+
+.box-detail i {
   width: 30px;
   height: 30px;
-  /* padding: 6px; */
   text-align: center;
 }
 /*-----------------image---------------------*/
@@ -334,7 +347,12 @@
   width: 100%;
   position: relative;
   color: white;
-  background-image: linear-gradient(240deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("/image/service-sec2.jpg"); 
+  background-image: linear-gradient(
+      240deg,
+      var(--e-global-color-f03f58e) 41%,
+      var(--e-global-color-secondary) 97%
+    ),
+    url("/image/service-sec2.jpg");
   background-image: linear-gradient(
       240deg,
       var(--e-global-color-f03f58e) 41%,
@@ -830,6 +848,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 530px;
+    overflow: scroll;
   }
 
   .section-7 .title {
@@ -837,13 +857,14 @@
     font-size: 36px;
   }
 
-  .section-7 .box .detail{
-      margin-top: 0;
+  .section-7 .box .detail {
+    margin-top: 0;
   }
 
   .section-7 .box .box_name {
     margin-top: 15px;
-    height: 45px;}
+    height: 45px;
+  }
   .section-7 .box .detail {
     margin-top: 0;
     max-width: 95%;
@@ -962,7 +983,8 @@
 
   .section-4 .bottom {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 5%;
+    padding: 30px;
+    box-sizing: border-box;
   }
 
   .section-5 .grid {
