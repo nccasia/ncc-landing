@@ -141,22 +141,29 @@
             <div class="overlay"></div>
             <div class="box">
                 <div class="slide">
-                    <div class="owl-carousel slide2" id="slide2">
+                    <div class="owl-carousel slide3" id="slide3">
                         <div class="wrapper">
                             <p class="slide_heading">Digital Disruption</p>
                             <div class="slide_btn">learn more</div>
                         </div>
                         <div class="wrapper">
-                          <p class="slide_heading">Digital Disruption 2</p>
-                          <div class="slide_btn">learn more</div>
-                      </div>
-                      <div class="wrapper">
-                        <p class="slide_heading">Digital Disruption 3</p>
-                        <div class="slide_btn">learn more</div>
+                            <p class="slide_heading">Digital Disruption1</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption2</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption3</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption4</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-                
+                </div>         
             </div>
             <div class="wrap">
                 <p class="box_title">Client Applications Development</p>
@@ -602,21 +609,18 @@
 <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
 <script src="/js/script.js"></script>
 <script>
-    $(".slide2").owlCarousel({
+    $(".slide3").owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
         autoplay:true,
+        items:1,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
         responsive: {
         0: {
             items: 1,
             nav: true,
-        },
-        600: {
-            items: 3,
-            nav: false,
         },
         },
     });
