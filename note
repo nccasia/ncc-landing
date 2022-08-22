@@ -1,0 +1,43 @@
+                <div class="slide">
+                    <div class="owl-carousel slide3" id="slide3">
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption1</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption2</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption3</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                        <div class="wrapper">
+                            <p class="slide_heading">Digital Disruption4</p>
+                            <div class="slide_btn">learn more</div>
+                        </div>
+                    </div>
+                </div>  
+
+
+                <script>
+                    $(".slide3").owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        responsiveClass: true,
+                        autoplay:true,
+                        items:1,
+                        autoplayTimeout:3000,
+                        autoplayHoverPause:true,
+                        responsive: {
+                        0: {
+                            items: 1,
+                            nav: true,
+                        },
+                        },
+                    });
+                </script>
