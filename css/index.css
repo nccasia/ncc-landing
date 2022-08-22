@@ -38,7 +38,7 @@
 
 .section-1 .bottom .image{
   position: relative;
-  background-image: url("../image/IMG_0003\ sua.jpg");
+  background-image: url("/image/IMG_0003\ sua.jpg");
   position: relative;
   background-position: center center;
   background-size: cover;
@@ -236,7 +236,7 @@
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../image/service-sec4.jpg');
+  background-image: url('/image/service-sec4.jpg');
 }
 
 .site_slide {
@@ -330,7 +330,7 @@
   width: 100%;
   position: relative;
   color: white;
-  background-image: linear-gradient(240deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("../image/service-sec2.jpg"); 
+  background-image: linear-gradient(240deg,var(--e-global-color-f03f58e) 41%,var(--e-global-color-secondary) 97%),url("/image/service-sec2.jpg"); 
   opacity: 0.88;
 }
 
@@ -403,15 +403,15 @@
 }
 
 .img1 {
-  background-image: url("../image/AnhNhan.jpg");
+  background-image: url("/image/AnhNhan.jpg");
 }
 
 .img2 {
-  background-image: url("../image/AnhTien.jpg");
+  background-image: url("/image/AnhTien.jpg");
 }
 
 .img3 {
-  background-image: url("../image/AnhPhuc.jpg");
+  background-image: url("/image/AnhPhuc.jpg");
 }
 
 .img4 {
@@ -831,7 +831,11 @@
 
   .section-7 .box .detail{
       margin-top: 0;
-      max-width: 95%;
+  }
+
+  .section-7 .box .box_name {
+    margin-top: 15px;
+    height: 45px;
   }
 
   .section-7 .icon{
@@ -1057,12 +1061,16 @@
     overflow: scroll;
   }
 
+  .section-5 {
+    background-position: left;
+  }
+
   .section-6 .top .name {
     margin-left: 60px;
   }
 
   .section-7 .grid {
-    height: 565px;
+    height: 530px;
     overflow: scroll;
   }
 

@@ -3,15 +3,35 @@
   margin: 0 0 100px 0;
 }
 
-.section_1 .name {
-  font-size: 40px;
-  margin-bottom: 80px;
+.section_1 .left span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--e-global-color-primary);
+  align-items: flex-start;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-.section_1 .title {}
+.section_1 .left span::before,
+.section_1 .left span::after{
+  display: inline-block;
+  content: "";
+  border-top: 1px solid var(--e-global-color-primary);
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(0.7em);
+}
+
+.section_1 .title {
+  font-size: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+}
 
 .section_1 .left{
-  padding-top: 100px;
+  padding-top: 50px;
   width: 50%;
   background-color: var(--e-global-color-secondary);
   color: white;
@@ -25,7 +45,7 @@
 
 .section_1 .right {
   width: 50%;
-  background-image: url("../image/service-sec4.jpg");
+  background-image: url("/image/service-sec4.jpg");
   background-size: cover;
   background-position: center;
   height: 460px;
@@ -54,7 +74,7 @@
 }
 
 .section_2 .right {
-  background-image: url("../image/team-sec1.jpg");
+  background-image: url("/image/team-sec1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,7 +180,7 @@
 
 .section_4 .left {
   width: 50%;
-  background-image: url("../image/AnhNhan.jpg");
+  background-image: url("/image/IMG_9910\ sua.jpg");
   background-position: center center;
   background-size: cover;
   height:585px;
@@ -234,40 +254,53 @@
   margin-top: 25px;
 }
 
+.wrap_hist {
+  display: flex;
+}
+
 .section_5 .grid{
   grid-gap: 20px;
 }
 
-.section_5 .bottom .box .flex {
-  height: 78px;
+.section_5 span {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--e-global-color-primary);
 }
 
-.section_5 .bottom .icon {
-  padding: 20px;
-  text-align: center;
-  margin: 10px 10px 0 0;
+.icon_history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--e-global-color-1f86ad6);
+  width: 40px;
+  height: 40px;
   transition-duration: .1s;
 }
 
-.section_5 .bottom .icon:hover {
+.icon_history:hover {
   color: var(--e-global-color-text);
-  margin: 6px 10px 0 0;
 }
 
-.section_5 .bottom .name_history {
+.name_history {
   color: var(--e-global-color-secondary);
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.3em;
 }
 
-.section_5 .time{
-  margin-top: 15px;
+.time {
   color: var(--e-global-color-primary);
-  font-size: 16px;
-  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 10px 15px;
 }
 
-.section_5 .time::after {
+.time::after {
   display: inline-block;
   content: "";
   border-top: 1px solid var(--e-global-color-primary);
@@ -380,6 +413,7 @@
 
 .section_6 .right .btn_send {
   width: 40%;
+  box-sizing: border-box;
   color: white;
   text-align: center;
   margin-top: 20px;
@@ -412,7 +446,7 @@
   }
   .section_1 .left{
       width: 100%;
-      padding:50px 0 50px 0;
+      padding:0 0 50px 0;
   }
   .section_1 .right {
       width: 100%;
@@ -509,6 +543,10 @@
       justify-content: center;
   }
 
+  .section_3 .counter_number {
+    font-size: 36px;
+  }
+
   .section_3 .desc_section3::after{
       width: 80%;
       margin: 40px 0 0 -430px;
@@ -559,7 +597,7 @@
       text-align: center;
       max-width: 100%;
       margin-left: 0;
-      padding: 0;
+      padding: 20px 0;
   }
 
   .section_6 .right {
@@ -568,7 +606,7 @@
   }
 
   .section_6 .text {
-      margin: 20px 20px 0 0;
+      margin-top: 20px;
   }
 
   .section_6 .right input {
@@ -578,7 +616,7 @@
   }
 
   .section_6 .right .input {
-      margin: 20px 20px 0 0;
+      margin-top: 20px;
       width: 80%;
   }
   .section_6 .right .btn {
@@ -586,8 +624,8 @@
       margin-left: 30px;
   }
   .section_6 .right .btn_send{
-      width: 75%;
-      margin-left: 8%;
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
@@ -599,7 +637,7 @@
 
   .section_1 .title {
     font-size: 36px;
-  padding: 15px 0;
+    padding: 0 0 15px 0;
   }
 
   .section_1 .desc {
@@ -627,11 +665,12 @@
   }
 
   .section_3 .left .name {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 60px;
   }
 
   .section_4 .right {
-    padding: 30px 0 0 20px;
+    box-sizing: border-box;
+    padding: 20px;
   }
 
   .section_4 .right .title {
@@ -643,20 +682,14 @@
   }
 
   .section_6 .left {
-      margin-bottom: 20px;
-      text-align: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .section-6 .top .name {
     margin-bottom: 15px;
-  }
-  
-  .section_6 .right input{
-      width: 80%;
-  }
-
-  .section_6 .right .input{
-      width: 80%;
   }
 
   .section_6 .right .btn{
@@ -674,6 +707,10 @@
   .section_6 .flex_icon {
       flex-direction: column;
       align-items: center;
+  }
+
+  .section_6 h4 {
+    padding-bottom: 0;
   }
 }
 
