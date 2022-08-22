@@ -97,6 +97,11 @@
 .menu-item {
   padding: 13px 20px;
 }
+
+.menu-item:nth-child(3) {
+  padding: 13px 20px 0;
+}
+
 .menu-item:hover {
   border-bottom: 1px solid var(--e-global-color-primary);
 }

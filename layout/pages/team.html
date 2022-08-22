@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-
-    <title>NCC - Team - Welcome to Shevia</title>
+    <link rel="icon" href="/image/logo.png" type="image/png" />
+    <title>Team</title>
   </head>
   <body>
     <header class="header">
@@ -41,9 +41,9 @@
         <div class="header-menu">
           <ul class="menu-content">
             <li class="menu-item">
-              <a href="./index.html">Home</a>
+              <a href="**">Home</a>
             </li>
-            <li class="menu-item"><a href="./about.html">About</a></li>
+            <li class="menu-item"><a href="/about">About</a></li>
             <li class="menu-item">
               <a href="#"
                 ><span>Pages <i class="fa-solid fa-angle-down"></i></span
@@ -67,7 +67,7 @@
                 </li>
               </ul>
             </li>
-            <li class="menu-item"><a href="./contact.html">Contact</a></li>
+            <li class="menu-item"><a href="/contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -150,10 +150,20 @@
         </ul>
         <p class="sidebar_name">Follow Us</p>
         <ul class="flex">
-          <li><i class="icon fa-brands fa-facebook"></i></li>
-          <li><i class="icon fa-brands fa-twitter"></i></li>
-          <li><i class="icon fa-brands fa-linkedin"></i></li>
-          <li><i class="icon fa-brands fa-youtube"></i></li>
+          <li>
+            <i class="icon fa-brands fa-facebook"></i
+            ><a href="https://www.facebook.com/nccsoft.com.vn"></a>
+          </li>
+          <li>
+            <i class="icon fa-brands fa-linkedin"></i
+            ><a href="https://www.linkedin.com/company/nccsoft-vietnam/"></a>
+          </li>
+          <li>
+            <i class="icon fa-brands fa-youtube"></i
+            ><a
+              href="https://www.youtube.com/channel/UChFpCEl2FP22M_BybYhWjnA/featured"
+            ></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -426,22 +436,22 @@
           </div>
           <div class="box grid">
             <a href="#">
-              <img src="/image/img_1.jpg" />
+              <img src="/image/team-sec1.jpg" />
             </a>
             <a href="#">
-              <img src="/image/img_2.jpg" />
+              <img src="/image/team-sec1.jpg" />
             </a>
             <a href="#">
-              <img src="/image/img_3.jpg" />
+              <img src="/image/team-sec1.jpg" />
             </a>
             <a href="#">
-              <img src="/image/img_4.jpg" />
+              <img src="/image/team-sec1.jpg" />
             </a>
             <a href="#">
-              <img src="/image/img_5.jpg" />
+              <img src="/image/team-sec1.jpg" />
             </a>
             <a href="#">
-              <img src="/image/img_6.jpg" />
+              <img src="/image/team-sec1.jpg" />
             </a>
           </div>
         </div>
@@ -451,49 +461,8 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      function openSidebar() {
-        document.getElementById("sidebar").style.display = "block";
-      }
-
-      function closeSidebar() {
-        document.getElementById("sidebar").style.display = "none";
-      }
-    </script>
     <script src="/js/script.js"></script>
     <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
     <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
-    <script>
-      $(".slide2").owlCarousel({
-        loop: true,
-        margin: 10,
-        items: 1,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true,
-          },
-        },
-      });
-    </script>
-    <script>
-      $(".slide1").owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true,
-          },
-          600: {
-            items: 3,
-            nav: false,
-          },
-        },
-      });
-    </script>
   </body>
 </html>

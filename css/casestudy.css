@@ -48,6 +48,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 60px 30px 60px 30px;
+  box-sizing: border-box;
 }
 
 .section-1-content h1 {
@@ -281,11 +282,11 @@
 .detail-title {
   display: flex;
   margin-bottom: 15px;
-  height: 60px;
   position: relative;
   justify-content: flex-start;
   gap: 30px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .detail-title i {
@@ -419,7 +420,6 @@ th {
   text-transform: capitalize;
   line-height: 1.1em;
   max-width: 420px;
-  margin: 15px 0 15px 0;
   text-align: left;
 }
 
@@ -429,11 +429,12 @@ th {
   margin-right: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .section-4 .left h2 {
   max-width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 30px;
 }
 
@@ -451,7 +452,6 @@ th {
 .section-4 .contact {
   display: flex;
   width: 100%;
-
   gap: 15px;
   height: 100%;
 }
@@ -550,6 +550,8 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 400px;
+    overflow: scroll;
   }
 
   .section-2 .grid .box {
@@ -581,6 +583,7 @@ th {
   .section-3-content span {
     display: flex;
     justify-content: center;
+    padding: 0 30px 30px;
   }
 
   .section-3-content span::before {
@@ -590,6 +593,7 @@ th {
   .section-3-content h2 {
     text-align: center;
     font-size: 36px;
+    padding: 0 30px 30px;
   }
 
   .section-3-detail {
@@ -603,9 +607,14 @@ th {
     padding: 15px;
   }
 
+  .bottom {
+    height: 450px;
+    overflow: scroll;
+  }
+
   .bottom .bottom-detail:nth-child(even) .popuptext {
-    left: -60px;
-    width: 100vw;
+    left: -30px;
+    width: calc(100vw - 60px);
   }
 
   .bottom-detail {
@@ -619,12 +628,17 @@ th {
   }
 
   .bottom-detail .content-popup .popuptext {
-    width: 100vw;
-    left: -60px;
+    width: calc(100vw - 60px);
+    left: -30px;
   }
 
   td {
     padding: 5px;
+    font-size: 12px;
+  }
+
+  th {
+    font-size: 16px;
   }
 
   .section-4 {
@@ -663,9 +677,11 @@ th {
   .section-4 .right {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 120px);
+    width: 100%;
     align-items: center;
     gap: 30px;
+    box-sizing: border-box;
+    padding: 0 60px;
   }
 
   .section-4 .right .contact {
@@ -677,29 +693,46 @@ th {
   }
 
   .section-4 .contact input {
-    width: calc(100% - 135px);
+    width: 100%;
     padding: 15px;
     margin: 0;
     height: 100%;
   }
 
   .section-4 .right .input {
-    width: calc(100% - 135px);
+    width: 100%;
     margin: 0;
     padding: 15px;
     height: 100%;
   }
 
   .section-4 .right .message {
-    width: calc(100% - 135px);
+    width: 100%;
     padding: 15px;
     margin: 0;
     height: 100%;
   }
 
   .section-4 .btn {
-    width: calc(100% - 120px);
+    width: 100%;
     text-align: center;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .section-1-content span::before,
+  .section-1-content span::after {
+    width: 19%;
+  }
+
+  .section-2 .top span::before,
+  .section-2 .top span::after {
+    width: 19%;
+  }
+
+  .section-4 .right {
+    padding: 0 30px;
   }
 }
 
@@ -734,7 +767,7 @@ th {
   }
 
   .section-2 .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
   }
 
@@ -747,9 +780,23 @@ th {
     width: 100%;
   }
 
+  .bottom {
+    height: 620px;
+    overflow: scroll;
+  }
+
   .bottom .bottom-detail:nth-child(even) .popuptext {
-    left: calc(-100% - 120px);
-    width: calc(100vw - 120px);
+    left: calc(-100% - 90px);
+    width: calc(100vw - 180px);
+  }
+
+  .bottom .bottom-detail .popuptext {
+    width: calc(100vw - 180px);
+    left: -30px;
+  }
+
+  th {
+    font-size: 16px;
   }
 
   .section-4 {
@@ -827,7 +874,7 @@ th {
     left: -60%;
   }
 
-  .bottom .bottom-detail:nth-child(2n) .content-popup .popuptext {
+  .bottom .bottom-detail:nth-child(even) .content-popup .popuptext {
     left: -170%;
   }
 }
