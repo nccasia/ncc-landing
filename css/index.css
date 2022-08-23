@@ -57,7 +57,7 @@
 }
 
 .section-1 .bottom .slide {
-  width: 100%;
+  width: 80%;
   padding: 20% 0 100px 15%;
   color: white;
 }
@@ -261,7 +261,7 @@
 
 .section-4 {
   box-sizing: border-box;
-  padding: 96px 60px;
+  padding: 96px 10px;
 }
 
 .section-4 .top .title {
@@ -362,7 +362,7 @@
 }
 
 .section-5 .grid {
-  padding-top: 35%;
+  padding-top: 30%;
   position: absolute;
   margin-left: 30%;
   grid-gap: 120px;
@@ -810,11 +810,6 @@
     height: max-content;
   }
 
-  .section-4 .box {
-    max-width: 100%;
-    text-align: center;
-  }
-
   .section-4 .box .flex_icon {
     justify-content: center;
   }
@@ -1037,6 +1032,7 @@
 
   .slide_heading {
     font-size: 30px;
+    line-height: 1em;
   }
 
   .section-2 .right {
@@ -1080,12 +1076,12 @@
   }
 
   .section-4 .bottom {
-    height: 550px;
+    height: 680px;
     overflow: scroll;
   }
 
   .section-5 {
-    background-position: left;
+    background-position: 20%;
   }
 
   .section-7 .grid {
