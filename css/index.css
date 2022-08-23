@@ -8,7 +8,6 @@
 
 .section-1 .top .name {
   text-align: left;
-  margin-left: 70px;
 }
 
 .headline {
@@ -58,7 +57,7 @@
 }
 
 .section-1 .bottom .slide {
-  width: 660px;
+  width: 100%;
   padding: 20% 0 100px 15%;
   color: white;
 }
@@ -87,8 +86,8 @@
 
 .wrap {
   background-color: var(--e-global-color-secondary);
-  width: 360px;
-  margin-left: 70%;
+  width: 25%;
+  margin-left: 75%;
   margin-top: -45%;
   z-index: 3;
   position: absolute;
@@ -363,7 +362,7 @@
 }
 
 .section-5 .grid {
-  padding-top: 25%;
+  padding-top: 35%;
   position: absolute;
   margin-left: 30%;
   grid-gap: 120px;
@@ -933,7 +932,7 @@
   .wrap {
     padding: 10px 0 10px 0;
     margin-left: 53%;
-    margin-top: -90%;
+    margin-top: -85%;
   }
 
   .section-2 .right .flex {
@@ -1037,15 +1036,11 @@
   }
 
   .slide_heading {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .section-2 .right {
     padding: 0;
-  }
-
-  .section-2 .right .name {
-    margin-left: 60px;
   }
 
   .section-2 .left {
@@ -1076,10 +1071,6 @@
     padding: 0;
   }
 
-  .section-4 .top .name {
-    margin-left: 60px;
-  }
-
   .section-4 .bottom {
     width: 100%;
   }
@@ -1097,20 +1088,8 @@
     background-position: left;
   }
 
-  .section-6 .top .name {
-    margin-left: 60px;
-  }
-
   .section-7 .grid {
     height: 530px;
     overflow: scroll;
-  }
-
-  .section-7 .name {
-    margin-left: 60px;
-  }
-
-  .section-8 .name {
-    margin-left: 60px;
   }
 }
