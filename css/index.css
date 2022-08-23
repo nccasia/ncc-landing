@@ -2,7 +2,7 @@
 .section-1 .top {
   background-color: #f2f7fb;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -88,7 +88,7 @@
   background-color: var(--e-global-color-secondary);
   width: 25%;
   margin-left: 75%;
-  margin-top: -45%;
+  margin-top: -40%;
   z-index: 3;
   position: absolute;
   padding: 50px 0 50px 0;
@@ -223,7 +223,9 @@
 
 .section-3 .item {
   padding-top: 10px;
+  align-items: center;
 }
+
 .section-3 .item i {
   margin-right: 10px;
 }
@@ -248,7 +250,7 @@
   width: 105%;
   margin-left: 30%;
   z-index: 99;
-  margin-top: 50%;
+  margin-top: 42%;
   position: absolute;
 }
 
@@ -286,11 +288,12 @@
 
 .section-4 .bottom {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
+  grid-gap: 50px 120px;
 }
 
 .section-4 .box {
-  padding: 30px;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -298,7 +301,6 @@
 .box-detail {
   display: flex;
   margin-bottom: 15px;
-  height: 90px;
   width: 100%;
   gap: 10px;
 }
@@ -317,6 +319,7 @@
 
 .section-4 .bottom .detail {
   color: var(--e-global-color-text);
+  font-size: 20px;
 }
 
 .section-4 .bottom .wrapper {
@@ -327,8 +330,9 @@
 
 .box-detail .item_name {
   color: var(--e-global-color-secondary);
-  font-size: 21px;
-  line-height: 1.4em;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 2em;
   width: 80%;
 }
 
@@ -340,32 +344,25 @@
 /*-----------------image---------------------*/
 .section-5 {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 25%;
   background-size: cover;
   height: 700px;
   width: 100%;
   position: relative;
   color: white;
   background-image: linear-gradient(
-      240deg,
+      180deg,
       var(--e-global-color-f03f58e) 41%,
       var(--e-global-color-secondary) 97%
     ),
     url("/image/service-sec2.jpg");
-  background-image: linear-gradient(
-      240deg,
-      var(--e-global-color-f03f58e) 41%,
-      var(--e-global-color-secondary) 97%
-    ),
-    url("../image/service-sec2.jpg");
   opacity: 0.88;
 }
 
 .section-5 .grid {
   padding-top: 30%;
-  position: absolute;
-  margin-left: 30%;
-  grid-gap: 120px;
+  text-align: center;
+  grid-gap: 80px;
 }
 
 .section-5 .number {
@@ -823,7 +820,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 5% 0 0 30%;
     grid-gap: 80px;
   }
 
@@ -1016,6 +1012,11 @@
   }
 }
 @media only screen and (max-width: 414px) {
+
+  .section-1 .top {
+    padding: 50px 15px;
+  }
+  
   .section-1 .image {
     height: 500px;
   }
@@ -1071,17 +1072,34 @@
     width: 100%;
   }
 
+  .section-4 .box-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .section-4 .bottom .item_name {
-    margin-top: 10px;
+    line-height: 1.4em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-4 .box .content .detail{
+    text-align: center;
   }
 
   .section-4 .bottom {
-    height: 680px;
+    height: 450px;
+    padding: 0 20px;
     overflow: scroll;
+    width: calc(100% - 40px);
   }
 
   .section-5 {
     background-position: 20%;
+  }
+
+  .section-7 {
+    padding: 0 15px;
   }
 
   .section-7 .grid {
