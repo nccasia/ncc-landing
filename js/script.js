@@ -50,31 +50,38 @@ window.addEventListener("click", ({ target }) => {
   }
 });
 
-$(".slide2").owlCarousel({
-  loop: true,
-  margin: 10,
-  items: 1,
-  responsiveClass: true,
-  responsive: {
+$(".slide3").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    autoplay:true,
+    items:1,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsive: {
     0: {
-      items: 1,
-      nav: true,
+        items: 1,
+        nav: true,
     },
-  },
+    },
 });
 
 $(".slide1").owlCarousel({
-  loop: true,
-  margin: 10,
-  responsiveClass: true,
-  responsive: {
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive: {
     0: {
-      items: 1,
-      nav: true,
+        items: 1,
+        nav: true,
     },
     600: {
-      items: 3,
-      nav: false,
+        items: 3,
+        nav: false,
     },
-  },
+    },
 });
+
