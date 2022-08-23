@@ -291,6 +291,7 @@
   grid-template-columns: repeat(2, 1fr);
   padding-top: 30px;
   grid-gap: 50px 120px;
+  margin-left: 110px;
 }
 
 .section-4 .box {
@@ -974,6 +975,7 @@
   .section-4 .bottom {
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
+    margin: 0;
     box-sizing: border-box;
   }
 
