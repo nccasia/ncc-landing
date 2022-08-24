@@ -50,11 +50,14 @@ window.addEventListener("click", ({ target }) => {
   }
 });
 
-$(".slide2").owlCarousel({
+$(".slide3").owlCarousel({
   loop: true,
   margin: 10,
-  items: 1,
   responsiveClass: true,
+  autoplay: true,
+  items: 1,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
   responsive: {
     0: {
       items: 1,
