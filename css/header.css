@@ -107,11 +107,12 @@
 }
 
 .menu-item:hover,
+.menu-item:hover .menu-title,
 .menu-item a:hover {
   color: var(--e-global-color-primary);
 }
 
-.small_menu .menu-item:hover {
+.menu-item:hover .small_menu .menu-item:hover {
   border-bottom: none;
 }
 
@@ -200,15 +201,12 @@
   z-index: 999;
   position: fixed;
   height: 100vh;
+  box-sizing: border-box;
+  padding: 96px 60px;
 }
 
 #closeIcon {
   float: right;
-  margin-top: 20px;
-}
-
-.sidebar .wrapper {
-  padding: 30% 0 0 60px;
 }
 
 .sidebar_header {
@@ -327,5 +325,11 @@
   .menu-content {
     justify-content: flex-end;
     width: 100%;
+  }
+
+  .sidebar {
+    margin-left: 60%;
+    width: 40%;
+    padding: 60px;
   }
 }
