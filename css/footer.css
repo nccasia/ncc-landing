@@ -173,6 +173,7 @@
 
   .footer-middle .box {
     margin-bottom: 15px;
+    place-items: center;
   }
 
   .grid a img {

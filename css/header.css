@@ -98,10 +98,6 @@
   padding: 13px 20px;
 }
 
-.menu-item:nth-child(3) {
-  padding: 13px 20px 0;
-}
-
 .menu-item:hover {
   border-bottom: 1px solid var(--e-global-color-primary);
 }
@@ -112,7 +108,7 @@
   color: var(--e-global-color-primary);
 }
 
-.menu-item:hover .small_menu .menu-item:hover {
+.small_menu .menu-item:hover {
   border-bottom: none;
 }
 
@@ -143,6 +139,9 @@
   align-items: center;
   width: 100%;
   padding: 13px 20px;
+}
+.menu-dropdown li:last-child a {
+  padding: 13px 20px 0;
 }
 
 .menu-dropdown li:hover {
