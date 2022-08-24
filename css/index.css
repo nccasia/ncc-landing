@@ -340,7 +340,7 @@
 /*-----------------image---------------------*/
 .section-5 {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 25%;
   background-size: cover;
   height: 700px;
   width: 100%;
@@ -1085,7 +1085,7 @@
   }
 
   .section-5 {
-    background-position: left;
+    background-position: 20%;
   }
 
   .section-7 .grid {
