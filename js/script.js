@@ -85,3 +85,72 @@ $(".slide1").owlCarousel({
     },
 });
 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+
+// var speed = 50;
+// function incEltNbr(id) {
+// elt = document.getElementById(id);
+// endNbr = Number(document.getElementById(id).innerHTML);
+// incNbrRec(0, endNbr, elt);
+// }
+// function incNbrRec(i, endNbr, elt) {
+// if (i <= endNbr) {
+//     elt.innerHTML = i;
+//     setTimeout(function() {
+//     incNbrRec(i + 1, endNbr, elt);
+//     }, speed);
+// }
+// }
+
+function visible(partial) {
+  var $t = partial,
+      $w = jQuery(window),
+      viewTop = $w.scrollTop(),
+      viewBottom = viewTop + $w.height(),
+      _top = $t.offset().top,
+      _bottom = _top + $t.height(),
+      compareTop = partial === true ? _bottom : _top,
+      compareBottom = partial === true ? _top : _bottom;
+
+  return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
+
+}
+
+$(window).scroll(function(){
+
+if(visible($('.count-digit')))
+  {
+    if($('.count-digit').hasClass('counter-loaded')) return;
+    $('.count-digit').addClass('counter-loaded');
+    
+$('.count-digit').each(function () {
+var $this = $(this);
+jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+  duration: 5000,
+  easing: 'swing',
+  step: function () {
+    $this.text(Math.ceil(this.Counter));
+  }
+});
+});
+  }
+})
+
+
+
+
+
+

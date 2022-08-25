@@ -234,31 +234,31 @@
                         <div class="wrapper">
                             <p class="slide_heading">Software Testing</p>
                             <div class="slide_btn">
-                                <a href="/layout/pages/service.html">Learn more</a>
+                                <a href="/layout/pages/service">Learn more</a>
                             </div>
                         </div>
                         <div class="wrapper">
                             <p class="slide_heading">Game Development</p>
                             <div class="slide_btn">
-                                <a href="/layout/pages/service.html">Learn more</a>
+                                <a href="/layout/pages/service">Learn more</a>
                             </div>
                         </div>
                         <div class="wrapper">
                             <p class="slide_heading">Blockchain Development</p>
                             <div class="slide_btn">
-                                <a href="/layout/pages/service.html">Learn more</a>
+                                <a href="/layout/pages/service">Learn more</a>
                             </div>
                         </div>
                         <div class="wrapper">
                             <p class="slide_heading">AI and IoT</p>
                             <div class="slide_btn">
-                                <a href="/layout/pages/service.html">Learn more</a>
+                                <a href="/layout/pages/service">Learn more</a>
                             </div>
                         </div>
                         <div class="wrapper">
                             <p class="slide_heading">VoIP Development</p>
                             <div class="slide_btn">
-                                <a href="/layout/pages/service.html">Learn more</a>
+                                <a href="/layout/pages/service">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -306,7 +306,7 @@
                     <p class="title">Prison management</p>
                 </div>
             </div>
-            <div class="right">
+            <div class="right reveal">
                 <p class="name">our industries</p>
                 <p class="name_industries">
                     Software Solutions For Big Industries
@@ -367,11 +367,11 @@
             </div>
         </div>
         <div class="box">
-            <p class="title">why choose us?</p> 
-            <p class="introduct">
+            <p class="title reveal">why choose us?</p> 
+            <p class="introduct reveal">
                 We Create Powerful Softwares and Digital Solutions That Drive Meaningful Value
             </p> 
-            <div class="list_reason">
+            <div class="list_reason reveal">
                 <div class="item flex_icon">
                     <i class="fa-solid fa-check"></i>
                     <p>Advanced technologies</p>
@@ -402,11 +402,11 @@
 </div>
 <div class="section-4">
     <div class="container">
-        <div class="top">
+        <div class="top reveal">
             <p class="name">our services</p>
             <p class="title">Build Your Custom Software For Your Business</p>
         </div>
-        <div class="bottom">
+        <div class="bottom reveal">
             <div class="box">
                 <div class="box-detail">
                     <i class="icon fa-solid fa-mobile-screen"></i>
@@ -500,27 +500,36 @@
 <div class="section-5">
     <div class="grid">
         <div class="project">
-            <p class="number">250+</p>
+            <div class="flex_icon">
+                <p class="number count-digit">250</p>
+                <p class="number">+</p>
+            </div>
             <p class="names">Project Completed</p>
         </div>
         <div class="clients">
-            <p class="number">80+</p>
+            <div class="flex_icon">
+                <p class="number count-digit">80</p>
+                <p class="number">+</p>
+            </div>
             <p class="names">Clients Served</p>
         </div>
         <div class="loyal">
-            <p class="number">80%</p>
+            <div class="flex_icon">
+                <p class="number count-digit">80</p>
+                <p class="number">%</p>
+            </div>
             <p class="names">Loyal Clients</p>
         </div>
     </div>
 </div>
 <div class="section-6">
     <div class="container">
-        <div class="top">
+        <div class="top reveal">
         <p class="name">the teams</p>
         <p class="title">Meet Awesome Team</p>
         <p class="desc">From a team of four dedicated and enthusiastic engineers…..</p>
         </div>
-        <div class="bottom">
+        <div class="bottom reveal">
         <div class="grid">
             <div class="grid-item img1">
             <div class="overlay">
@@ -564,7 +573,7 @@
         </div>
     </div>
 </div>
-<div class="section-7">
+<div class="section-7 reveal">
     <div class="container">
         <div class="top">
             <p class="name">our process</p>
@@ -617,7 +626,7 @@
 </div>
 <div class="section-8">
     <div class="container flex">
-        <div class="left">
+        <div class="left reveal">
               <div class="flex">
                 <p class="name">GET STARTED</p>
               </div>
@@ -676,7 +685,7 @@
             <li><a href="https://www.youtube.com/channel/UChFpCEl2FP22M_BybYhWjnA/featured">Youtube</a></li>
           </ul>
         </div>
-        <div class="box grid">
+        <div class="box grid reveal">
           <a href="#">
             <img src="/image/home-sec1.jpg" />
           </a>
@@ -706,6 +715,24 @@
 <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
 <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
 <script src="/js/script.js"></script>
-
+<script>
+    $(window).scroll(function(){
+  if(visible($('.count-digit')))
+    {
+      if($('.count-digit').hasClass('counter-loaded')) return;
+      $('.count-digit').addClass('counter-loaded');
+      $('.count-digit').each(function () {
+        var $this = $(this);
+        jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function () {
+        $this.text(Math.ceil(this.Counter));
+    }
+  });
+});
+    }
+})
+    </script>
 </body>
 </html>
