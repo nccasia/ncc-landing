@@ -85,8 +85,10 @@
 }
 
 .grid a img {
-  width: 87px;
-  height: 87px;
+  float: left;
+  width: 84px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .grid a img:hover {
@@ -171,10 +173,14 @@
 
   .footer-middle .box {
     margin-bottom: 15px;
+    place-items: center;
   }
 
   .grid a img {
-    width: 100%;
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
   }
 
   .submit_subscribe {
