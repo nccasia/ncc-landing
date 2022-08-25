@@ -4,9 +4,6 @@
   box-sizing: border-box;
   padding: 50px 0;
   position: relative;
-  animation: fadeInAnimation ease 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards
 }
 
 .section-1 .top .name {
@@ -262,17 +259,16 @@
 
 .site_slide {
   background-color: white;
-  width: 100%;
+  width: 105%;
+  margin-left: 30%;
   z-index: 99;
+  margin-top: 42%;
   position: absolute;
-  bottom: 0;
-  left: 30%;
 }
 
 .slide img {
   width: 160px;
   height: 100px;
-  object-fit: contain;
 }
 
 /*------------------services-----------------*/
@@ -307,6 +303,7 @@
   grid-template-columns: repeat(2, 1fr);
   padding-top: 30px;
   grid-gap: 50px 120px;
+  margin-left: 110px;
 }
 
 .section-4 .box {
@@ -511,17 +508,26 @@
   padding: 0 10px 0 10px;
 }
 
-.section-6 .btn {
-  width: 180px;
-  margin: 15px 0 20px 41%;
+.btn_team {
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  background-color: var(--e-global-color-primary);
+  box-sizing: border-box;
+  padding: 15px;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin:25px 0 0 25%;
 }
 
-.section-6 .btn p {
+.btn_team p {
+  font-size: 13px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-left: 15px;
+  font-weight: 600;
 }
-
 /*-------------------process-----------------*/
 .section-7 {
   margin: 100px 0 100px 0;
@@ -794,13 +800,12 @@
   .site_slide {
     width: 60%;
     margin-left: 0;
-    height: 96px;
-    left: 0;
+    height: 100px;
+    margin-top: 52%;
   }
 
   .slide img {
     padding: 10px;
-    object-fit: contain;
   }
 
   .section-3 .box {
@@ -892,7 +897,7 @@
   }
   .section-7 .box .detail {
     margin-top: 0;
-    max-width: 100%;
+    max-width: 95%;
   }
 
   .section-7 .icon {
@@ -998,7 +1003,8 @@
 
   .site_slide {
     width: 70%;
-    left: 0;
+    margin-left: -15px;
+    margin-top: 40%;
   }
 
   .section-4 {
@@ -1047,10 +1053,11 @@
   }
 }
 @media only screen and (max-width: 414px) {
+
   .section-1 .top {
     padding: 50px 15px;
   }
-
+  
   .section-1 .image {
     height: 500px;
   }
@@ -1068,7 +1075,6 @@
   .slide_heading {
     font-size: 30px;
     line-height: 1em;
-    height: 40px;
   }
 
   .section-2 .right {
@@ -1095,9 +1101,12 @@
     width: 100%;
   }
 
+  .site_slide {
+    margin-top: 103%;
+  }
+
   .slide img {
     padding: 0;
-    object-fit: contain;
   }
 
   .section-4 .bottom {
@@ -1115,7 +1124,7 @@
     text-align: center;
   }
 
-  .section-4 .box .content .detail {
+  .section-4 .box .content .detail{
     text-align: center;
   }
 
