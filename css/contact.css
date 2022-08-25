@@ -354,17 +354,24 @@
 .address-content .middle h3 {
   box-sizing: border-box;
   padding: 30px;
+  font-weight: 600;
+  font-size: 30px;
   width: 100%;
+  color: var(--e-global-color-secondary);
 }
 
 .address-content .middle h1 {
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--e-global-color-secondary);
 }
 
 .address-content .middle p {
   font-size: 20px;
   font-weight: 600;
+  line-height: 1.5em;
   width: 300px;
+  color: var(--e-global-color-secondary);
 }
 
 .address-content:hover .image {

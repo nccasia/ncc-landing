@@ -171,7 +171,7 @@
     <div class="section-container">
       <div class="section-1">
         <div class="container">
-          <div class="section-1-content">
+          <div class="section-1-content reveal fade-bottom">
             <span>our contact</span>
             <h1>Contact Us</h1>
             <p>
@@ -185,8 +185,8 @@
       </div>
       <div class="section-2">
         <div class="container">
-          <div class="section-2-img"></div>
-          <div class="section-2-content">
+          <div class="section-2-img reveal fade-bottom"></div>
+          <div class="section-2-content reveal fade-bottom">
             <div class="container">
               <div class="contact-detail">
                 <div class="title">
@@ -210,13 +210,13 @@
         </div>
       </div>
       <div class="section-3">
-        <div class="head-title">
+        <div class="head-title reveal fade-bottom">
           <span>contact us</span>
           <h1>HOTLINE: (+84) 24 6687 4606</h1>
           <p>EMAIL: <a href="#">info@ncc.asia</a></p>
         </div>
         <div class="address">
-          <div class="address-content col">
+          <div class="address-content col reveal fade-bottom">
             <img src="/image/logo.png" alt="ncc-office" class="image" />
             <div class="middle">
               <h1>Head Office</h1>
@@ -227,14 +227,14 @@
               </p>
             </div>
           </div>
-          <div class="address-content col">
+          <div class="address-content col reveal fade-bottom">
             <img src="/image/logo.png" alt="ncc-office" class="image" />
             <div class="middle">
               <h3>HA NOI 2</h3>
               <p>7th Floor, 8 Pham Hung St., Cau Giay Dist., Hanoi, Vietnam.</p>
             </div>
           </div>
-          <div class="address-content col">
+          <div class="address-content col reveal fade-bottom">
             <img src="/image/logo.png" alt="ncc-office" class="image" />
             <div class="middle">
               <h3>SAI GON 1</h3>
@@ -244,7 +244,7 @@
               </p>
             </div>
           </div>
-          <div class="address-content col">
+          <div class="address-content col reveal fade-bottom">
             <img src="/image/logo.png" alt="ncc-office" class="image" />
             <div class="middle">
               <h3>SAI GON 2</h3>
@@ -254,7 +254,7 @@
               </p>
             </div>
           </div>
-          <div class="address-content col">
+          <div class="address-content col reveal fade-bottom">
             <img src="/image/logo.png" alt="ncc-office" class="image" />
             <div class="middle">
               <h3>DA NANG</h3>
@@ -264,7 +264,7 @@
               </p>
             </div>
           </div>
-          <div class="address-content col">
+          <div class="address-content col reveal fade-bottom">
             <img src="/image/logo.png" alt="ncc-office" class="image" />
             <div class="middle">
               <h3>VINH</h3>
@@ -274,7 +274,7 @@
               </p>
             </div>
           </div>
-          <div class="address-content col">
+          <div class="address-content col reveal fade-bottom">
             <img src="/image/logo.png" alt="ncc-office" class="image" />
             <div class="middle">
               <h3>QUY NHON</h3>
@@ -287,7 +287,6 @@
         </div>
       </div>
     </div>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
@@ -361,5 +360,22 @@
       </div>
     </footer>
     <script src="/js/script.js"></script>
+    <script>
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
