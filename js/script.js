@@ -96,21 +96,9 @@ $(".slide1").owlCarousel({
       items: 1,
       nav: true,
     },
-  },
-});
-
-$(".slide3").owlCarousel({
-  loop: true,
-  margin: 10,
-  responsiveClass: true,
-  autoplay: true,
-  items: 1,
-  autoplayTimeout: 3000,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1,
-      nav: true,
+    600: {
+        items: 3,
+        nav: false,
     },
   },
 });
@@ -128,20 +116,40 @@ function reveal() {
     }
   }
 }
+window.addEventListener("scroll", reveal);
 
-var speed = 10;
+// var speed = 50;
+// function incEltNbr(id) {
+// elt = document.getElementById(id);
+// endNbr = Number(document.getElementById(id).innerHTML);
+// incNbrRec(0, endNbr, elt);
+// }
+// function incNbrRec(i, endNbr, elt) {
+// if (i <= endNbr) {
+//     elt.innerHTML = i;
+//     setTimeout(function() {
+//     incNbrRec(i + 1, endNbr, elt);
+//     }, speed);
+// }
+// }
 
 function visible(partial) {
   var $t = partial,
-    $w = jQuery(window),
-    viewTop = $w.scrollTop(),
-    viewBottom = viewTop + $w.height(),
-    _top = $t.offset().top,
-    _bottom = _top + $t.height(),
-    compareTop = partial === true ? _bottom : _top,
-    compareBottom = partial === true ? _top : _bottom;
+      $w = jQuery(window),
+      viewTop = $w.scrollTop(),
+      viewBottom = viewTop + $w.height(),
+      _top = $t.offset().top,
+      _bottom = _top + $t.height(),
+      compareTop = partial === true ? _bottom : _top,
+      compareBottom = partial === true ? _top : _bottom;
 
-  return (
-    compareBottom <= viewBottom && compareTop >= viewTop && $t.is(":visible")
-  );
+  return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
+
 }
+
+
+
+
+
+
+

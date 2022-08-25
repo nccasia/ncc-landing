@@ -4,6 +4,9 @@
   box-sizing: border-box;
   padding: 50px 0;
   position: relative;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards
 }
 
 .section-1 .top .name {
@@ -100,6 +103,18 @@
   color: white;
   text-align: center;
   margin-top: 20px;
+  animation: fadeInAnimation ease 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 /*-------------------industries--------------*/
@@ -362,7 +377,8 @@
 
 .section-5 .grid {
   padding-top: 30%;
-  text-align: center;
+  justify-items: center;
+  grid-gap: 80px;
 }
 
 .section-5 .number {
@@ -632,6 +648,20 @@
   width: 50px;
 }
 
+/* animations */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media only screen and (max-width: 767px) {
   .section-1 .top .name {
     text-align: center;
@@ -704,6 +734,9 @@
     max-width: 100%;
     text-align: center;
     font-size: 36px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 30px 20px;
   }
 
   .section-2 .right .detail {
@@ -800,6 +833,7 @@
   }
 
   .section-4 .bottom {
+    margin-left: 0;
     display: flex;
     flex-direction: column;
   }
@@ -820,7 +854,7 @@
   .section-5 .grid {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     grid-gap: 80px;
   }
 
@@ -882,7 +916,7 @@
     max-width: 100%;
     font-size: 36px;
     box-sizing: border-box;
-    padding: 15px 0;
+    padding: 15px;
   }
 
   .section-8 .left .desc {
@@ -1023,7 +1057,7 @@
 
   .section-1 .bottom .slide {
     box-sizing: border-box;
-    padding: 75% 0 0 40px;
+    padding: 70% 0 0 40px;
     width: 100%;
   }
 
