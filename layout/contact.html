@@ -171,7 +171,7 @@
     <div class="section-container">
       <div class="section-1">
         <div class="container">
-          <div class="section-1-content reveal fade-bottom">
+          <div class="section-1-content fadeIn-bottom">
             <span>our contact</span>
             <h1>Contact Us</h1>
             <p>
@@ -362,20 +362,6 @@
     <script src="/js/script.js"></script>
     <script>
       window.addEventListener("scroll", reveal);
-
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var elementTop = reveals[i].getBoundingClientRect().top;
-          var elementVisible = 150;
-
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          }
-        }
-      }
     </script>
   </body>
 </html>

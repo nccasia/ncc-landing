@@ -101,3 +101,34 @@ $(".slide3").owlCarousel({
     },
   },
 });
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+var speed = 10;
+
+function visible(partial) {
+  var $t = partial,
+    $w = jQuery(window),
+    viewTop = $w.scrollTop(),
+    viewBottom = viewTop + $w.height(),
+    _top = $t.offset().top,
+    _bottom = _top + $t.height(),
+    compareTop = partial === true ? _bottom : _top,
+    compareBottom = partial === true ? _top : _bottom;
+
+  return (
+    compareBottom <= viewBottom && compareTop >= viewTop && $t.is(":visible")
+  );
+}

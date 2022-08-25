@@ -92,15 +92,8 @@
   <body id="body">
     <header class="header">
       <div class="header-left">
-        <div
-          class="header-title"
-          style="display: flex; align-items: center; gap: 5px"
-        >
-          <img
-            src="/image/logo.png"
-            alt="logo-ncc"
-            style="width: 40px; height: 40px"
-          />
+        <div class="header-title">
+          <img src="/image/logo.png" alt="logo-ncc" />
         </div>
         <div class="header-menu">
           <ul class="menu-content">
@@ -236,7 +229,7 @@
     <div class="section-container">
       <div class="section-1">
         <div class="container">
-          <div class="section-1-content">
+          <div class="section-1-content fadeIn-bottom">
             <span>our service</span>
             <h1>CaseStudy</h1>
             <p>
@@ -251,14 +244,14 @@
       </div>
       <div class="section-2">
         <div class="container">
-          <div class="top">
+          <div class="top reveal fade-bottom">
             <span>our service</span>
             <p class="title">
               We apply agile/scrum methodology to bring the most updated and
               optimized products
             </p>
           </div>
-          <div class="grid">
+          <div class="grid reveal fade-bottom">
             <div class="box">
               <i class="icon-first fa-regular fa-envelope"></i>
               <p class="box_name">Requirements analysis</p>
@@ -315,14 +308,14 @@
       </div>
       <div class="section-3">
         <div class="container">
-          <div class="section-3-content">
+          <div class="section-3-content reveal fade-bottom">
             <span>CaseStudy</span>
             <h2>Featured Case Studies</h2>
           </div>
           <div class="section-3-detail">
             <div class="container">
               <div class="bottom">
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-money-check fa-2xl"></i>
                     <p class="item-name">Finance & Insurance</p>
@@ -694,7 +687,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-shopping-cart fa-2xl"></i>
                     <p class="item-name">Retails & Ecommerce</p>
@@ -868,7 +861,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-gamepad fa-2xl"></i>
                     <p class="item-name">Game</p>
@@ -1012,7 +1005,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-book-bookmark fa-2xl"></i>
                     <p class="item-name">Education</p>
@@ -1219,7 +1212,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-heart-circle-check fa-2xl"></i>
                     <p class="item-name">Healthcare</p>
@@ -1319,7 +1312,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-globe-asia fa-2xl"></i>
                     <p class="item-name">Social network</p>
@@ -1420,7 +1413,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-toolbox fa-2xl"></i>
                     <p class="item-name">Enterprise solution</p>
@@ -1506,7 +1499,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-money-check fa-2xl"></i>
                     <p class="item-name">Real estate</p>
@@ -1568,7 +1561,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-football fa-2xl"></i>
                     <p class="item-name">Sport</p>
@@ -1644,7 +1637,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="bottom-detail">
+                <div class="bottom-detail reveal fade-bottom">
                   <div class="detail-title">
                     <i class="fas fa-shield fa-2xl"></i>
                     <p class="item-name">Prison management</p>
@@ -1708,7 +1701,7 @@
       </div>
       <div class="section-4">
         <div class="container">
-          <div class="left">
+          <div class="left reveal fade-bottom">
             <span>GET STARTED </span>
             <h2>Get Started & Tell Us About Your Requirements</h2>
           </div>
@@ -1777,7 +1770,7 @@
               </li>
             </ul>
           </div>
-          <div class="box grid">
+          <div class="box grid reveal fade-bottom">
             <a href="#">
               <img src="/image/home-sec1.jpg" />
             </a>
@@ -1808,5 +1801,8 @@
       </div>
     </footer>
     <script src="/js/script.js"></script>
+    <script>
+      window.addEventListener("scroll", reveal);
+    </script>
   </body>
 </html>

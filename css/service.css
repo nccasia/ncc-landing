@@ -166,7 +166,6 @@
 
 .section-2-detail .detail-item span {
   display: flex;
-  flex-direction: column;
   position: relative;
   align-items: flex-start;
   justify-content: flex-end;

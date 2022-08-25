@@ -91,15 +91,8 @@
   <body>
     <header class="header">
       <div class="header-left">
-        <div
-          class="header-title"
-          style="display: flex; align-items: center; gap: 5px"
-        >
-          <img
-            src="/image/logo.png"
-            alt="logo-ncc"
-            style="width: 56px; height: 56px"
-          />
+        <div class="header-title">
+          <img src="/image/logo.png" alt="logo-ncc" />
         </div>
         <div class="header-menu">
           <ul class="menu-content">
@@ -233,7 +226,7 @@
     <div class="section-container">
       <div class="section-1">
         <div class="container">
-          <div class="section-1-content">
+          <div class="section-1-content fadeIn-bottom">
             <span>the teams</span>
             <h1>Team</h1>
             <p>
@@ -247,14 +240,14 @@
       </div>
       <div class="section-2">
         <div class="container">
-          <div class="top">
+          <div class="top reveal fade-bottom">
             <span>the teams</span>
             <p class="title">Meet Awesome Team</p>
           </div>
           <div class="bottom">
             <div class="grid">
               <div
-                class="grid-item"
+                class="grid-item reveal fade-bottom"
                 style="background-image: url(/image/AnhNhan.jpg)"
               >
                 <div class="overlay">
@@ -275,7 +268,7 @@
                 </div>
               </div>
               <div
-                class="grid-item"
+                class="grid-item reveal fade-bottom"
                 style="background-image: url(/image/AnhTien.jpg)"
               >
                 <div class="overlay">
@@ -295,7 +288,7 @@
                 </div>
               </div>
               <div
-                class="grid-item"
+                class="grid-item reveal fade-bottom"
                 style="background-image: url(/image/AnhPhuc.jpg)"
               >
                 <div class="overlay">
@@ -316,7 +309,7 @@
                 </div>
               </div>
               <div
-                class="grid-item"
+                class="grid-item reveal fade-bottom"
                 style="background-image: url(/image/AnhLinh.jpg)"
               >
                 <div class="overlay">
@@ -343,11 +336,11 @@
       </div>
       <section class="section-3">
         <div class="container">
-          <div class="section-3-title">
+          <div class="section-3-title reveal fade-bottom">
             <span>team values</span>
             <h2>Lean Engineering Environment</h2>
           </div>
-          <div class="section-3-detail">
+          <div class="section-3-detail reveal fade-bottom">
             <div class="detail-toggle">
               <div class="toggle-item">
                 <div
@@ -431,7 +424,7 @@
           </div>
         </div>
       </section>
-      <section class="section-4">
+      <section class="section-4 reveal fade-bottom">
         <div class="container">
           <div class="top">
             <span>join our team</span>
@@ -497,7 +490,7 @@
               </li>
             </ul>
           </div>
-          <div class="box grid">
+          <div class="box grid reveal fade-bottom">
             <a href="#">
               <img src="/image/home-sec1.jpg" />
             </a>
@@ -530,5 +523,8 @@
     <script src="/js/script.js"></script>
     <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
     <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+      window.addEventListener("scroll", reveal);
+    </script>
   </body>
 </html>

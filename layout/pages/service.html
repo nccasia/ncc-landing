@@ -232,7 +232,7 @@
     <div class="section-container">
       <div class="section-1">
         <div class="container">
-          <div class="section-1-content">
+          <div class="section-1-content fadeIn-bottom">
             <span>our service</span>
             <h1>Service</h1>
             <p>
@@ -245,7 +245,7 @@
         </div>
       </div>
       <div class="section-2">
-        <div class="section-2-content">
+        <div class="section-2-content reveal fade-bottom">
           <div class="content-left">
             <span>OUR SERVICES</span>
             <h1>Software Development Services For Your Innovative Ideas</h1>
@@ -258,28 +258,37 @@
             </p>
           </div>
         </div>
-        <div class="section-2-detail">
-          <div class="detail-item">
-            <span>250+</span>
+        <div class="section-2-detail reveal fade-bottom">
+          <div class="detail-item" data-diff="100">
+            <span
+              ><p class="value">250</p>
+              +</span
+            >
             <h6>Project Completed</h6>
           </div>
-          <div class="detail-item">
-            <span>80+ </span>
+          <div class="detail-item" data-diff="100">
+            <span>
+              <p class="value">80</p>
+              +
+            </span>
             <h6>Clients Served</h6>
           </div>
-          <div class="detail-item">
-            <span>80%</span>
+          <div class="detail-item" data-diff="100">
+            <span
+              ><p class="value">80</p>
+              %</span
+            >
             <h6>Loyal Clients</h6>
           </div>
         </div>
       </div>
       <div class="section-3">
         <div class="container">
-          <div class="section-3-content">
+          <div class="section-3-content reveal fade-bottom">
             <span>OUR SERVICES</span>
             <h2>Build Your Custom Software For Your Business</h2>
           </div>
-          <div class="section-3-detail">
+          <div class="section-3-detail reveal fade-bottom">
             <div class="detail-table">
               <div class="detail-item">
                 <div class="item-title">
@@ -445,12 +454,12 @@
         <div class="wrapper flex">
           <img src="/image/service-sec4.jpg" />
           <div class="box">
-            <span>why choose us?</span>
-            <h2>
+            <span class="reveal fade-bottom">why choose us?</span>
+            <h2 class="reveal fade-bottom">
               We Create Powerful Softwares and Digital Solutions That Drive
               Meaningful
             </h2>
-            <div class="list">
+            <div class="list reveal fade-bottom">
               <div class="item">
                 <i class="fa-solid fa-check"></i>
                 <p>Advanced technologies</p>
@@ -566,5 +575,30 @@
     <script src="/js/script.js"></script>
     <script src="/libs/jquery/jquery/jquery-3.2.1.min.js"></script>
     <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+      window.addEventListener("scroll", reveal);
+    </script>
+    <script>
+      $(window).scroll(function () {
+        if (visible($(".value"))) {
+          if ($(".value").hasClass("counter-loaded")) return;
+          $(".value").addClass("counter-loaded");
+
+          $(".value").each(function () {
+            var $this = $(this);
+            jQuery({ Counter: 0 }).animate(
+              { Counter: $this.text() },
+              {
+                duration: 1500,
+                easing: "swing",
+                step: function () {
+                  $this.text(Math.ceil(this.Counter));
+                },
+              }
+            );
+          });
+        }
+      });
+    </script>
   </body>
 </html>

@@ -190,6 +190,7 @@
   font-size: 20px;
   padding: 0 24px 15px 24px;
   box-sizing: border-box;
+  height: 54px;
 }
 
 .section-2 .btn {
@@ -314,6 +315,10 @@
 
 .focus {
   color: var(--e-global-color-primary);
+}
+.section-3-detail .toggle-item .item-content p {
+  animation: growDown 0.5s ease-in-out forwards;
+  transform-origin: top center;
 }
 
 .section-3-detail .detail-item h5 {
@@ -636,7 +641,7 @@
   }
 
   .text .position {
-    padding: 15px;
+    padding: 0 15px;
   }
 
   .text .description {
