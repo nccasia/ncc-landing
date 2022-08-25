@@ -171,7 +171,7 @@
   width: 100%;
   padding: 96px 60px 96px 60px;
   background-color: var(--e-global-color-9bed8f9);
-  line-height: 1, 1rem;
+  line-height: 1rem;
   box-sizing: border-box;
 }
 
@@ -336,42 +336,6 @@ th {
   width: 24px;
   height: 24px;
   border: 2px solid var(--e-global-color-secondary);
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 .section-4 {

@@ -11,6 +11,19 @@ function openSidebar() {
 
 function closeSidebar() {
   document.getElementById("sidebar").style.display = "none";
+  document.getElementById("btn-team").classList.toggle = "none";
+}
+
+function openTeam() {
+  document.getElementById("grid-team").style.display = "grid";
+  document.getElementById("btn-toggle1").classList.add("none");
+  document.getElementById("btn-toggle2").classList.remove("none");
+}
+
+function closeTeam() {
+  document.getElementById("grid-team").style.display = "none";
+  document.getElementById("btn-toggle1").classList.remove("none");
+  document.getElementById("btn-toggle2").classList.add("none");
 }
 
 function toggleItem(id1, id2, itemTitle, itemContent) {
