@@ -173,10 +173,6 @@
     margin-bottom: 15px;
   }
 
-  .grid a img {
-    width: 100%;
-  }
-
   .submit_subscribe {
     align-items: center;
     flex-direction: column;

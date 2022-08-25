@@ -557,6 +557,7 @@
       text-align: center;
       max-width: 100%;
       font-size: 36px;
+      padding: 0 15px;
   }
 
   .section_3 .right {
@@ -615,7 +616,9 @@
   .section_5 .titles{
       max-width: 100%;
       text-align: center;
-      margin-left: 0;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 20px;
       font-size: 36px;
   }
 
