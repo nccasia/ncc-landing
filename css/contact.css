@@ -436,6 +436,11 @@
     width: 100%;
   }
 
+  .section-2 {
+    padding: 60px 0;
+    box-sizing: border-box;
+  }
+
   .section-2 .container {
     flex-direction: column;
   }
