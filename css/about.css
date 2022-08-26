@@ -254,7 +254,8 @@
 }
 /*--------------------section_5-------------------*/
 .section_5 {
-  margin: 100px 0 100px 0;
+  box-sizing: border-box;
+  padding: 60px 30px;
 }
 
 .section_5 .titles {
@@ -263,7 +264,7 @@
 }
 
 .section_5 .bottom {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .wrap_hist {
@@ -690,7 +691,7 @@
   }
 
   .section_3 {
-    padding: 50px 20px 20px 10px;
+    padding: 60px 20px;
   }
 
   .section_3 .left .name {
