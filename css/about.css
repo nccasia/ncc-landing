@@ -12,9 +12,6 @@
   text-transform: uppercase;
   box-sizing: border-box;
   padding: 20px;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 .section_1 .left span::before,
@@ -31,9 +28,6 @@
   font-size: 50px;
   box-sizing: border-box;
   padding: 15px;
-  animation: fadeInAnimation ease 5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 .section_1 .left {
@@ -48,18 +42,6 @@
   color: white;
   box-sizing: border-box;
   padding: 20px;
-  animation: fadeInAnimation ease 7s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
 }
 
 .section_1 .right {
@@ -260,7 +242,8 @@
 }
 /*--------------------section_5-------------------*/
 .section_5 {
-  margin: 100px 0 100px 0;
+  box-sizing: border-box;
+  padding: 60px 30px;
 }
 
 .section_5 .titles {
@@ -269,7 +252,7 @@
 }
 
 .section_5 .bottom {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .wrap_hist {
@@ -708,7 +691,7 @@
   }
 
   .section_3 {
-    padding: 50px 20px 20px 10px;
+    padding: 60px 20px;
   }
 
   .section_3 .left .name {
