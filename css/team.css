@@ -145,7 +145,8 @@
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
   position: relative;
-  gap: 10px;
+  row-gap: 30px;
+  column-gap: 10px;
   animation: fadeIn 1s ease-in-out forwards;
   transform-origin: top center;
 }
@@ -646,7 +647,8 @@
     font-size: 36px;
   }
 
-  .section-2 .bottom .grid {
+  .section-2 .bottom .grid1,
+  .section-2 .bottom .grid2 {
     grid-template-columns: auto;
     grid-template-rows: auto;
     row-gap: 30px;
@@ -766,9 +768,10 @@
     padding: 0 30px 30px;
   }
 
-  .section-2 .bottom .grid {
+  .section-2 .bottom .grid1,
+  .section-2 .bottom .grid2 {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0;
+    grid-gap: 10px;
   }
 
   .section-3-title {
