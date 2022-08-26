@@ -668,8 +668,6 @@
   width: 50px;
 }
 
-/* animations */
-
 @media only screen and (max-width: 767px) {
   .section-1 .top .name {
     text-align: center;
