@@ -523,7 +523,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin:15px 0 0 25%;
+  margin: 15px 0 0 25%;
 }
 
 .btn_team:hover {
@@ -657,7 +657,7 @@
 }
 
 .message {
-  font-family: 'Barlow';
+  font-family: "Barlow";
   /* width: 695px; */
   width: calc(100% - 20px);
   padding: 6px 16px;
@@ -794,7 +794,7 @@
 
   .image_2 {
     width: 100%;
-    height: 500px;
+    height: 300px;
     position: relative;
     padding: 0;
   }
