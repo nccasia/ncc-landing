@@ -580,6 +580,7 @@ th {
   .bottom {
     height: 450px;
     overflow: scroll;
+    scroll-snap-stop: normal;
   }
 
   .bottom .bottom-detail:nth-child(even) .popuptext {

@@ -265,7 +265,7 @@
   display: inline-block;
   content: "";
   border-top: 1px solid var(--e-global-color-primary);
-  width: 6%;
+  width: 15%;
   margin: 0 1rem;
   transform: translateY(0.7em);
 }
