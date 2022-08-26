@@ -42,7 +42,7 @@
   position: relative;
   background-position: center center;
   background-size: cover;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .section-1 .bottom .image .overlay {
@@ -258,24 +258,26 @@
 }
 
 .site_slide {
+  height: 80px;
   background-color: white;
   width: 105%;
   margin-left: 30%;
   z-index: 99;
-  margin-top: 42%;
   position: absolute;
+  bottom: 0;
 }
 
 .slide img {
-  width: 160px;
-  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 90px;
 }
 
 /*------------------services-----------------*/
 
 .section-4 {
   box-sizing: border-box;
-  padding: 96px 10px;
+  padding: 60px 30px;
 }
 
 .section-4 .top .title {
@@ -397,7 +399,8 @@
 
 .section-6 {
   width: 100%;
-  margin-top: 100px;
+  box-sizing: border-box;
+  padding: 60px 30px 0 30px;
 }
 
 .section-6 .top .name {
@@ -520,7 +523,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin: 45px 0 0 25%;
+  margin:15px 0 0 25%;
 }
 
 .btn_team:hover {
@@ -534,7 +537,8 @@
 }
 /*-------------------process-----------------*/
 .section-7 {
-  margin: 100px 0 100px 0;
+  box-sizing: border-box;
+  padding: 60px 30px;
 }
 
 .section-7 .title {
@@ -605,7 +609,11 @@
 /*---------------contact--------------*/
 
 .section-8 {
-  margin-bottom: 100px;
+  padding-bottom: 60px;
+}
+
+.section-8 .flex {
+  justify-content: space-between;
 }
 
 .section-8 .left {
@@ -613,7 +621,7 @@
 }
 
 .section-8 .right {
-  max-width: 65%;
+  max-width: 60%;
 }
 
 .section-8 .name::after {
@@ -642,14 +650,16 @@
 }
 
 .input {
-  width: 695px;
+  width: calc(100% - 20px);
   height: 31px;
   padding: 6px 16px;
   margin: 15px 0 15px 0;
 }
 
 .message {
-  width: 695px;
+  font-family: 'Barlow';
+  /* width: 695px; */
+  width: calc(100% - 20px);
   padding: 6px 16px;
   margin: 15px 0 15px 0;
 }
@@ -793,7 +803,6 @@
     width: 60%;
     margin-left: 0;
     height: 100px;
-    margin-top: 52%;
   }
 
   .slide img {
@@ -859,7 +868,6 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0 10px;
   }
 
   .section-6 .top .title {
@@ -954,7 +962,7 @@
 
   .wrap {
     padding: 10px 0 10px 0;
-    margin-left: 53%;
+    left: 0;
     margin-top: -85%;
   }
 
@@ -1092,10 +1100,6 @@
     width: 100%;
   }
 
-  .site_slide {
-    margin-top: 103%;
-  }
-
   .slide img {
     padding: 0;
   }
@@ -1128,10 +1132,6 @@
 
   .section-5 {
     background-position: 20%;
-  }
-
-  .section-7 {
-    padding: 0 15px;
   }
 
   .section-7 .grid {
