@@ -378,6 +378,7 @@
 .section_6 .middle li {
   color: var(--e-global-color-text);
   padding-top: 10px;
+  font-size: 20px;
 }
 
 .section_6 .middle h3 {
