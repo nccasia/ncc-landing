@@ -162,6 +162,7 @@
   height: 650px;
   background-position: center center;
   background-size: cover;
+  border-radius: 20px;
 }
 .grid-item .grid-title {
   display: flex;
@@ -177,6 +178,8 @@
   height: 15%;
   box-sizing: border-box;
   padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .overlay {
@@ -191,6 +194,7 @@
   transition: 0.5s ease-in-out;
   background-color: var(--e-global-color-secondary);
   color: var(--e-global-color-1f86ad6);
+  border-radius: 20px;
 }
 
 .overlay .position,

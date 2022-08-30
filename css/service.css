@@ -130,7 +130,7 @@
 
 .section-2-content .content-right {
   display: flex;
-  width: 100%;
+  width: 70%;
   align-items: flex-end;
   color: var(--e-global-color-text);
   font-size: 20px;
@@ -253,8 +253,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 30px;
-  overflow: scroll;
-  height: 700px;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -376,6 +375,8 @@
 
 .section-4 .item p {
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .section-4 .box h2 {

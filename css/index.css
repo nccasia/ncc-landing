@@ -471,9 +471,11 @@
   transition: 0.5s ease-in-out;
   background-color: var(--e-global-color-secondary);
   color: var(--e-global-color-1f86ad6);
+  border-radius: 10px;
 }
 
-.grid-item:hover .overlay {
+.grid-item:hover .overlay,
+.grid-item:active .overlay {
   opacity: 1;
 }
 
@@ -487,12 +489,12 @@
   line-height: 1.8em;
   background-color: var(--e-global-color-secondary);
   color: white;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .grid-item:hover .text {
   display: none;
-} 
+}
 
 .overlay p {
   display: flex;
@@ -515,7 +517,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin:40px 0 0 25%;
+  margin: 40px 0 0 25%;
 }
 
 .btn_team:hover {
@@ -864,9 +866,9 @@
     font-size: 36px;
   }
 
-  .overlay p{
-    line-height: 1.7em;
-    font-size: 16px;
+  .overlay p {
+    line-height: 1.5em;
+    font-size: 14px;
   }
 
   .section-7 .grid {
