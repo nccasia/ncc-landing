@@ -509,7 +509,7 @@
 
 .grid-item:hover .text {
   display: none;
-} 
+}
 
 .overlay p {
   display: flex;
@@ -533,7 +533,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin:40px 0 0 25%;
+  margin: 40px 0 0 25%;
 }
 
 .btn_team:hover {
@@ -882,9 +882,9 @@
     font-size: 36px;
   }
 
-  .overlay p{
-    line-height: 1.7em;
-    font-size: 16px;
+  .overlay p {
+    line-height: 1.5em;
+    font-size: 14px;
   }
 
   .section-7 .grid {
