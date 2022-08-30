@@ -120,7 +120,7 @@
   justify-content: space-around;
 }
 .section-2 .left .box {
-  width: 300px;
+  width: 400px;
 }
 
 .section-2 .left {
@@ -483,6 +483,10 @@
   border-radius:  20px;
 }
 
+.grid-item:hover .overlay{
+  opacity: 1;
+}
+
 .grid-item:hover .overlay,
 .grid-item:active .overlay {
   opacity: 1;
@@ -514,6 +518,7 @@
   padding: 20px;
   box-sizing: border-box;
   line-height: 1.6em;
+  font-style: italic;
 }
 
 .btn_team {
