@@ -84,39 +84,9 @@
 .section-2 .container {
   display: flex;
   width: 100%;
-}
-
-.elementor {
-  width: 540px;
-  height: 268px;
-  padding: 96px 30px;
-  background-color: #1c2347;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-
-.boxleft {
-  width: 540px;
-  height: 268px;
-
-  flex-direction: row;
-}
-.contact_name {
-  color: #ff7d90;
-  font-size: 16px;
-  font-family: Barlow, sans-serif;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.text {
-  color: #ffffff;
-  font-size: 68px;
-  font-family: Barlow, sans-serif;
-  font-weight: 500;
-  margin-bottom: 16px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 .content {
@@ -127,13 +97,8 @@
   margin-bottom: 16px;
 }
 
-.image {
-  width: 600px;
-  height: 460px;
-}
-
 .section-2-img {
-  width: 40%;
+  width: 60%;
   height: 100%;
 
   background-image: url(/image/team-sec1.jpg);
