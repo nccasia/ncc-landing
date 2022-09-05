@@ -132,6 +132,12 @@ body {
   animation-fill-mode: forwards;
 }
 
+.fadeIn-Right {
+  animation: fadeInRight ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .reveal {
   position: relative;
   opacity: 0;
@@ -161,6 +167,17 @@ body {
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }

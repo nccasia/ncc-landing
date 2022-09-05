@@ -129,13 +129,33 @@
   grid-gap: 20px;
 }
 
-.rows:nth-child(-1n + 4) {
+.rows:nth-child(-1n + 6) {
   grid-row: span 2;
 }
 
 .rows:nth-last-child(5) {
-  grid-column-start:2;
+  grid-column-start: 2;
   grid-row: 2 / span 2;
+}
+
+.rows:nth-last-child(4) {
+  grid-column-start: 2;
+  grid-row: 4 / span 2;
+}
+
+.rows:nth-last-child(3) {
+  grid-column-start: 2;
+  grid-row: 6 / span 2;
+}
+
+.rows:nth-last-child(2) {
+  grid-column-start: 2;
+  grid-row: 8 / span 2;
+}
+
+.rows:nth-last-child(1) {
+  grid-column-start: 2;
+  grid-row: 10 / span 2;
 }
 
 .section-2 .left .title {
@@ -465,7 +485,7 @@
 }
 
 .img4 {
-  background-image: url("../image/AnhLinh.jpg");
+  background-image: url("/image/AnhLinh.jpg");
 }
 
 .overlay {
@@ -480,10 +500,10 @@
   transition: 0.5s ease-in-out;
   background-color: var(--e-global-color-secondary);
   color: var(--e-global-color-1f86ad6);
-  border-radius:  20px;
+  border-radius: 20px;
 }
 
-.grid-item:hover .overlay{
+.grid-item:hover .overlay {
   opacity: 1;
 }
 
@@ -502,7 +522,7 @@
   line-height: 1.8em;
   background-color: var(--e-global-color-secondary);
   color: white;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -517,7 +537,7 @@
   font-size: 20px;
   padding: 20px;
   box-sizing: border-box;
-  line-height: 1.6em;
+  line-height: 1.5em;
   font-style: italic;
 }
 
