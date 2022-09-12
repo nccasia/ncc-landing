@@ -197,9 +197,10 @@
   border-radius: 20px;
 }
 
-.overlay .position,
+.grid-title .position,
 .overlay h2 {
   opacity: 1;
+  text-transform: capitalize;
 }
 
 .grid-item:hover .overlay {
